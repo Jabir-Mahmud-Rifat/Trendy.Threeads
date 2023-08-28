@@ -48,3 +48,51 @@
                         </li>
                     </ul>
                 </div>
+                <div class="nav-btn">
+
+                    <ul class="nav-list">
+                        <li class="nav-item">
+
+                            <a href="login and signup.php" class="login-btn"  id="login-btn"><i class="fa-solid fa-user"></i></a>
+                            
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="cart.php" class="nav-cart" id="cart-shop""><i class="fa-solid fa-cart-shopping"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h4>ABOVE THE CLOUDS</h4>
+            <h2>Wear your <span>best</span> <br> version</h2>
+            <h6>From waste to wear, our innovative clothing features recycled fabrics</h6>
+            <p>Save more with coupons & upto 50% off</p>
+            <button onclick="window.location='shop.php'">Shop now</button>
+
+        </section>
+    </div>
+
+    <section class="feature-product">
+        <h2>Featured products</h2>
+        <p>Check Out Our Prized Possessions</p>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://i.ibb.co/2N16zHr/TOO-HOT-TO-HANDLE-mockup-image.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Too Hot to Handle T-shirt</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 750</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
