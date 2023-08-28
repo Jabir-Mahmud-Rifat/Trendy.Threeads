@@ -1,2 +1,2 @@
-# Trendy.Threeads
+# Trendy Threads
 web &amp; mobile App
