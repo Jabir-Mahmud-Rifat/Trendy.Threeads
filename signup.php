@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     }
     else{
       $md5pass= md5($Password); //increpted the password
-      $sql = "INSERT INTO admin(username, password, email, name) VALUES('$Username', '$md5pass', '$Email', '$Name')" ; //we want to see the pass so 
+      $sql = "INSERT INTO admin(username, password, email, name) VALUES('$Username', '$Password', '$Email', '$Name')" ; //we want to see the pass so 
       //we use $Password in the query insted of $pass
       $insert = mysqli_query($conn, $sql) or die('query failed');
 

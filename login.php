@@ -9,9 +9,9 @@ session_start ();
 if(isset($_POST['submit'])){
 
   $Username = mysqli_real_escape_string($conn, $_POST['username']);
-  $Password= mysqli_real_escape_string($conn, md5($_POST['password']));
+  $Password= mysqli_real_escape_string($conn, ($_POST['password']));    //($conn, md5($_POST['password']))
 
-  $select = mysqli_query($conn, "SELECT * FROM admin WHERE username = '$Username' AND password = '$Password'") or die('query failed');
+  $select = mysqli_query($conn, "SELECT * FROM admin WHERE username = '$Username'  And password ='$Password'") or die('query failed');
 
   if(empty($Username) || empty($Password)){
    echo '<script type ="text/JavaScript">';  
@@ -20,11 +20,14 @@ if(isset($_POST['submit'])){
   }
   elseif(mysqli_num_rows($select) > 0){
     $row = mysqli_fetch_assoc($select);
-    header('location:index.php');
+    header('location:welcome.php');
+    //header('location:index.php');
   }
   else{
    echo '<script type ="text/JavaScript">';  
    echo 'alert("Incorrect Username or Password")';  
+   header('location:error.php'); // have to fix this partr
+
    echo '</script>';
   }
 }
