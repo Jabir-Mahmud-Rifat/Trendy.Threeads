@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
   $Username = mysqli_real_escape_string($conn, $_POST['username']);
   $Password= mysqli_real_escape_string($conn, md5($_POST['password']));
 
-  $select = mysqli_query($conn, "SELECT * FROM  admin WHERE username = '$Username' AND password = '$Password'") or die('query failed');
+  $select = mysqli_query($conn, "SELECT * FROM admin WHERE username = '$Username' AND password = '$Password'") or die('query failed');
 
   if(empty($Username) || empty($Password)){
    echo '<script type ="text/JavaScript">';  

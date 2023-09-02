@@ -38,7 +38,7 @@ if(isset($_POST['submit'])){
       }
       else{
         echo 'Signup Failed';
-        header('location:login & signup.php');
+        header('location:login and signup.php');
       }
     }
   }

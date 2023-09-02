@@ -319,7 +319,7 @@
             <a href="#"><i class="fa-brands fa-artstation" target="_blank"></i></a>
         </div>
 
-        <h6>© 2022 Trendy Threads - All Rights Reserved</h6>
+        <h6>© 2023 Trendy Threads - All Rights Reserved</h6>
     </footer>
     
 </body>

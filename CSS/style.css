@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --default-height-header: 3.5rem;
+
+    --background-color-main: rgb(20, 20, 20);
+    --main-title-color: rgb(109, 240, 79);
+    --main-text-color: azure;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: var(--main-title-color);
+}
+
+h2{
+    font-size: 45px;
+    line-height: 55px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+h3{
+    font-size: 36px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+
+h4{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+h6{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+p{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(208, 208, 208);
+}
+
+body{
+    width: 100%;
+    background-color: var(--background-color-main);
+    color: var(--main-text-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+/* header */
+
+#header-index{
+    background: transparent;
+}
+
+.header{
+    padding: 20px 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(8, 8, 8), rgb(13, 13, 13), rgb(20, 20, 20));
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+/* navbar */
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.nav-item{
+    padding: 0px 20px;
+    position: relative;
+}
+
+.nav a{
+    color: white;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: 0.3s ease;
+}
+
+.nav a:hover{
+    color: rgba(255, 255, 255, 0.64);
+}
+
+.nav-list a:hover,
+.nav-list a.active{
+    color: rgba(139, 232, 245, 0.925);
+}
+
+.nav-list a.active::after,
+.nav-list a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgba(130, 222, 234, 0.925);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.nav-logo i{
+    padding-right: 10px;
+}
+
+.nav-logo{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.nav-list i{
+    transform: scale(1.2);
+}
+
+
+/* Main and Hero Section */
+.self{
+    background-image: url("https://i.ibb.co/KN66CVy/enchanting-girl-with-dark-curly-hair-fooling-around-outdoor-warm-summer-day-amazing-ginger-female-mo.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: top 25%;
+    background-size: cover;
+}
+
+.hero{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0px 100px;
+}
+
+.hero h4{
+    font-stretch: expanded;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 10px;
+    color: rgb(62, 38, 7);
+}
+
+.hero h2{
+    font-size: 75px;
+    line-height: 80px;
+    text-transform: capitalize;
+    color: rgb(223, 89, 18);
+}
+
+.hero h2 span{
+    color: rgb(42, 22, 0);
+}
+
+.hero h6{
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 10px;
+    color: rgb(62, 38, 7);
+}
+
+.hero p{
+    font-weight: 400;
+    color: rgb(222, 130, 37);
+    padding-bottom: 20px;
+}
+
+.hero button{
+    color: rgb(255, 255, 255);
+    background-color: rgb(246, 97, 5);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+/* Featured Products */
+
+.feature-product{
+    text-align: center;
+    padding: 40px 80px;
+    margin-top: 40px;
+}
+
+.feature-product .product{
+    width: 23%;
+    min-width: 250px;
+    padding: 15px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px, 20px 30px rgb(16, 16, 16);
+    margin: 15px 0px;
+    transition: 0.2s;
+}
+
+.feature-product .product:hover{
+    box-shadow: 20px, 20px 30px black;
+}
+
+.feature-product .product img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.feature-product .product .description{
+    text-align: start;
+    padding: 10px 0px;
+}
+
+.feature-product .product .description span{
+    color: rgb(188, 170, 114);
+}
+
+.feature-product .product .description h5{
+    font-size: 20px;
+    padding: 2px 0px;
+}
+
+.feature-product .product .description i{
+    font-size: 12px;
+    color: yellow;
+}
+
+.feature-product .product .description h4{
+    font-size: 18px;
+    color: rgb(70, 255, 147);
+    padding-top: 7px;
+    font-weight: 700;
+}
+
+.feature-product .product a{
+    width: 40px;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+    background-color: rgb(46, 46, 46);
+    font-weight: 500;
+    color: rgb(87, 227, 89);
+    padding: 10px 15px;
+    border: 1px solid rgb(58, 58, 58);
+}
+
+.feature-product .product-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Banner Section */
+
+.banner{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.ibb.co/G38K2hx/1600w-qt-TMRJF4m0.webp");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner h2{
+    padding: 10px 0;
+}
+
+.banner h2 span{
+    color: rgb(255, 171, 125);
+}
+
+.banner button{
+    color: rgb(19, 168, 148);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Small Banner Section */
+
+.sm-banner .banner-box{
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.ibb.co/ThpfGwf/fashion-image-elegant-stylish-couple-love-holding-hands-looking-each-other-with-pleasure-long-haired.jpg");
+    min-width: 650px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.sm-banner{
+    padding: 40px 75px;
+    display: flex;
+    justify-content: space-between;
+    flex: wrap;
+}
+
+.sm-banner .banner-box button{
+    color: rgb(19, 168, 148);
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+
+.sm-banner .banner-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://i.ibb.co/5hYJn54/fashion-pretty-cool-young-girl-shopping-bags-wearing-black-hat-white-pants-over-colorful-orange-back.jpg");
+    min-width: 650px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* Footer Section */
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(4, 4, 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3{
+    color: rgb(231, 255, 227);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+footer p{
+    color: rgb(231, 255, 227);
+    font-size: 13.5px;
+    font-weight: 400;
+    line-height: 15px;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+footer h6{
+    color: rgb(206, 179, 97);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Footer Socials */
+
+.socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.socials a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(203, 139, 0);
+    border-radius: 30px;
+    margin: 10px 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.socials a:hover{
+    transform: scale(1.1);
+    background-color: rgb(120, 92, 0);
+    border: 2px solid rgb(238, 255, 0);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.product-details{
+    padding: 40px 80px;
+}
+
+.product-details .single-pro-image{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.sml-img-grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sml-img-col{
+    flex-basis: 32.5%;
+}
+
+.sml-img{
+    cursor: pointer;
+}
+
+/* Product Page */
+
+.product-details{
+    display: flex;
+    margin-top: 20px;
+}
+
+.product-details .single-pro-details{
+    width: 50%;
+    padding-top: 30px;
+}
+
+.product-details .single-pro-details h2{
+    padding: 10px 0px;
+}
+
+.product-details .single-pro-details span{
+    color: aquamarine;
+}
+
+.product-details .single-pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(45, 45, 45);
+}
+
+.product-details .single-pro-details input{
+    width: 50px;
+    height: 50px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 10px;
+}
+
+.product-details .single-pro-details button{
+    color: rgb(252, 252, 252);
+    border: 2px solid rgb(42, 39, 39);
+    background-color: rgb(35, 32, 32);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: 0.5s;
+    margin-top: 10px;
+}
+
+.product-details .single-pro-details h4{
+    font-size: 24px;
+    padding: 20px 0px;
+}
+
+.product-details .single-pro-details h5{
+    color: rgb(146, 146, 146);
+    font-weight: 500;
+}
+
+.pagination{
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.pagination a{
+    font-weight: 600;
+    padding: 15px 22px;
+    text-decoration: none;
+    background-color: rgb(145, 255, 106);
+    border-radius: 10px;
+    margin: 10px 2px;
+    color: rgb(70, 70, 70);
+}
+
+.pagination a:hover{
+    background-color: rgb(72, 138, 70);
+    border: 2px solid rgb(62, 255, 88);
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+.pagination a i{
+   font-weight: bold;
+}
+
+#about img{
+    width: 50%;
+    margin-right: 75px;
+    border-radius: 20px;
+}
+
+/* Contact Page */
+
+#contact iframe{
+    width: 100vh;
+    margin-left: 30px;
+    border-radius: 20px;
+}
+
+#contact-info{
+    padding-left: 75px;
+}
+
+#contact-info div{
+    padding: 15px 0px;
+}
+
+#contact-info li{
+    list-style: none;
+    display: flex;
+    padding: 12px 0px;
+    align-items: center;
+}
+
+#contact-info li i{
+    font-size: 15px;
+    padding-right: 20px;
+}
+
+#contact-info li h5{
+    padding-left: 20px;
+}
+
+/* Contact Form */
+
+.contact{
+    width: 100%;
+    align-items: center;
+    background: linear-gradient(rgb(20, 20, 20), rgb(24, 24, 24));
+    padding-top: 72px;
+}
+
+.contact .contact-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact h6{
+    color: whitesmoke;
+    font-size: 17px;
+    letter-spacing: 3.2px;
+    font-weight: 300;
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+    width: 200vh;
+}
+
+.contact .contact-form span{
+    margin-left: 24px;
+}
+
+.contact span{
+    color: rgb(129, 255, 225);
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 3rem;
+    margin-bottom: 40px;
+}
+
+.contact .row form .form-box{
+    border-radius: 15px;
+    padding: 20px;
+    margin: 7.5px 0px;
+    background-color: rgb(9, 9, 9);
+    color: white;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    border: 2.4px solid rgb(46, 45, 21);
+}
+
+.contact .row form .message{
+    height: 150px;
+    resize: none;
+}
+
+.contact button{
+    margin-top: 10px;
+    background-color: rgb(255, 255, 0);
+    color: rgb(24, 24, 24);
+    text-decoration: none;
+    text-align: none;
+    border: 3px solid transparent;
+    font-weight: bold;
+    padding: 15px 24px;
+    border-radius: 24px;
+    transition: .5s;
+}
+
+.contact button:hover{
+    background-color: rgb(96, 89, 0);
+    border: 2px solid rgb(255, 174, 0);
+    color: white;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.cart{
+    margin-top: 40px;
+    padding: 40px 80px;
+}
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart table thead{
+    border: 2px solid rgb(132, 104, 63);
+    border-left: none;
+    border-right: none;
+}
+
+.cart table thead td{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 20px 0px;
+}
+
+.cart table tbody td{
+    font-weight: 400;
+    padding: 20px 0px;
+}
+
+.cart table tbody td a{
+    color: white;
+    font-size: 30px;
+}
+
+.cart img{
+    width: 75px;
+    border-radius: 10px;
+}
+
+.cart input{
+    width: 72px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    color: white;
+    border: 2px solid rgb(81, 81, 81);
+    background: transparent;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-add{
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 2px solid rgb(48, 48, 25);
+    border-radius: 30px;
+}
+
+.cart-add h3{
+    padding: 20px 0px;
+}
+
+.cart-add table{
+    border: 2px solid rgb(132, 104, 63);
+    border-left: none;
+    border-right: none;
+    padding: 20px 0px;
+    width: 90vh;
+}
+
+.cart-add table td{
+    padding: 10px 0px;
+}
+
+.cart-add button{
+    color: rgb(43, 43, 43);
+    background-color: rgb(246, 214, 5);
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 12px 24px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    margin: 50px 0px;
+}
