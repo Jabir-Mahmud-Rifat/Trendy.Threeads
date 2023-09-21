@@ -74,7 +74,9 @@
             <h2><span>Trendy </span> Threads</h2>
 
             <h4>A bunch of visionaries wanting your attention</h4>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem voluptatibus esse ipsam nulla repellendus facilis, expedita hic, blanditiis nam accusantium ratione deleniti velit optio dicta veniam. Architecto porro nihil enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel amet dicta ducimus ipsum, libero sunt illum culpa provident, nihil voluptatum dignissimos quisquam facere vitae iusto quas blanditiis modi debitis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt illo harum, nemo accusantium quo beatae cupiditate, dicta sapiente libero cumque dolor culpa veritatis, ipsam esse porro in unde itaque rem!</p>
+            <p>
+            Trendy Threads is an e-commerce platform that is available via online and app. Our platform, which was created using HTML, CSS, JS, and Flutter, allows for 24-hour shopping while removing geographical restrictions. We place a high value on a seamless shopping experience, offering a wide selection of products, tailored suggestions, user ratings, and simple payment choices. Additionally, we provide flexible delivery, easy returns, and a worldwide marketplace for vendors. Lastly, we strive to reduce environmental impact. Join us our journey!
+            </p>
         </div>
         
     </section>
