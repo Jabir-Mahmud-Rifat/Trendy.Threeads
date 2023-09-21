@@ -52,7 +52,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-cart" id="cart-shop""><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="cart.php" class="nav-cart" id="cart-shop""><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                 </ul>
 
