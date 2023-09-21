@@ -21,7 +21,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a href="index.php" class="nav-logo">
-                <i class="fa-solid fa-vest-patches"></i> Retail Club
+                <i class="fa-solid fa-vest-patches"></i> Trendy Threads
             </a>
 
             <div class="nav-menu" id="nav-menu">
