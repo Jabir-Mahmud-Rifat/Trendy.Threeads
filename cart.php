@@ -35,10 +35,6 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="cart.php" class="nav-link active">Cart</a>
-                    </li>
-
-                    <li class="nav-item">
                         <a href="about.php" class="nav-link">About</a>
                     </li>
 
