@@ -136,7 +136,11 @@
 
     <!-- footer section -->
     <footer>
+<<<<<<< HEAD
         <h3>Trendy Threads</h3>
+=======
+        <h3>Retail Club</h3>
+>>>>>>> 85e9349f4bab8631d46c9dce5d8a79abc1ddda96
         <p>For more information on us,<br> please follow the links below</p>
 
         <div class="socials">
@@ -146,7 +150,11 @@
             <a href="#"><i class="fa-brands fa-artstation" target="_blank"></i></a>
         </div>
 
+<<<<<<< HEAD
         <h6>© 2023 Trendy Threads- All Rights Reserved</h6>
+=======
+        <h6>© 2022 Retail Club - All Rights Reserved</h6>
+>>>>>>> 85e9349f4bab8631d46c9dce5d8a79abc1ddda96
     </footer>
     
 </body>
