@@ -20,8 +20,8 @@ if(isset($_POST['submit'])){
   }
   elseif(mysqli_num_rows($select) > 0){
     $row = mysqli_fetch_assoc($select);
-    header('location:welcome.php');
-    //header('location:index.php');
+    //header('location:welcome.php');
+    header('location:index.php');
   }
   else{
    echo '<script type ="text/JavaScript">';  

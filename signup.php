@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
   $Password= mysqli_real_escape_string($conn, $_POST['password']);
   $CPassword= mysqli_real_escape_string($conn, $_POST['cpassword']);
 
-  $select = mysqli_query($conn, "SELECT * FROM admin WHERE email = '$Email' AND password = '$Password'") or die('query failed');
+  $select = mysqli_query($conn, "SELECT * FROM admin WHERE email = '$Email' AND password = '$Password' ") or die('query failed');
 
   if(empty($Username) || empty($Email) || empty($Password)){
     echo 'Please Fill In The Blanks';
