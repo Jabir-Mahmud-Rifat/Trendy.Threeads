@@ -76,147 +76,41 @@
         <h2>Men's Collection</h2>
         <p>Check Out These Categories</p>
         <div class="product-container">
-            <div class="product">
-                <img src="https://i.ibb.co/2N16zHr/TOO-HOT-TO-HANDLE-mockup-image.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Too Hot to Handle T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 750</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/GMCtkxx/foodie-tshirt-image-mydesignation-eat-at-trivandrum-C.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Foodie T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 900</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/FVDnPz5/harry-potter-tshirt-glow-in-the-dark-mydesignation-mockup-glow.gif" alt="">
-                <div class="description">
-                    <span>Glow in the Dark</span>
-                    <h5>Harry Potter T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 850</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/vjHxhMq/kgf-tshirt-mockup.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>KGF Rules T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 820</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
+            
             <div class="product">
                 <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Manushyan T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 800</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Malayali T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 870</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Theyyam T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 950</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Pwoli T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 850</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
-
-        </div>
     </section>
-
-    <section class="banner2">
-        <h4>We Create Quality</h4>
-        <h2>Up to <span>50% off</span> - on All T-shirts and Accessories</h2>
-        <button onclick="window.location='shop.php'">Explore More</button>
-    </section>
-
+       
+    
     <section class="feature-product">
-        <h2>New Arrivals</h2>
-        <p>We Proudly Present Our New Stock</p>
+        <h2>Women's Collection</h2>
+        <p>Check Out These Categories</p>
         <div class="product-container">
             
             <div class="product">
@@ -224,67 +118,99 @@
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Manushyan T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 800</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Malayali T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 870</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Theyyam T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 950</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Pwoli T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 850</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
+    </section>
+        
+    <section class="feature-product">
+        <h2>Kid's Collection</h2>
+        <p>Check Out These Categories</p>
+        <div class="product-container">
+            
+            <div class="product">
+                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Manushyan T-shirt</h5>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Malayali T-shirt</h5>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Theyyam T-shirt</h5>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Pwoli T-shirt</h5>
+                </div>
+            </div>
+    </section>
 
-        </div>
+    <section class="feature-product">
+        <h2>Winter Collection</h2>
+        <p>Check Out These Categories</p>
+        <div class="product-container">
+            
+            <div class="product">
+                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Manushyan T-shirt</h5>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Malayali T-shirt</h5>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Theyyam T-shirt</h5>
+                </div>
+            </div>
+            <div class="product">
+                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
+                <div class="description">
+                    <span>Unisex T-shirts</span>
+                    <h5>Pwoli T-shirt</h5>
+                </div>
+            </div>
     </section>
  
 
