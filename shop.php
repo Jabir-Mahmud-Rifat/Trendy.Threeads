@@ -78,31 +78,27 @@
         <div class="product-container">
             
             <div class="product">
-                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
+                <img src=".\Img\t-shirts.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Manushyan T-shirt</h5>
+                    <h5>T-shirts</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
+                <img src=".\Img\shirts.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Malayali T-shirt</h5>
+                    <h5>Shirts</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
+                <img src=".\Img\pants.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Theyyam T-shirt</h5>
+                    <h5>Pants & Trousers</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
+                <img src=".\Img\blazers.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Pwoli T-shirt</h5>
+                    <h5>Blazers</h5>
                 </div>
             </div>
     </section>
@@ -114,31 +110,27 @@
         <div class="product-container">
             
             <div class="product">
-                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
+                <img src=".\Img\womens-dress.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Manushyan T-shirt</h5>
+                    <h5>Dresses</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
+                <img src=".\Img\jeans.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Malayali T-shirt</h5>
+                    <h5>Jeans & Trousers</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
+                <img src=".\Img\womens-tops.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Theyyam T-shirt</h5>
+                    <h5>Tops</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
+                <img src=".\Img\trad-wear.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Pwoli T-shirt</h5>
+                    <h5>Traditional Wear</h5>
                 </div>
             </div>
     </section>
@@ -149,31 +141,21 @@
         <div class="product-container">
             
             <div class="product">
-                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
+                <img src=".\Img\onesies.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Manushyan T-shirt</h5>
+                    <h5>Baby Onesies & Rompers</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
+                <img src=".\Img\kids-hoodie.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Malayali T-shirt</h5>
+                    <h5>Toddler's Outwear</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
+                <img src=".\Img\kids-tshirts.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Theyyam T-shirt</h5>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Pwoli T-shirt</h5>
+                    <h5>Kids' Apparel</h5>
                 </div>
             </div>
     </section>
@@ -184,31 +166,27 @@
         <div class="product-container">
             
             <div class="product">
-                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
+                <img src=".\Img\hoodies cat.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Manushyan T-shirt</h5>
+                    <h5>Hoodies</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
+                <img src=".\Img\sweatshirt-cat.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Malayali T-shirt</h5>
+                    <h5>Sweaters & Sweatshirts</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
+                <img src=".\Img\jackets-cat.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Theyyam T-shirt</h5>
+                    <h5>Jackets</h5>
                 </div>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
+                <img src=".\Img\turtle-cat.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Pwoli T-shirt</h5>
+                    <h5>Turtleneck Sweaters</h5>
                 </div>
             </div>
     </section>
