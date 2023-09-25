@@ -39,19 +39,27 @@ CREATE TABLE `account` (
 --
 
 INSERT INTO `account` (`username`, `password`, `email`, `name`) VALUES
-('raks', ' 2314456 ', 'raks@yahoo.com', NULL),
-('SHAKIB', ' ', 'shakib75@gmail.com', NULL),
-('MESSI', '1f42d189bd95aa44423e0263de1908d4', ' messi2023@gmail.com', NULL),
-('CR7', ' 12345', ' cr7@gmail.com', NULL),
-('vvjhvjhvj', ' 12335454', ' hfhjhj@gmail.com', NULL),
-('varun', ' 12345678tr', ' varun75@gmail.com', NULL),
-('king', ' 123ert', ' srk00@gmail.com', NULL),
-('king', ' 123ert', ' srk00@gmail.com', NULL),
-('veeee', '  827ccb0eea8a706c4c34a16891f84e7b', ' v23@gmail.com', NULL),
-('Tiger', 't2023', ' T20@gmail.com', NULL),
-('dhoni07', '827ccb0eea8a706c4c34a16891f84e7b', 'dhoni07@gmail.com', 'Dhoni'),
-('siam75', '5531a5834816222280f20d1ef9e95f69', 'siam75@gmail.com', 'Siam'),
-('raj75', '07811dc6c422334ce36a09ff5cd6fe71', 'raj75@gmail.com', 'raj');
+('john_doe123', 'password123', 'john.doe@example.com', 'John Doe'),
+('jane_smith456', 'letmein', 'jane.smith@email.com', 'Jane Smith'),
+('mike_jones789', '12345', 'mike.jones@mail.com', 'Mike Jones'),
+('sara_kim101', 'p@ssw0rd', 'sara.kim@gmail.com', 'Sara Kim'),
+('chris_evans2022', 'captainamerica', 'chris.evans@avengers.com', 'Chris Evans'),
+('emma_watson_90', 'hermione123', 'emma.watson@hogwarts.com', 'Emma Watson'),
+('brad_pitt_actor', 'bradpitt', 'brad.pitt@hollywood.com', 'Brad Pitt'),
+('selena_gomez87', 'selenator', 'selena.gomez@singers.com', 'Selena Gomez'),
+('elon_musk_321', 'spacex2022', 'elon.musk@tesla.com', 'Elon Musk'),
+('mark_zuckerberg', 'facebook', 'mark.zuckerberg@meta.com', 'Mark Zuckerberg'),
+('serena_williams23', 'tennisqueen', 'serena.williams@sports.com', 'Serena Williams'),
+('jeff_bezos99', 'amazon', 'jeff.bezos@amazon.com', 'Jeff Bezos'),
+('taylor_swift1989', 'redalbum', 'taylor.swift@singers.com', 'Taylor Swift'),
+('barack_obama', 'president44', 'barack.obama@us.gov', 'Barack Obama'),
+('oprah_winfrey', 'ownnetwork', 'oprah.winfrey@talkshow.com', 'Oprah Winfrey'),
+('bill_gates', 'microsoft', 'bill.gates@microsoft.com', 'Bill Gates'),
+('warren_buffett', 'berkshire', 'warren.buffett@investor.com', 'Warren Buffett'),
+('angelina_jolie', 'brangelina', 'angelina.jolie@actress.com', 'Angelina Jolie'),
+('leonardo_dicaprio', 'oscarwinner', 'leo.dicaprio@hollywood.com', 'Leonardo DiCaprio'),
+('j.k_rowling', 'harrypotter', 'jk.rowling@wizardworld.com', 'J.K. Rowling');
+
 
 -- --------------------------------------------------------
 
