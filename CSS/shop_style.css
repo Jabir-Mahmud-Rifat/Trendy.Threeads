@@ -251,9 +251,6 @@ form.search::after {
     width: 100%;
     border-radius: 10px;
 }
-.feature-product .product img:hover{
-    transform:scale(1.5);
-}
 
 .feature-product .product .description{
     text-align: start;
@@ -289,12 +286,90 @@ form.search::after {
     border-radius: 100px;
     background-color: rgb(46, 46, 46);
     font-weight: 500;
-    color: rgb(225, 227, 87);
+    color: rgb(236, 196, 67);
     padding: 10px 15px;
     border: 1px solid rgb(58, 58, 58);
 }
 
 .feature-product .product-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+/*Shop product*/
+
+.shop-product{
+    text-align: center;
+    padding: 40px 80px;
+    margin-top: 40px;
+}
+
+.shop-product .product{
+    width: 23%;
+    min-width: 250px;
+    padding: 15px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 20px, 20px 30px rgb(16, 16, 16);
+    margin: 15px 0px;
+    transition: 0.2s;
+}
+
+.shop-product .product:hover{
+    box-shadow: 20px, 20px 30px black;
+}
+
+.shop-product .product img{
+    width: 100%;
+    border-radius: 10px;
+}
+.shop-product .product img:hover{
+    transform:scale(2.0);
+}
+
+.shop-product .product .description{
+    text-align: start;
+    padding: 10px 0px;
+}
+
+.shop-product .product .description span{
+    color: rgb(188, 170, 114);
+}
+
+.shop-product .product .description h5{
+    font-size: 20px;
+    padding: 2px 0px;
+}
+
+.shop-product .product .description i{
+    font-size: 12px;
+    color: yellow;
+}
+
+.shop-product .product .description h4{
+    font-size: 18px;
+    color: rgb(70, 255, 147);
+    padding-top: 7px;
+    font-weight: 700;
+}
+
+.shop-product .product a{
+    width: 40px;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+    background-color: rgb(46, 46, 46);
+    font-weight: 500;
+    color: rgb(236, 196, 67);
+    padding: 10px 15px;
+    border: 1px solid rgb(58, 58, 58);
+}
+
+.shop-product .product-container{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
