@@ -223,7 +223,6 @@ form.search::after {
     text-shadow: 0 0 3px #1b1919, 0 0 5px #000000;
 }
 
-
 /* Featured Products */
 
 .feature-product{
@@ -252,6 +251,9 @@ form.search::after {
     width: 100%;
     border-radius: 10px;
 }
+.feature-product .product img:hover{
+    transform:scale(2.5);
+}
 
 .feature-product .product .description{
     text-align: start;
@@ -274,20 +276,20 @@ form.search::after {
 
 .feature-product .product .description h4{
     font-size: 18px;
-    color: rgb(70, 255, 147);
+    color: rgb(38, 59, 130);
     padding-top: 7px;
     font-weight: 700;
 }
 
-.feature-product .product a{
+.feature-product .product .description a{
     width: 40px;
     font-size: 20px;
     height: 40px;
     line-height: 40px;
     border-radius: 100px;
-    background-color: rgb(46, 46, 46);
+    background-color: rgb(42, 42, 42);
     font-weight: 500;
-    color: rgb(87, 227, 89);
+    color: rgb(230, 204, 88);
     padding: 10px 15px;
     border: 1px solid rgb(58, 58, 58);
 }
