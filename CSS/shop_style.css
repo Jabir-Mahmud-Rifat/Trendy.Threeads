@@ -167,6 +167,43 @@ input{
     font-size: 17px;
 }
 
+.dropbtn {
+    
+    background:rgba(139, 232, 245, 0.925);;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: left;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(255, 171, 125);;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #e4cdcd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #000000;}
+
+
 /* Style the submit button */
 form.search button {
     float: right;
