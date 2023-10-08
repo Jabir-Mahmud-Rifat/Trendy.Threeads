@@ -23,33 +23,33 @@
     <header class="header" id="header">
         <nav class="nav container"> 
         <div class="logo-container">
-            <div class="dropdown">
+        <div class="dropdown">
                 <button class="dropbtn"><i class="fa-solid fa-list"></i></button>
                 <div class="dropdown-content">
 
                     <a href="#">Men's Collection:</a>
-                    <a href="t-shirts.php"><h6>• T-shirts</h6></a>
-                    <a href="shirts.php"><h6>• Shirts</h6></a>
-                    <a href="pants.php"><h6>• Pants & Trousers</h6></a>
-                    <a href="blazers.php"><h6>• Blazers</h6></a>
+                    <a href="t-shirts.php"><h6>T-shirts</h6></a>
+                    <a href="shirts.php"><h6>Shirts</h6></a>
+                    <a href="pants.php"><h6>Pants & Trousers</h6></a>
+                    <a href="blazers.php"><h6>Blazers</h6></a>
 
                     
                     <a href="#">Women's Collection:</a>
-                    <a href="dresses.php"><h6>• Dresses</h6></a>
-                    <a href="jeans.php"><h6>• Jeans & Trousers</h6></a>
-                    <a href="tops.php"><h6>•Tops</h6></a>
-                    <a href="trad-wear.php"><h6>• Traditional Wear</h6></a>
+                    <a href="outfits.php"><h6>Outfits</h6></a>
+                    <a href="jeans.php"><h6>Jeans & Trousers</h6></a>
+                    <a href="tops.php"><h6>Tops</h6></a>
+                    <a href="trad-wear.php"><h6>Traditional Wear</h6></a>
 
                     <a href="#">Kid's Collection:</a>
-                    <a href="onesies.php"><h6>• Baby Onesies & Rompers</h6></a>
-                    <a href="outwears.php"><h6>• Todler's Outwear</h6></a>
-                    <a href="apparels.php"><h6>• Kid's Apparel</h6></a>
+                    <a href="onesies.php"><h6>Baby Onesies & Rompers</h6></a>
+                    <a href="outwears.php"><h6>Todler's Outwear</h6></a>
+                    <a href="apparels.php"><h6>Kid's Apparel</h6></a>
 
                     <a href="#">Winter Collection:</a>
-                    <a href="hoodies.php"><h6>• Hoodies</h6></a>
-                    <a href="sweaters.php"><h6>• Sweaters & Sweatshirts</h6></a>
-                    <a href="jackets.php"><h6>• Jackets</h6></a>
-                    <a href="turtles.php"><h6>• Turtlenecks</h6></a>
+                    <a href="hoodies.php"><h6>Hoodies</h6></a>
+                    <a href="sweaters.php"><h6>Sweaters & Sweatshirts</h6></a>
+                    <a href="jackets.php"><h6>Jackets</h6></a>
+                    <a href="turtles.php"><h6>Turtlenecks</h6></a>
 
                 </div>
             </div>    

@@ -28,28 +28,28 @@
                 <div class="dropdown-content">
 
                     <a href="#">Men's Collection:</a>
-                    <a href="t-shirts.php"><h6>• T-shirts</h6></a>
-                    <a href="shirts.php"><h6>• Shirts</h6></a>
-                    <a href="pants.php"><h6>• Pants & Trousers</h6></a>
-                    <a href="blazers.php"><h6>• Blazers</h6></a>
+                    <a href="t-shirts.php"><h6>T-shirts</h6></a>
+                    <a href="shirts.php"><h6>Shirts</h6></a>
+                    <a href="pants.php"><h6>Pants & Trousers</h6></a>
+                    <a href="blazers.php"><h6>Blazers</h6></a>
 
                     
                     <a href="#">Women's Collection:</a>
-                    <a href="dresses.php"><h6>• Dresses</h6></a>
-                    <a href="jeans.php"><h6>• Jeans & Trousers</h6></a>
-                    <a href="tops.php"><h6>•Tops</h6></a>
-                    <a href="trad-wear.php"><h6>• Traditional Wear</h6></a>
+                    <a href="outfits.php"><h6>Outfits</h6></a>
+                    <a href="jeans.php"><h6>Jeans & Trousers</h6></a>
+                    <a href="tops.php"><h6>Tops</h6></a>
+                    <a href="trad-wear.php"><h6>Traditional Wear</h6></a>
 
                     <a href="#">Kid's Collection:</a>
-                    <a href="onesies.php"><h6>• Baby Onesies & Rompers</h6></a>
-                    <a href="outwears.php"><h6>• Todler's Outwear</h6></a>
-                    <a href="apparels.php"><h6>• Kid's Apparel</h6></a>
+                    <a href="onesies.php"><h6>Baby Onesies & Rompers</h6></a>
+                    <a href="outwears.php"><h6>Todler's Outwear</h6></a>
+                    <a href="apparels.php"><h6>Kid's Apparel</h6></a>
 
                     <a href="#">Winter Collection:</a>
-                    <a href="hoodies.php"><h6>• Hoodies</h6></a>
-                    <a href="sweaters.php"><h6>• Sweaters & Sweatshirts</h6></a>
-                    <a href="jackets.php"><h6>• Jackets</h6></a>
-                    <a href="turtles.php"><h6>• Turtlenecks</h6></a>
+                    <a href="hoodies.php"><h6>Hoodies</h6></a>
+                    <a href="sweaters.php"><h6>Sweaters & Sweatshirts</h6></a>
+                    <a href="jackets.php"><h6>Jackets</h6></a>
+                    <a href="turtles.php"><h6>Turtlenecks</h6></a>
 
                 </div>
             </div>
@@ -115,7 +115,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Half-sleeve Crop Shirt </span>- Light Green</h5>
+                    <h5><span>Wide Legged denim </span>- Sky blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -123,7 +123,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3500</h4>
+                    <h4>BDT. 1500</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -131,7 +131,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Balloon Sleeve Moff Shirt </span>- Pink</h5>
+                    <h5><span>Wide Legged Denim Jeans </span>- Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -139,7 +139,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3800</h4>
+                    <h4>BDT. 1600</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -147,7 +147,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Folded Half-sleeve Shirt </span>- Pale Orange</h5>
+                    <h5><span>Wide Legged Jeans </span>- Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -155,7 +155,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4000</h4>
+                    <h4>BDT. 1750</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -163,7 +163,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Folded Half-sleeve Shirt </span>- Bottle Green</h5>
+                    <h5><span>Flare Jeans </span>- Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -171,7 +171,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3350</h4>
+                    <h4>BDT. 1800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -180,7 +180,7 @@
                 <img src=".\Img\lad-jeans-5.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Solid Full-sleeve Shirt </span>- Plain White</h5>
+                    <h5><span>Formal Pants </span>- Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -188,7 +188,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4500</h4>
+                    <h4>BDT. 2000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>    

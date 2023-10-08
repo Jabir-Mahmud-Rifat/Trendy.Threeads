@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T-shirts</title>
+    <title>Outfits</title>
     <link rel="icon" type="image/x-icon" href=".\Img\favicon.ico">
 
 
@@ -22,8 +22,8 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-        <div class="logo-container">
-            <div class="dropdown">
+        <div class="logo-container">            
+        <div class="dropdown">
                 <button class="dropbtn"><i class="fa-solid fa-list"></i></button>
                 <div class="dropdown-content">
 
@@ -53,12 +53,11 @@
 
                 </div>
             </div>
-          
 
             <a href="index.php" class="nav-logo">
                 <i class="fa-solid fa-vest-patches"></i> Trendy Threads
             </a>
-        </div> 
+        </div>
 
             <div class="nav-menu" id="nav-menu">
                 <ul class="nav-list">
@@ -90,7 +89,7 @@
                     <li class="nav-item">
                          <a href="cart.php" class="nav-cart" id="cart-shop"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
-              
+
                     <li class="nav-item">
                     <form class="search" action="search.php">
                     <input type="text" placeholder="Search.." name="search">
@@ -105,15 +104,17 @@
         </nav>
     </header>
 
+    <section class="shopbanner-4">
+    </section>
+
     <section class="shop-product">
-        <h2>Featured products</h2>
-        <p>Check Out Our Prized Possessions</p>
+        <h2>Summer Sensations</h2>
+        <p>Light, Breezy Outfits for Sun-Kissed Days</p>
         <div class="product-container">
             <div class="product">
-                <img src="https://i.ibb.co/2N16zHr/TOO-HOT-TO-HANDLE-mockup-image.jpg" alt="">
+                <img src=".\Img\jumpsuit-1.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Too Hot to Handle T-shirt</h5>
+                    <h5><span>Powder Blue Humpsuit with Top </span>- Powder Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -121,187 +122,75 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 750</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/GMCtkxx/foodie-tshirt-image-mydesignation-eat-at-trivandrum-C.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Foodie T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 900</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/FVDnPz5/harry-potter-tshirt-glow-in-the-dark-mydesignation-mockup-glow.gif" alt="">
-                <div class="description">
-                    <span>Glow in the Dark</span>
-                    <h5>Harry Potter T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 850</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/vjHxhMq/kgf-tshirt-mockup.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>KGF Rules T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 820</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Manushyan T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 800</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Malayali T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 870</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Theyyam T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 950</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Pwoli T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 850</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Manushyan T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 800</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Malayali T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 870</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Theyyam T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 950</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            <div class="product">
-                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
-                <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Pwoli T-shirt</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 850</h4>
+                    <h4>BDT. 1800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
+            <div class="product">
+                <img src=".\Img\jumpsuit-2.jpg" alt="">
+                <div class="description">
+                    <h5><span>Black Sleeveless Jumpsuit</span>- Black</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 1850</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\jumpsuit-3.jpg" alt="">
+                <div class="description">
+                    <h5><span>Yellow Jumpsuit</span>- Yellow</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 2000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\jumpsuit-4.jpg" alt="">
+                <div class="description">
+                    <h5><span>Powder Green Silk Jumpsuit </span>- Powder Green</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 2200</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\jumpsuit-5.jpg" alt="">
+                <div class="description">
+                    <h5><span>Sea Blue Jumpsuit </span>- Sea Blue</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 2500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+                    
         </div>
     </section>
 
