@@ -146,6 +146,7 @@ input{
 
 .nav-logo i{
     padding-right: 10px;
+    padding-left: 10px;
 }
 
 .nav-logo{
@@ -169,11 +170,12 @@ input{
 
 .dropbtn {
     
-    background:rgba(139, 232, 245, 0.925);;
-    color: white;
-    padding: 12px;
+    background:rgba(139, 232, 245, 0.925);
+    color: black;
+    padding: 5px;
+    width: 40px;
     font-size: 16px;
-    border: none;
+    border:#1b1919;
   }
   
   .dropdown {
@@ -184,24 +186,32 @@ input{
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color:rgb(255, 171, 125);;
+    background-color:rgb(255, 255, 255);;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
   .dropdown-content a {
-    color: black;
+    
+    color: rgb(0, 0, 0);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #e4cdcd;}
+  .dropdown-content a:hover {background-color: #62bec1;}
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #000000;}
+  .dropdown:hover .dropbtn {background-color: rgba(139, 233, 245, 0.406)}
+
+  .dropdown-content h6 {
+    font-size: 12px;
+    float: center;
+    color:  rgb(26, 91, 78);
+    padding-left: 10px;
+}
 
 
 /* Style the submit button */
@@ -397,7 +407,7 @@ form.search::after {
     border-radius: 10px;
 }
 .shop-product .product img:hover{
-    transform:scale(2.0);
+    transform:scale(1.5);
 }
 
 .shop-product .product .description{
