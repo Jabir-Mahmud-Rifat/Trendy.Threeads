@@ -112,9 +112,9 @@
         <p>Discover Elegance Woven in Every Drape</p>
         <div class="product-container">
             <div class="product">
-                <img src=".\Img\blazer-1.jpg" alt="">
+                <img src=".\Img\salwar-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Glen Check Blazer </span>- Navy Blue</h5>
+                    <h5><span>Women's Kurti with Pants</span> - Sky Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -122,15 +122,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3350</h4>
+                    <h4>BDT. 3300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-4.jpg" alt="">
+                <img src=".\Img\salwar-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer</span>- Black</h5>
+                    <h5><span>Women's Kurti with Cream Trousers</span> - Navy Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -144,9 +144,9 @@
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-5.jpg" alt="">
+                <img src=".\Img\salwar-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer</span>- Maroon</h5>
+                    <h5><span>Women's Embroidered Kurti with Pants</span> - White</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -160,9 +160,9 @@
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-2.jpg" alt="">
+                <img src=".\Img\salwar-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer </span>- Pine Green</h5>
+                    <h5><span>Women's Three-piece </span>- Powder Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -176,9 +176,9 @@
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-3.jpg" alt="">
+                <img src=".\Img\salwar-5.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Glen Check Blazer </span>- Purple</h5>
+                    <h5><span>Women's Kurti with Pants</span> - Lavendar</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -192,10 +192,9 @@
             </div>
                     
             <div class="product">
-                <img src=".\Img\blazer-6.jpg" alt="">
+                <img src=".\Img\salwar-6.jpg" alt="">
                 <div class="description">
-     
-                    <h5><span>Men's Glen Check Blazer </span>- Grey</h5>
+                    <h5><span>Women's Three-piece</span> - Lavendar</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -209,10 +208,10 @@
             </div>
             
             <div class="product">
-                <img src=".\Img\suit-2.jpg" alt="">
+                <img src=".\Img\saree-1.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Men's Chalk Stripe Suit</span> - Charcoal Grey</h5>
+                    <h5><span>Women's Saree</span> - Pink Shimmery</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -220,16 +219,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 8250</h4>
+                    <h4>BDT. 3300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\suit-1.jpg" alt="">
+                <img src=".\Img\saree-2.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Men's Glen Check Suit </span>- Ocean Blue</h5>
+                    <h5><span>Women's Saree</span> - Navy Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -237,24 +236,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 8800</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product">
-                <img src=".\Img\suit-3.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Men's Glen Check Suit</span> - Indigo</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 9000</h4>
+                    <h4>BDT. 3000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>

@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeans</title>
+    <title>Turtlenecks</title>
     <link rel="icon" type="image/x-icon" href=".\Img\favicon.ico">
 
 
@@ -108,14 +108,14 @@
     </section>
 
     <section class="shop-product">
-        <h2>Denim Delights</h2>
-        <p>Elevate Your Style with Classic Jeans</p>
+        <h2>Classy Turtlenecks</h2>
+        <p>When Fashion Meets Functionality</p>
         <div class="product-container">
 
             <div class="product">
-                <img src=".\Img\lad-jeans-1.jpg" alt="">
+                <img src=".\Img\turtleneck-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged denim </span>- Sky blue</h5>
+                    <h5><span>Unisex Turtleneck</span> - Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -123,15 +123,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1500</h4>
+                    <h4>BDT. 1100</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\lad-jeans-2.jpg" alt="">
+                <img src=".\Img\turtleneck-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged Denim Jeans </span>- Blue</h5>
+                    <h5><span>Unisex Turtleneck</span> - Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -139,15 +139,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1600</h4>
+                    <h4>BDT. 1200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\lad-jeans-3.jpg" alt="">
+                <img src=".\Img\turtleneck-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged Jeans </span>- Black</h5>
+                    <h5><span>Unisex Turtleneck</span> - Olive Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -155,15 +155,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1750</h4>
+                    <h4>BDT. 1200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\lad-jeans-4.jpg" alt="">
+                <img src=".\Img\turtleneck-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Flare Jeans </span>- Blue</h5>
+                    <h5><span>Unisex Turtleneck</span> - Brown</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -171,16 +171,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1800</h4>
+                    <h4>BDT. 1200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
                     
             <div class="product">
-                <img src=".\Img\lad-jeans-5.jpg" alt="">
+                <img src=".\Img\turtleneck-5.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Formal Pants </span>- Black</h5>
+                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -188,7 +188,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 2000</h4>
+                    <h4>BDT. 1200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>    

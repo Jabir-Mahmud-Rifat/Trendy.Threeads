@@ -113,27 +113,30 @@
         <div class="product-container">
             
             <div class="product">
-                <img src=".\Img\t-shirts.jpg" alt="">
-                <div class="description">
-                    <a href="t-shirts.php">T-shirts</a>
-                </div>
-            </div>
-            <div class="product">
                 <img src=".\Img\shirts.jpg" alt="">
                 <div class="description">
                     <a href="shirts.php">Shirts</a>
                 </div>
             </div>
+                        
             <div class="product">
                 <img src=".\Img\pants.jpg" alt="">
                 <div class="description">
                     <a href="pants.php">Pants & Trousers</a>
                 </div>
             </div>
+            
             <div class="product">
                 <img src=".\Img\blazers.jpg" alt="">
                 <div class="description">
                    <a href="blazers.php">Blazers</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\panjabi-4.jpg" alt="">
+                <div class="description">
+                    <a href="panjabi.php">Traditional Wear</a>
                 </div>
             </div>
     </section>
@@ -178,7 +181,7 @@
             <div class="product">
                 <img src=".\Img\onesies.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Baby Onesies & Rompers</a>
+                <a href="t-shirts.php">Baby Onesies</a>
                 </div>
             </div>
             <div class="product">
@@ -203,25 +206,25 @@
             <div class="product">
                 <img src=".\Img\hoodies cat.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Hoodies</a>  
+                <a href="hoodies.php">Hoodies</a>  
                 </div>
             </div>
             <div class="product">
                 <img src=".\Img\sweatshirt-cat.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Sweaters & Sweatshirts</a>  
+                <a href="sweaters.php">Sweatshirts</a>  
                 </div>
             </div>
             <div class="product">
                 <img src=".\Img\jackets-cat.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Jackets</a>  
+                <a href="jackets.php">Jackets</a>  
                  </div>
             </div>
             <div class="product">
                 <img src=".\Img\turtle-cat.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Turtleneck Sweaters</a>  
+                <a href="turtles.php">Turtleneck Sweaters</a>  
                 </div>
             </div>
     </section>

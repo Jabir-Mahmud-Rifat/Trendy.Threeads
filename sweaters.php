@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeans</title>
+    <title>Sweatshirts</title>
     <link rel="icon" type="image/x-icon" href=".\Img\favicon.ico">
 
 
@@ -108,14 +108,14 @@
     </section>
 
     <section class="shop-product">
-        <h2>Denim Delights</h2>
-        <p>Elevate Your Style with Classic Jeans</p>
+        <h2>Cozy Knit Pullovers</h2>
+        <p>Wrap Yourself in Warmth!</p>
         <div class="product-container">
 
             <div class="product">
-                <img src=".\Img\lad-jeans-1.jpg" alt="">
+                <img src=".\Img\sweater-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged denim </span>- Sky blue</h5>
+                    <h5><span>Unisex Sweatshirts</span> - White</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -123,15 +123,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1500</h4>
+                    <h4>BDT. 800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\lad-jeans-2.jpg" alt="">
+                <img src=".\Img\sweater-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged Denim Jeans </span>- Blue</h5>
+                    <h5><span>Unisex Sweatshirts</span> - Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -139,15 +139,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1600</h4>
+                    <h4>BDT. 800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\lad-jeans-3.jpg" alt="">
+                <img src=".\Img\sweater-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged Jeans </span>- Black</h5>
+                    <h5><span>Unisex Sweatshirts</span> - Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -155,32 +155,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1750</h4>
+                    <h4>BDT. 850</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\lad-jeans-4.jpg" alt="">
-                <div class="description">
-                    <h5><span>Flare Jeans </span>- Blue</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 1800</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-                    
-            <div class="product">
-                <img src=".\Img\lad-jeans-5.jpg" alt="">
+                <img src=".\Img\sweater-5.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Formal Pants </span>- Black</h5>
+                    <h5><span>Unisex Sweatshirts </span>- Pine Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -188,11 +172,26 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 2000</h4>
+                    <h4>BDT. 900</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>    
+            </div>
 
+            <div class="product">
+                <img src=".\Img\sweater-4.jpg" alt="">
+                <div class="description">
+                    <h5><span>Women's Sweatshirts</span> - Lavendar</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 960</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
         </div>
     </section>
 
