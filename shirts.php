@@ -112,9 +112,9 @@
         <p>Elevate Your Wardrobe with Timeless Elegance and Unmatched Comfort</p>
         <div class="product-container">
             <div class="product">
-                <img src=".\Img\blazer-1.jpg" alt="">
+                <img src=".\Img\shirts-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Glen Check Blazer </span>- Navy Blue</h5>
+                    <h5><span>Men's Band Collar Striped Shirt</span> - Blue & White</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -122,15 +122,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3350</h4>
+                    <h4>BDT. 1200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-4.jpg" alt="">
+                <img src=".\Img\shirts-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer</span>- Black</h5>
+                    <h5><span>Men's Casual Shirt</span> - Khaki</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -138,15 +138,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3500</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-5.jpg" alt="">
+                <img src=".\Img\shirts-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer</span>- Maroon</h5>
+                    <h5><span>Men's Casual Shirt</span> - Mint Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -154,15 +154,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3800</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-2.jpg" alt="">
+                <img src=".\Img\shirts-9.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer </span>- Pine Green</h5>
+     
+                    <h5><span>Men's Casual Shirt</span> - Olive Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -170,15 +171,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4000</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\blazer-3.jpg" alt="">
+                <img src=".\Img\shirts-5.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Glen Check Blazer </span>- Purple</h5>
+                    <h5><span>Men's Casual Shirt</span> - Pale Orange</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -186,16 +187,66 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4200</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
+
+            <div class="product">
+                <img src=".\Img\shirts-8.jpg" alt="">
+                <div class="description">
+     
+                    <h5><span>Men's Linen Shirt</span> - Navy Blue</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 1350</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\shirts-7.jpg" alt="">
+                <div class="description">
+     
+                    <h5><span>Men's Grameen Check Shirt</span> - Blue</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 1400</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\shirts-4.jpg" alt="">
+                <div class="description">
+                    <h5><span>Men's Formal Shirt</span> - White</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 1500</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>          
                     
             <div class="product">
-                <img src=".\Img\blazer-6.jpg" alt="">
+                <img src=".\Img\shirts-6.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Men's Glen Check Blazer </span>- Grey</h5>
+                    <h5><span>Men's Formal Shirt</span> - Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -203,58 +254,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4500</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-            
-            <div class="product">
-                <img src=".\Img\suit-2.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Men's Chalk Stripe Suit</span> - Charcoal Grey</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 8250</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product">
-                <img src=".\Img\suit-1.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Men's Glen Check Suit </span>- Ocean Blue</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 8800</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product">
-                <img src=".\Img\suit-3.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Men's Glen Check Suit</span> - Indigo</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 9000</h4>
+                    <h4>BDT. 1500</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
