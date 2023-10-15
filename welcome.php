@@ -21,28 +21,29 @@ session_start() ; //  code for connecting next page
 <body>
     <header>
         <h1>Welcome to Trendy Threads</h1>
+         <h2> Your sign up is Successful</h2>
         <p>Enjoy your Shopping with us</p>
     </header>
 
     <section class="features">
         <div class="feature">
-            <h2>Feature 1</h2>
-            <p>Description of feature 1.</p>
+            <h2>Discover your style</h2>
+           
         </div>
         <div class="feature">
-            <h2>Feature 2</h2>
-            <p>Description of feature 2.</p>
+            <h2>Trust on quality</h2>
+            
         </div>
         <div class="feature">
-            <h2>Feature 3</h2>
-            <p>Description of feature 3.</p>
+            <h2> shopping with Trendy Threads</h2>
+          
         </div>
     </section>
 
     <section class="cta">
-        <h2> To explore Trendy Threads </h2>
-        <p>click</p>
-        <a href="#" class="btn"> Home Page</a>
+        <h2> </h2>    
+                                
+        <a href="index.php" class="btn"> Explore Trendy Threads </a>     <!--add index.php in btn to reach home page..-->
     </section>
 
     <footer>

@@ -1,18 +1,18 @@
 /* Reset some default styles */
 body, h1, h2, p {
-    margin: 0;
-    padding: 0;
+    margin:20;
+    padding: 20;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: hsla(136, 77%, 28%, 0.353);
+    color: #64ae620b;
 }
 
 header {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #22b4695a;
+    color: #10100f;
     text-align: center;
     padding: 50px;
 }
@@ -20,27 +20,28 @@ header {
 .features {
     display: flex;
     justify-content: space-around;
-    padding: 30px;
+    padding: 50px;
 }
 
 .feature {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #1e8772;
+    border: 1px solid #d9d7d3;
+    color: #e7f0ee;
     padding: 20px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(1, 3, 7, 0.1);
 }
 
 .cta {
     text-align: center;
-    padding: 50px;
+    padding: 100px;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #096d1a;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -48,7 +49,7 @@ header {
 
 footer {
     text-align: center;
-    padding: 20px;
-    background-color: #007bff;
+    padding: 0%;
+    background-color: #22b4695a;
     color: #fff;
 }

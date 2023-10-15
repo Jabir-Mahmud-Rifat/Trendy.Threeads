@@ -20,7 +20,7 @@
     <div class="container">
         <div class="forms-container">
             <div class="login-signup">
- <!-- logib page -->
+ <!-- login page -->
                 <form action="login.php" class="sign-in-form" method = "POST">
                     <h2 class="title">Sign in</h2>
 

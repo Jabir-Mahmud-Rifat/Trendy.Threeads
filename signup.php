@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
 
       if($insert){
         echo 'Signup Complete';
-        header('location:index.php');
+        header('location:Welcome.php');
       }
       else{
         echo 'Signup Failed';
