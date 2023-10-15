@@ -5,6 +5,10 @@ require_once('connection.php');
  //code for connecting next page
 session_start ();
 
+$Username = '';
+$email = '' ;
+$errors = '' ;
+
 
 if(isset($_POST['submit'])){
 
@@ -20,8 +24,13 @@ if(isset($_POST['submit'])){
   }
   elseif(mysqli_num_rows($select) > 0){
     $row = mysqli_fetch_assoc($select);
+
+   $_SESSION ['username'] =  $username ;
+    
+   $_SESSION ['success'] = "you are now logged in" ;
+
     //header('location:welcome.php');
-    header('location: welcome.php');      // welcome.php
+    header('location:  welcome.php   ');      // welcome.php  //landingpage.php
   }
   else{
    echo '<script type ="text/JavaScript">';  
