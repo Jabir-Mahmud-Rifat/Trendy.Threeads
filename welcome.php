@@ -20,8 +20,8 @@ session_start() ; //  code for connecting next page
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Landing Page</h1>
-        <p>Your message or call to action goes here.</p>
+        <h1>Welcome to Trendy Threads</h1>
+        <p>Enjoy your Shopping with us</p>
     </header>
 
     <section class="features">
@@ -40,9 +40,9 @@ session_start() ; //  code for connecting next page
     </section>
 
     <section class="cta">
-        <h2>Sign Up Now!</h2>
-        <p>Don't miss out on our amazing product. Join us today!</p>
-        <a href="#" class="btn">Sign Up</a>
+        <h2> To explore Trendy Threads </h2>
+        <p>click</p>
+        <a href="#" class="btn"> Home Page</a>
     </section>
 
     <footer>
