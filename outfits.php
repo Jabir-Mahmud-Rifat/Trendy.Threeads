@@ -104,7 +104,7 @@
         </nav>
     </header>
 
-    <section class="shopbanner-4">
+    <section class="shopbanner-5">
     </section>
 
     <section class="shop-product">

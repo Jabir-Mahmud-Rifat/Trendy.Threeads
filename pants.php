@@ -104,6 +104,9 @@
         </nav>
     </header>
 
+    <section class="shopbanner-3">
+    </section>
+
     <section class="shop-product">
         <h2>Classic Cuts: Timeless and Versatile Pants</h2>
         <p>Discover a Range of Comfortable and Stylish Pants for Every Occasion</p>

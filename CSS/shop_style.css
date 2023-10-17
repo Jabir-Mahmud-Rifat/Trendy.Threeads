@@ -270,6 +270,19 @@ form.search::after {
     text-shadow: 0 0 3px #1b1919, 0 0 5px #000000;
 }
 
+.shopbanner-1{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/bg-tshirts.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
 
 .shopbanner-2{
     padding: 40px 0px;
@@ -286,6 +299,20 @@ form.search::after {
 
 }
 
+.shopbanner-3{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/background-3.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
 .shopbanner-4{
     padding: 40px 0px;
     display: flex;
@@ -298,10 +325,105 @@ form.search::after {
     height: 40vh;
     background-size: cover;
     background-position: center;
-
 }
 
+.shopbanner-5{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/background-out.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
 
+.shopbanner-6{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/background-jhg.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.shopbanner-7{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/background-crop.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.shopbanner-8{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/background-trd.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.shopbanner-9{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/background-winter.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.shopbanner-10{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/background.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.shopbanner-12{
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("../Img/hood-rack.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
 
 /* Featured Products */
 

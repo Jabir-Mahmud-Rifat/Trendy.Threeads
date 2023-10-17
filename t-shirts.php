@@ -104,7 +104,8 @@
             </div>
         </nav>
     </header>
-
+    <section class="shopbanner-1">
+    </section>
     <section class="shop-product">
         <h2>Featured products</h2>
         <p>Check Out Our Prized Possessions</p>
@@ -240,8 +241,8 @@
             <div class="product">
                 <img src=".\Img\polos-1.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Manushyan T-shirt</h5>
+                    <span>Men's Polo Shirts</span>
+                    <h5>Bottle Green Polo T-shirt</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -256,8 +257,8 @@
             <div class="product">
                 <img src=".\Img\polos-2.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Malayali T-shirt</h5>
+                    <span>Men's Polo Shirts</span>
+                    <h5>Black Polo T-shirt</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -272,8 +273,8 @@
             <div class="product">
                 <img src=".\Img\polos-3.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Theyyam T-shirt</h5>
+                    <span>Men's Polo Shirts</span>
+                    <h5>White Polo T-shirt</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -288,8 +289,8 @@
             <div class="product">
                 <img src=".\Img\polos-4.jpg" alt="">
                 <div class="description">
-                    <span>Unisex T-shirts</span>
-                    <h5>Pwoli T-shirt</h5>
+                    <span>Men's Polo Shirts</span>
+                    <h5>Navy Blue Polo T-shirt</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
