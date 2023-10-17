@@ -113,6 +113,13 @@
         <div class="product-container">
             
             <div class="product">
+                <img src=".\Img\t-shirts.jpg" alt="">
+                <div class="description">
+                    <a href="t-shirts.php">T-shirts</a>
+                </div>
+            </div>
+            
+            <div class="product">
                 <img src=".\Img\shirts.jpg" alt="">
                 <div class="description">
                     <a href="shirts.php">Shirts</a>
@@ -133,12 +140,7 @@
                 </div>
             </div>
 
-            <div class="product">
-                <img src=".\Img\panjabi-4.jpg" alt="">
-                <div class="description">
-                    <a href="panjabi.php">Traditional Wear</a>
-                </div>
-            </div>
+            
     </section>
        
     

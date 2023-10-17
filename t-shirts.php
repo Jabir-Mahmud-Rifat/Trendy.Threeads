@@ -238,7 +238,7 @@
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/HpGPRTk/manushyan-tshirt-mydesignation-mockup-latest-image.jpg" alt="">
+                <img src=".\Img\polos-1.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Manushyan T-shirt</h5>
@@ -254,7 +254,7 @@
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/9pf6KvS/malayali-tshirt-mydesignation-mockup-image-latest-golden-1.jpg" alt="">
+                <img src=".\Img\polos-2.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Malayali T-shirt</h5>
@@ -270,7 +270,7 @@
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/VHj9KXb/theyyam-tshirt-mydesignation-image.jpg" alt="">
+                <img src=".\Img\polos-3.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Theyyam T-shirt</h5>
@@ -286,7 +286,7 @@
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
-                <img src="https://i.ibb.co/Y2qWWZW/pwoli-tshirt-mydesignation-image-latest.jpg" alt="">
+                <img src=".\Img\polos-4.jpg" alt="">
                 <div class="description">
                     <span>Unisex T-shirts</span>
                     <h5>Pwoli T-shirt</h5>

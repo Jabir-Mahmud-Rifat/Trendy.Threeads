@@ -1,3 +1,6 @@
+
+
+
 <?php
     include("connection.php");
      session_start ();  
@@ -11,7 +14,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoodies</title>
+    <title>Jackets</title>
     <link rel="icon" type="image/x-icon" href=".\Img\favicon.ico">
 
 
@@ -23,7 +26,7 @@
     <header class="header" id="header">
         <nav class="nav container">
         <div class="logo-container">            
-            <div class="dropdown">
+        <div class="dropdown">
                 <button class="dropbtn"><i class="fa-solid fa-list"></i></button>
                 <div class="dropdown-content">
 
@@ -108,14 +111,13 @@
     </section>
 
     <section class="shop-product">
-        <h2>Sporty Hoodies</h2>
-        <p>Casual Cool with a Cozy Touch</p>
+        <h2>Jackets Junction</h2>
+        <p>Unleash Your Inner Explorer with Stylish Jackets</p>
         <div class="product-container">
-
             <div class="product">
-                <img src=".\Img\hoodies-1.jpg" alt="">
+                <img src=".\Img\blazer-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Black</h5>
+                    <h5><span>Men's Glen Check Blazer </span>- Navy Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -123,15 +125,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1100</h4>
+                    <h4>BDT. 3350</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\hoodies-2.jpg" alt="">
+                <img src=".\Img\blazer-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Blue</h5>
+                    <h5><span>Men's Formal Blazer</span>- Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -139,15 +141,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 3500</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\hoodies-3.jpg" alt="">
+                <img src=".\Img\blazer-5.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Olive Green</h5>
+                    <h5><span>Men's Formal Blazer</span>- Maroon</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -155,15 +157,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 3800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\hoodies-4.jpg" alt="">
+                <img src=".\Img\blazer-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Brown</h5>
+                    <h5><span>Men's Formal Blazer </span>- Pine Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -171,16 +173,32 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 4000</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\blazer-3.jpg" alt="">
+                <div class="description">
+                    <h5><span>Men's Glen Check Blazer </span>- Purple</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 4200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
                     
             <div class="product">
-                <img src=".\Img\hoodies-5.jpg" alt="">
+                <img src=".\Img\blazer-6.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
+                    <h5><span>Men's Glen Check Blazer </span>- Grey</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -188,16 +206,33 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 4500</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>    
+            </div>
+            
+            <div class="product">
+                <img src=".\Img\suit-2.jpg" alt="">
+                <div class="description">
+     
+                    <h5><span>Men's Chalk Stripe Suit</span> - Charcoal Grey</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 8250</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
 
             <div class="product">
-                <img src=".\Img\hoodies-6.jpg" alt="">
+                <img src=".\Img\suit-1.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
+                    <h5><span>Men's Glen Check Suit </span>- Ocean Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -205,16 +240,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 8800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div> 
+            </div>
 
             <div class="product">
-                <img src=".\Img\hoodies-7.jpg" alt="">
+                <img src=".\Img\suit-3.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
+                    <h5><span>Men's Glen Check Suit</span> - Indigo</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -222,27 +257,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 9000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div> 
-
-            <div class="product">
-                <img src=".\Img\hoodies-8.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 1200</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div> 
+            </div>
 
         </div>
     </section>
