@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-12">
-    </section>
-
     <section class="shop-product">
         <h2>Sporty Hoodies</h2>
         <p>Casual Cool with a Cozy Touch</p>

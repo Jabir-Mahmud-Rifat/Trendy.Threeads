@@ -104,8 +104,7 @@
         </nav>
     </header>
 
-    <section class="shopbanner-2">
-    </section>
+
 
     <section class="shop-product">
         <h2>Signature Shirts Collection</h2>

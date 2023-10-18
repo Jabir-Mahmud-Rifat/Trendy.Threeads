@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-11">
-    </section>
-
     <section class="shop-product">
         <h2>Infant Playtime Picks</h2>
         <p>Onesies for your new-borns!</p>

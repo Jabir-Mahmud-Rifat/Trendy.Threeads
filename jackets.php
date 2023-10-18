@@ -107,9 +107,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-12">
-    </section>
-
     <section class="shop-product">
         <h2>Jackets Junction</h2>
         <p>Unleash Your Inner Explorer with Stylish Jackets</p>

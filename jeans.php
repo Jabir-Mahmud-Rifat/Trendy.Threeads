@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-6">
-    </section>
-
     <section class="shop-product">
         <h2>Denim Delights</h2>
         <p>Elevate Your Style with Classic Jeans</p>

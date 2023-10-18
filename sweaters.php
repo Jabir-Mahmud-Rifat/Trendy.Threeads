@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-10">
-    </section>
-
     <section class="shop-product">
         <h2>Cozy Knit Pullovers</h2>
         <p>Wrap Yourself in Warmth!</p>

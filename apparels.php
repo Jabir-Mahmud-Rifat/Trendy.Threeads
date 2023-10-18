@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-11">
-    </section>
-
     <section class="shop-product">
         <h2>Tiny Tots Collection</h2>
         <p>Playful Picks for Active Toddlers</p>

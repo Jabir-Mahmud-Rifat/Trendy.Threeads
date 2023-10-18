@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-8">
-    </section>
-
     <section class="shop-product">
         <h2>Timeless Sarees & Salwar Kameez</h2>
         <p>Discover Elegance Woven in Every Drape</p>

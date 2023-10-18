@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-10">
-    </section>
-
     <section class="shop-product">
         <h2>Classy Turtlenecks</h2>
         <p>When Fashion Meets Functionality</p>

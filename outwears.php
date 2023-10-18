@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-11">
-    </section>
-
     <section class="shop-product">
         <h2>Seasonal Styles for Kids</h2>
         <p>Stylish Picks for Active Days</p>

@@ -104,8 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-4">
-    </section>
 
     <section class="shop-product">
         <h2>Suits for Every Occasion</h2>

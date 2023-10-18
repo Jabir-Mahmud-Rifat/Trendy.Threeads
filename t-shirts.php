@@ -104,8 +104,7 @@
             </div>
         </nav>
     </header>
-    <section class="shopbanner-1">
-    </section>
+    
     <section class="shop-product">
         <h2>Featured products</h2>
         <p>Check Out Our Prized Possessions</p>

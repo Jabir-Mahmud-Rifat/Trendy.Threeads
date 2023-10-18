@@ -105,9 +105,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-7">
-    </section>
-
     <section class="shop-product">
         <h2>Women's Top Picks</h2>
         <p>Elevate Your Style with Our Latest Collection of Women's Tops</p>

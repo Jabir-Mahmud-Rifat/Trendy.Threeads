@@ -104,9 +104,6 @@
         </nav>
     </header>
 
-    <section class="shopbanner-5">
-    </section>
-
     <section class="shop-product">
         <h2>Summer Sensations</h2>
         <p>Light, Breezy Outfits for Sun-Kissed Days</p>
