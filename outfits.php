@@ -130,7 +130,7 @@
             <div class="product">
                 <img src=".\Img\jumpsuit-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Black Sleeveless Jumpsuit</span>- Black</h5>
+                    <h5><span>Black Jumpsuit</span>- Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

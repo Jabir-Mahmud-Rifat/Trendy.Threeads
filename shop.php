@@ -113,7 +113,7 @@
         <div class="product-container">
             
             <div class="product">
-                <img src=".\Img\t-shirts.jpg" alt="">
+                <img src=".\Img\tshirts.jpg" alt="">
                 <div class="description">
                     <a href="t-shirts.php">T-shirts</a>
                 </div>
@@ -183,19 +183,19 @@
             <div class="product">
                 <img src=".\Img\onesies.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Baby Onesies</a>
+                <a href="onesies.php">Baby Onesies</a>
                 </div>
             </div>
             <div class="product">
                 <img src=".\Img\kids-hoodie.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Toddler's Outwear</a>
+                <a href="outwears.php">Toddler's Outwear</a>
                 </div>
             </div>
             <div class="product">
                 <img src=".\Img\kids-tshirts.jpg" alt="">
                 <div class="description">
-                <a href="t-shirts.php">Kids' Apparel</a>
+                <a href="apparels.php">Kids' Apparel</a>
                 </div>
             </div>
     </section>

@@ -1,6 +1,3 @@
-
-
-
 <?php
     include("connection.php");
      session_start ();  
@@ -14,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jackets</title>
+    <title>Kids Apparels</title>
     <link rel="icon" type="image/x-icon" href=".\Img\favicon.ico">
 
 
@@ -107,17 +104,18 @@
         </nav>
     </header>
 
-    <section class="shopbanner-12">
+    <section class="shopbanner-11">
     </section>
 
     <section class="shop-product">
-        <h2>Jackets Junction</h2>
-        <p>Unleash Your Inner Explorer with Stylish Jackets</p>
+        <h2>Tiny Tots Collection</h2>
+        <p>Playful Picks for Active Toddlers</p>
         <div class="product-container">
+
             <div class="product">
-                <img src=".\Img\jackets-1.jpg" alt="">
+                <img src=".\Img\kids-shirt-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Chore Jacket</span> - Midnight Black</h5>
+                    <h5><span>Boy's T-shirt & Pants set</span> - Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -125,15 +123,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1800</h4>
+                    <h4>BDT. 800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\jackets-2.jpg" alt="">
+                <img src=".\Img\kids-shirt-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Denim Jacket</span> - Blue</h5>
+                    <h5><span>Boy's T-shirt & Pants set</span> - Mint Green & White</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -141,15 +139,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 2200</h4>
+                    <h4>BDT. 1000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\jackets-3.jpg" alt="">
+                <img src=".\Img\kids-shirt-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Harrington Jacket</span> - White</h5>
+                    <h5><span>Boy's T-shirt & Pants set</span> - Black & Brown</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -157,15 +155,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 2800</h4>
+                    <h4>BDT. 1000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\jackets-5.jpg" alt="">
+                <img src=".\Img\kids-shirt-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Puffer Jacket</span> - Black</h5>
+                    <h5><span>Boy's T-shirt & Pants set</span> - Black & Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -173,16 +171,32 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3000</h4>
+                    <h4>BDT. 1000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
-                  
+
             <div class="product">
-                <img src=".\Img\jackets-9.jpg" alt="">
+                <img src=".\Img\kids-frock-1.jpg" alt="">
+                <div class="description">
+                    <h5><span>Girl's Flowery Frock</span> - Midnight Green</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 1200</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+                    
+            <div class="product">
+                <img src=".\Img\kids-frock-2.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Women's Denim Jacket</span> - Blue & Navy Blue</h5>
+                    <h5><span>Girl's Polkadot Frock</span> - Red</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -190,16 +204,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3500</h4>
+                    <h4>BDT. 1200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             
             <div class="product">
-                <img src=".\Img\jackets-7.jpg" alt="">
+                <img src=".\Img\kids-frock-3.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Women's Leather Jacket</span> - Carbon Black</h5>
+                    <h5><span>Girls' Frock with Frills</span> - Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -207,16 +221,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 6250</h4>
+                    <h4>BDT. 1250</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\jackets-6.jpg" alt="">
+                <img src=".\Img\kids-ramper-1.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Women's Leather Jacket</span> - Beige</h5>
+                    <h5><span>Baby Rampers</span> - Beige & Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -224,16 +238,16 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 7000</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\jackets-8.jpg" alt="">
+                <img src=".\Img\kids-jumpsuit-1.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Women's Leather Jacket</span> - Black</h5>
+                    <h5><span>Baby Jumpsuit with Stipes</span> - Pink & White</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -241,7 +255,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 7000</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>

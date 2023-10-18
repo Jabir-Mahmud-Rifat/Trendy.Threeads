@@ -1,6 +1,3 @@
-
-
-
 <?php
     include("connection.php");
      session_start ();  
@@ -14,7 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jackets</title>
+    <title>Baby Onesies</title>
     <link rel="icon" type="image/x-icon" href=".\Img\favicon.ico">
 
 
@@ -107,17 +104,17 @@
         </nav>
     </header>
 
-    <section class="shopbanner-12">
+    <section class="shopbanner-11">
     </section>
 
     <section class="shop-product">
-        <h2>Jackets Junction</h2>
-        <p>Unleash Your Inner Explorer with Stylish Jackets</p>
+        <h2>Infant Playtime Picks</h2>
+        <p>Onesies for your new-borns!</p>
         <div class="product-container">
             <div class="product">
-                <img src=".\Img\jackets-1.jpg" alt="">
+                <img src=".\Img\onesies-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Chore Jacket</span> - Midnight Black</h5>
+                    <h5><span>Baby Onesies </span>- Grey</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -125,15 +122,47 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1800</h4>
+                    <h4>BDT. 500</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
-                <img src=".\Img\jackets-2.jpg" alt="">
+                <img src=".\Img\onesies-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Denim Jacket</span> - Blue</h5>
+                    <h5><span>Baby Onesies </span>- Black</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 550</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\onesies-3.jpg" alt="">
+                <div class="description">
+                    <h5><span>Baby Onesies </span>- White</h5>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>BDT. 600</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+            </div>
+
+            <div class="product">
+                <img src=".\Img\onesies-4.jpg" alt="">
+                <div class="description">
+                    <h5><span>Baby Onesies Mixed Set</span>- White, Brown & Beige</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -146,105 +175,9 @@
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
-            <div class="product">
-                <img src=".\Img\jackets-3.jpg" alt="">
-                <div class="description">
-                    <h5><span>Men's Harrington Jacket</span> - White</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 2800</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product">
-                <img src=".\Img\jackets-5.jpg" alt="">
-                <div class="description">
-                    <h5><span>Men's Puffer Jacket</span> - Black</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 3000</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-                  
-            <div class="product">
-                <img src=".\Img\jackets-9.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Women's Denim Jacket</span> - Blue & Navy Blue</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 3500</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
             
-            <div class="product">
-                <img src=".\Img\jackets-7.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Women's Leather Jacket</span> - Carbon Black</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 6250</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
 
-            <div class="product">
-                <img src=".\Img\jackets-6.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Women's Leather Jacket</span> - Beige</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 7000</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
-
-            <div class="product">
-                <img src=".\Img\jackets-8.jpg" alt="">
-                <div class="description">
-     
-                    <h5><span>Women's Leather Jacket</span> - Black</h5>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 7000</h4>
-                </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
-            </div>
+            
 
         </div>
     </section>

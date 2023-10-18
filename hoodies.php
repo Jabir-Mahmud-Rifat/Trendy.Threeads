@@ -115,7 +115,7 @@
             <div class="product">
                 <img src=".\Img\hoodies-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Black</h5>
+                    <h5><span>Men's Sporty Hoodies</span> - Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -131,7 +131,7 @@
             <div class="product">
                 <img src=".\Img\hoodies-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Blue</h5>
+                    <h5><span>Men's Sporty Hoodies</span> - Olive Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -147,7 +147,7 @@
             <div class="product">
                 <img src=".\Img\hoodies-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Olive Green</h5>
+                    <h5><span>Men's Sporty Hoodies</span> - Brown</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -163,7 +163,7 @@
             <div class="product">
                 <img src=".\Img\hoodies-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Unisex Turtleneck</span> - Brown</h5>
+                    <h5><span>Unisex Casual Hoodies</span> - Purple</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -180,7 +180,7 @@
                 <img src=".\Img\hoodies-5.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
+                    <h5><span>Women's Woollen Hoodies</span> - White</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -197,7 +197,7 @@
                 <img src=".\Img\hoodies-6.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
+                    <h5><span>Women's Casual Hoodies</span> - White & Pink</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -214,7 +214,7 @@
                 <img src=".\Img\hoodies-7.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
+                    <h5><span>Women's Cozy Hoodies</span> - Cream & Pink</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -222,7 +222,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div> 
@@ -231,7 +231,7 @@
                 <img src=".\Img\hoodies-8.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Unisex Turtleneck</span> - Grey</h5>
+                    <h5><span>Men's Cozy Hoodies</span> - Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -239,7 +239,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 1200</h4>
+                    <h4>BDT. 1300</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div> 
