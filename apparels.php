@@ -247,7 +247,7 @@
                 <img src=".\Img\kids-jumpsuit-1.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Baby Jumpsuit with Stipes</span> - Pink & White</h5>
+                    <h5><span>Baby Jumpsuit with Stripes</span> - Pink & White</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
