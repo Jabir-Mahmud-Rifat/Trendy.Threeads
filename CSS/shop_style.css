@@ -277,7 +277,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/bg-tshirts.jpg");
+    background-image: url("../Img/background-tshirts.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -306,7 +306,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/background-3.jpg");
+    background-image: url("../Img/background-pants.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -320,7 +320,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/coats-rack.jpg");
+    background-image: url("../Img/background-coats.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -334,7 +334,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/background-out.jpg");
+    background-image: url("../Img/background-outfits.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -348,7 +348,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/background-jhg.jpg");
+    background-image: url("../Img/background-jeans.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -362,7 +362,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/background-crop.jpg");
+    background-image: url("../Img/background-tops.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -376,7 +376,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/background-trd.jpg");
+    background-image: url("../Img/background-trad-wear.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -390,7 +390,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/background-winter.jpg");
+    background-image: url("../Img/background-hoodies.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -404,7 +404,7 @@ form.search::after {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("../Img/background.jpg");
+    background-image: url("../Img/background-9.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
