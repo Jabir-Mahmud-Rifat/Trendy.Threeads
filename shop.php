@@ -113,28 +113,28 @@
         <div class="product-container">
             
             <div class="product">
-                <img src=".\Img\tshirts.jpg" alt="">
+            <a href="t-shirts.php"><img src=".\Img\tshirts.jpg" alt=""></a>
                 <div class="description">
                     <a href="t-shirts.php">T-shirts</a>
                 </div>
             </div>
             
             <div class="product">
-                <img src=".\Img\shirts.jpg" alt="">
+            <a href="shirts.php"><img src=".\Img\shirts.jpg" alt=""></a>
                 <div class="description">
                     <a href="shirts.php">Shirts</a>
                 </div>
             </div>
                         
             <div class="product">
-                <img src=".\Img\pants.jpg" alt="">
+            <a href="pants.php"><img src=".\Img\pants.jpg" alt=""></a>
                 <div class="description">
                     <a href="pants.php">Pants & Trousers</a>
                 </div>
             </div>
             
             <div class="product">
-                <img src=".\Img\blazers.jpg" alt="">
+            <a href="blazers.php"><img src=".\Img\blazers.jpg" alt=""></a>
                 <div class="description">
                    <a href="blazers.php">Blazers</a>
                 </div>
@@ -150,25 +150,25 @@
         <div class="product-container">
             
             <div class="product">
-                <img src=".\Img\womens-dress.jpg" alt="">
+            <a href="outfits.php"><img src=".\Img\womens-dress.jpg" alt=""></a>
                 <div class="description">
                     <a href="outfits.php">Outfits</a>
                 </div>
             </div>
             <div class="product">
-                <img src=".\Img\jeans.jpg" alt="">
+            <a href="jeans.php"><img src=".\Img\jeans.jpg" alt=""></a>
                 <div class="description">
                 <a href="jeans.php">Jeans & Trousers</a>
                 </div>
             </div>
             <div class="product">
-                <img src=".\Img\womens-tops.jpg" alt="">
+            <a href="tops.php"><img src=".\Img\womens-tops.jpg" alt=""></a>
                 <div class="description">
                 <a href="tops.php">Tops</a>
                 </div>
             </div>
             <div class="product">
-                <img src=".\Img\trad-wear.jpg" alt="">
+            <a href="trad-wear.php"><img src=".\Img\trad-wear.jpg" alt=""></a>
                 <div class="description">
                 <a href="trad-wear.php">Traditional Wear</a>
                 </div>
@@ -181,19 +181,19 @@
         <div class="product-container">
             
             <div class="product">
-                <img src=".\Img\onesies.jpg" alt="">
+            <a href="onesies.php"><img src=".\Img\onesies.jpg" alt=""></a>
                 <div class="description">
                 <a href="onesies.php">Baby Onesies</a>
                 </div>
             </div>
             <div class="product">
-                <img src=".\Img\kids-hoodie.jpg" alt="">
+            <a href="outwears.php"><img src=".\Img\kids-hoodie.jpg" alt=""></a>
                 <div class="description">
                 <a href="outwears.php">Toddler's Outwear</a>
                 </div>
             </div>
             <div class="product">
-                <img src=".\Img\kids-tshirts.jpg" alt="">
+            <a href="apparels.php"><img src=".\Img\kids-tshirts.jpg" alt=""></a>
                 <div class="description">
                 <a href="apparels.php">Kids' Apparel</a>
                 </div>
@@ -206,25 +206,25 @@
         <div class="product-container">
             
             <div class="product">
-                <img src=".\Img\hoodies cat.jpg" alt="">
+            <a href="hoodies.php"><img src=".\Img\hoodies cat.jpg" alt=""></a>
                 <div class="description">
                 <a href="hoodies.php">Hoodies</a>  
                 </div>
             </div>
             <div class="product">
-                <img src=".\Img\sweatshirt-cat.jpg" alt="">
+            <a href="sweaters.php"><img src=".\Img\sweatshirt-cat.jpg" alt=""></a>
                 <div class="description">
                 <a href="sweaters.php">Sweatshirts</a>  
                 </div>
             </div>
             <div class="product">
-                <img src=".\Img\jackets-cat.jpg" alt="">
+            <a href="jackets.php"><img src=".\Img\jackets-cat.jpg" alt=""></a>
                 <div class="description">
                 <a href="jackets.php">Jackets</a>  
                  </div>
             </div>
             <div class="product">
-                <img src=".\Img\turtle-cat.jpg" alt="">
+            <a href="turtles.php"><img src=".\Img\turtle-cat.jpg" alt=""></a>
                 <div class="description">
                 <a href="turtles.php">Turtleneck Sweaters</a>  
                 </div>
