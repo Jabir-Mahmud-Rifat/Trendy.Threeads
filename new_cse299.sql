@@ -962,7 +962,7 @@ ALTER TABLE `order`
 --
 -- Indexes for table `productlist`
 --
-ALTER TABLE `tshirt`
+ALTER TABLE `tshirts`
   ADD PRIMARY KEY (`product_id`),
   ADD KEY `category_ID` (`category_ID`);
 
