@@ -175,7 +175,7 @@
             <div class="product">
                 <img src=".\Img\pants-7.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Wide legged </span>- Khaki</h5>
+                    <h5><span>Men's Formal Wide legged Pants </span>- Khaki</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

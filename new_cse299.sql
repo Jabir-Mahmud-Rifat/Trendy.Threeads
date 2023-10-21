@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `admin` (
-  `admin_id` int(255) NOT NULL,
+  `name` varchar(100) NOT NULL,
   `username` varchar(40) NOT NULL,
   `password` varchar(40) NOT NULL,
   `email` varchar(30) NOT NULL
@@ -38,15 +38,14 @@ CREATE TABLE `admin` (
 -- Dumping data for table `admin`
 --
 
-INSERT INTO `admin` (`admin_id`, `username`, `password`, `email`) VALUES
-(1, 'rakib', ' shakib ', '25f9e794323b453885f5181f1b624d'),
-(2, 'SHAKIB', ' shakib75@gmail.com', 'd3c4fb694484de76fc00096d34a64b'),
-(3, 'MESSI', '1f42d189bd95aa44423e0263de1908d4', ' messi2022@gmail.com'),
-(4, 'CR7', ' 12345', ' cr7@gmail.com'),
-(5, 'vvjhvjhvj', ' 12335454', ' hfhjhj@gmail.com'),
-(6, 'varun', ' 12345678tr', ' varun75@gmail.com'),
-(7, 'king', ' 123ert', ' srk00@gmail.com'),
-(8, 'king', ' 123ert', ' srk00@gmail.com');
+INSERT INTO `admin` (`name`, `username`, `password`, `email`) VALUES
+('Rakib Rahman', 'rakib', '2356', 'rakib@yahoo.com' ),
+('Shakib-al Hassan', 'shakib75', 'allrounder75' ,'shakib75@gmail.com'),
+('Lionel Messi', 'messi10', 'theGOAT' ,'messi2022@gmail.com'),
+('Cristiano Ronaldo', ' CR7', 'cr7rocks' ,'cr7@gmail.com'),
+('Samiul Haq', 'samiul', 'sam123', 'samiul@gmail.com'),
+('Jabir Mahmud', 'jabir', 'jab231','jabir@gmail.com'),
+('Sabrina Katha', 'katha', 'kat321', 'katha@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -54,27 +53,27 @@ INSERT INTO `admin` (`admin_id`, `username`, `password`, `email`) VALUES
 -- Table structure for table `billing info(orders)`
 --
 
-CREATE TABLE `billing info(orders)` (
+CREATE TABLE `billing info (orders)` (
   `billing_id` int(11) NOT NULL,
-  `billing_address` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `order_id` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `billing_address` varchar(40) NOT NULL,
+  `order_id` varchar(40) NOT NULL,
   `card_number` int(10) NOT NULL,
-  `card_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+  `card_name` varchar(100) NOT NULL,
   `pin` int(5) NOT NULL,
-  `user_id` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `username` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `billing info(orders)`
 --
 
-INSERT INTO `billing info(orders)` (`billing_id`, `billing_address`, `order_id`, `card_number`, `card_name`, `pin`, `user_id`) VALUES
-(1, 'Dhaka', ' 101 ', 223145, '', 1234, 1),
-(2, 'Dhaka', ' 102', 22564, '', 1234, 2),
-(3, 'Bogura', ' 103 ', 223150, '', 1234, 3),
-(4, 'Rajshahi', ' 104', 22577, '', 1234, 4),
-(5, 'Jossore', ' 105 ', 223196, '', 1234, 5),
-(6, 'Rajbari', ' 106', 22500, '', 1234, 6);
+INSERT INTO `billing info (orders)` (`billing_id`, `billing_address`, `order_id`, `card_number`, `card_name`, `pin`, `username`) VALUES
+(1, 'Dhaka', ' 111 ', 223145, 'King', 1234, 'sking'),
+(2, 'Jhinaidah', ' 112', 22564, 'Shanto', 1234, ''),
+(3, 'Jossore', ' 113 ', 223150, 'Tamim', 1234, 'tamJr'),
+(4, 'Rajshahi', ' 114', 22577, 'Parves', 1234, 'parv139'),
+(5, 'Dhaka', ' 115 ', 223196, 'Rohan', 1234, 'ROHAN'),
+(6, 'Barishal', ' 116', 22500, 'Shahid', 1234, 's2k78');
 
 -- --------------------------------------------------------
 
@@ -84,19 +83,19 @@ INSERT INTO `billing info(orders)` (`billing_id`, `billing_address`, `order_id`,
 
 CREATE TABLE `cart` (
   `cart_id` int(11) NOT NULL,
-  `user_Id` int(5) NOT NULL,
+  `username` varchar(40) NOT NULL,
   `product_id` int(5) NOT NULL,
   `price` int(5) NOT NULL,
   `Quantity` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`cart_id`, `user_Id`, `product_id`, `price`, `Quantity`) VALUES
-(1, 1, 1, 10, 11),
-(2, 2, 1, 10, 12);
+INSERT INTO `cart` (`cart_id`, `username`, `product_id`, `price`, `Quantity`) VALUES
+(1, 's2k78', 1010011, 1350, 2),
+(2, 'LKD16', 1010113, 1000, 1);
 
 -- --------------------------------------------------------
 
@@ -105,84 +104,756 @@ INSERT INTO `cart` (`cart_id`, `user_Id`, `product_id`, `price`, `Quantity`) VAL
 --
 
 CREATE TABLE `category` (
-  `category_id` int(11) NOT NULL,
-  `category_name` varchar(40) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `description` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `category_ID` int(11) NOT NULL,
+  `category_name` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `category`
 --
 
-INSERT INTO `category` (`category_id`, `category_name`, `description`) VALUES
-(1, ' T-SHIRT ', 'WOOL'),
-(2, ' PANT ', 'JEANS'),
-(3, ' SHOE ', 'LEATHER'),
-(4, ' JACKET ', 'LEATHER'),
-(5, ' SHIRT', 'WOOL');
+INSERT INTO `category` (`category_ID`, `category_name`) VALUES
+(101, ' T-SHIRT '),
+(102, ' SHIRTS '),
+(103, ' PANTS'),
+(104, ' BLAZERS '),
+(105, ' OUTFITS '),
+(106, ' JEANS '),
+(107, ' TOPS '),
+(108, ' TRADITIONAL WEAR '),
+(109, ' BABY ONESIES ' ),
+(110, ' TODDLERS OUTWEAR '),
+(111, ' KIDS APPAREL '),
+(112, ' HOODIES '),
+(113, ' SWEATERS '),
+(114, ' JACKETS '),
+(115, ' TURTLE-NECKS ');
+
+
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `customer`
+-- Table structure for table `tshirts`
 --
 
-CREATE TABLE `customer` (
-  `id` int(5) NOT NULL,
-  `bill_id` int(5) NOT NULL,
-  `customer_name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `customer_contact` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `customer_address` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `product_name` varchar(30) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `product_category` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `product_quantity` varchar(12) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `product_price` int(8) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+CREATE TABLE `tshirts` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `customer`
+-- Dumping data for table `tshirts`
 --
 
-INSERT INTO `customer` (`id`, `bill_id`, `customer_name`, `customer_contact`, `customer_address`, `product_name`, `product_category`, `product_quantity`, `product_price`, `date`) VALUES
-(1, 1, 'Fahim', '1960839377', 'haluaghat', 'Milk', 'food', '100gm', 500, '2019-12-21'),
-(32, 2, 'Pias', '01455967441', 'Dhaka', 'Nestle Kit Kat', 'Chocolate', '40gm', 50, '2019-12-22'),
-(33, 4, 'Pias', '01485311744', 'Dhaka', 'Bisk Club Potato Biscuits', 'Biscuit', '100gm', 25, '2019-12-22'),
-(34, 4, 'Pias', '01485999441', 'Dhaka', 'Shezan Mango Fruit Drinks Pet', 'Juice', '500ml', 45, '2019-12-22'),
-(35, 4, 'Pias', '01485967001', 'Dhaka', 'Fresh Soyabean Oil', 'Oil', '2ltr', 202, '2019-12-22'),
-(36, 4, 'Pias', '01485968841', 'Dhaka', 'Rupchada Soyabin Oil', 'Oil', '2ltr', 202, '2019-12-22'),
-(37, 5, 'Sajib', '01689562252', 'Khulna', 'Tic Tac Candy Mint Flav', 'Chocolate', '7gm', 25, '2019-12-22'),
-(38, 5, 'Sajib', '01689511525', 'Khulna', 'Aarong Laban', 'Juice', '500gm', 50, '2019-12-22'),
-(39, 5, 'Sajib', '01689568445', 'Khulna', 'Fresh Soyabean Oil', 'Oil', '2ltr', 202, '2019-12-22'),
-(40, 5, 'Sajib', '01689588525', 'Khulna', 'Rupchanda Soyabean Oil', 'Oil', '2ltr', 218, '2019-12-22'),
-(41, 6, 'Himel', '01785622351', 'Chattogram', 'Cadbury Perk Chocolate', 'Chocolate', '16gm', 15, '2019-12-22'),
-(42, 6, 'Himel', '01785623514', 'Chattogram', 'Pran Frooto Mango Juice', 'Juice', '500gm', 45, '2019-12-22'),
-(43, 6, 'Himel', '01785663514', 'Chattogram', 'Nestle Kit Kat', 'Chocolate', '40gm', 50, '2019-12-22'),
-(44, 6, 'Himel', '01785623314', 'Chattogram', 'Rupchanda Soyabean Oil', 'Oil', '2ltr', 218, '2019-12-22'),
-(45, 7, 'Jhalak', '01856921652', 'dhaka', 'Danish Max Milk Biscuits', 'Biscuit', '70gm', 10, '2019-12-22'),
-(46, 7, 'Jhalak', '01856955652', 'dhaka', 'Aarong Laban', 'Juice', '500gm', 50, '2019-12-22'),
-(47, 8, 'taemin', '0187655', 'dhanmondi', 'Nestle Kit Kat', 'Chocolate', '40gm', 50, '2022-12-22'),
-(48, 9, 'Musfiq', '01623854595', 'savar', 'Nestle Kit Kat', 'Chocolate', '40gm', 50, '2019-12-22'),
-(49, 10, '', '', '', 'Tic Tac Candy Mint Flav', 'Chocolate', '7gm', 25, '2019-12-22'),
-(50, 10, 'Dighi', 'hgjhg', 'Busan', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(51, 10, 'Righi', 'hgjhg', 'Gamcheon', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(52, 10, 'Piya', 'hgjhg', 'Gwanju', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(53, 10, 'Sam', 'hgjhg', 'Ilsan', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(54, 10, 'Namjoon', 'hgjhg', 'Gangnam', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(55, 10, 'Pushpo', 'hgjhg', 'Sonadia', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(56, 10, 'Sonia', 'hgjhg', 'Dhanmondi', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(57, 10, 'Tamanna', 'huyjhg', 'Mirpur', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(58, 10, 'Tighi', 'hmkjhg', 'Katabon', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(59, 10, 'Kabbo', 'htyrhg', 'Uttara', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(60, 10, 'Katty', 'mkjhg', 'Basundhara', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(61, 31, 'Rae', '01987655', 'daegu', 'Nestle Kit Kat', 'Chocolate', '40gm', 50, '2022-12-22'),
-(62, 32, 'Rajib', '01677588525', 'Kaliganj', 'Rupchanda Soyabean Oil', 'Oil', '2ltr', 218, '2019-11-22'),
-(63, 33, 'Rahim', '01960839377', 'Bogura', 'Milk', 'food', '100gm', 500, '0000-00-00'),
-(64, 34, 'Hemanta', '01985633514', 'Pabna', 'Pran Frooto Mango Juice', 'Juice', '500gm', 45, '2019-12-23'),
-(65, 35, 'Shima', '5677788', 'Katabon', 'Cadbary Dairy Milk Chocolate', 'Chocolate', '55gm', 100, '2019-12-22'),
-(66, 36, 'Asif', '016253695', 'Dhanmondi', 'Nestle Kit Kat', 'Chocolate', '40gm', 50, '2019-12-27'),
-(67, 37, 'Shafiq', '0198795', 'norda', 'Aarong Laban', 'Juice', '500gm', 50, '2019-09-07'),
-(68, 38, 'Moon', '0198943295', 'gazipur', 'Aarong Laban', 'Juice', '500gm', 50, '2019-04-07');
+INSERT INTO `tshirts` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(1010001, 'Too Hot to Handle T-shirt - Black', '101', 'S', 650, 50),
+(1010002, 'Too Hot to Handle T-shirt - Black', '101', 'M', 650, 50),
+(1010003, 'Too Hot to Handle T-shirt - Black', '101', 'L', 650, 50),
+(1010004, 'Too Hot to Handle T-shirt - Black', '101', 'XL', 650, 50),
+(1010011, 'Foodie T-shirt - Red', '101', 'S', 675, 50),
+(1010012, 'Foodie T-shirt - Red', '101', 'M', 675, 50),
+(1010013, 'Foodie T-shirt - Red', '101', 'L', 675, 50),
+(1010014, 'Foodie T-shirt - Red', '101', 'XL', 675, 50),
+(1010021, 'KGF Rules T-shirt - Black', '101', 'S', 720, 50),
+(1010022, 'KGF Rules T-shirt - Black', '101', 'M', 720, 50),
+(1010023, 'KGF Rules T-shirt - Black', '101', 'L', 720, 50),
+(1010024, 'KGF Rules T-shirt - Black', '101', 'XL', 720, 50),
+(1010031, 'Glow in the Dark T-shirt - Black', '101', 'S', 800, 50),
+(1010032, 'Glow in the Dark T-shirt - Black', '101', 'M', 800, 50),
+(1010033, 'Glow in the Dark T-shirt - Black', '101', 'L', 800, 50),
+(1010034, 'Glow in the Dark T-shirt - Black', '101', 'XL', 800, 50),
+(1010041, 'Airplane T-shirt - Khaki', '101', 'S', 800, 50),
+(1010042, 'Airplane T-shirt - Khaki', '101', 'M', 800, 50),
+(1010043, 'Airplane T-shirt - Khaki', '101', 'L', 800, 50),
+(1010044, 'Airplane T-shirt - Khaki', '101', 'XL', 800, 50),
+(1010051, 'Solid T-shirt - Olive Green', '101', 'S', 870, 50),
+(1010052, 'Solid T-shirt - Olive Green', '101', 'M', 870, 50),
+(1010053, 'Solid T-shirt - Olive Green', '101', 'L', 870, 50),
+(1010054, 'Solid T-shirt - Olive Green', '101', 'XL', 870, 50),
+(1010061, 'Drop-shoulder T-shirt - Navy Blue', '101', 'S', 870, 50),
+(1010062, 'Drop-shoulder T-shirt - Navy Blue', '101', 'M', 870, 50),
+(1010063, 'Drop-shoulder T-shirt - Navy Blue', '101', 'L', 870, 50),
+(1010064, 'Drop-shoulder T-shirt - Navy Blue', '101', 'XL', 870, 50),
+(1010071, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(1010072, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(1010073, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(1010074, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(1010081, 'Mens Polo T-shirt - Bottle Green', '101', 'S', 950, 50),
+(1010082, 'Mens Polo T-shirt - Bottle Green', '101', 'M', 950, 50),
+(1010083, 'Mens Polo T-shirt - Bottle Green', '101', 'L', 950, 50),
+(1010084, 'Mens Polo T-shirt - Bottle Green', '101', 'XL', 950, 50),
+(1010091, 'Mens Polo T-shirt - Black', '101', 'S', 970, 50),
+(1010092, 'Mens Polo T-shirt - Black', '101', 'S', 970, 50),
+(1010093, 'Mens Polo T-shirt - Black', '101', 'L', 970, 50),
+(1010094, 'Mens Polo T-shirt - Black', '101', 'XL', 970, 50),
+(1010101, 'Mens Polo T-shirt - White', '101', 'S', 1000, 50),
+(1010102, 'Mens Polo T-shirt - White', '101', 'M', 1000, 50),
+(1010103, 'Mens Polo T-shirt - White', '101', 'L', 1000, 50),
+(1010104, 'Mens Polo T-shirt - White', '101', 'XL', 1000, 50),
+(1010111, 'Mens Polo T-shirt - Navy Blue', '101', 'S', 1000, 50),
+(1010112, 'Mens Polo T-shirt - Navy Blue', '101', 'M', 1000, 50),
+(1010113, 'Mens Polo T-shirt - Navy Blue', '101', 'L', 1000, 50),
+(1010114, 'Mens Polo T-shirt - Navy Blue', '101', 'XL', 1000, 50);
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `shirts`
+--
+
+CREATE TABLE `shirts` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `shirts`
+--
+
+INSERT INTO `shirts` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(1020001, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'S', 1200, 50),
+(1020002, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'M', 1200, 50),
+(1020003, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'L', 1200, 50),
+(1020004, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'XL', 1200, 50),
+(1020011, 'Mens Casual Shirt - Khaki', '102', 'S', 1300, 50),
+(1020012, 'Mens Casual Shirt - Khaki', '102', 'M', 1300, 50),
+(1020013, 'Mens Casual Shirt - Khaki', '102', 'L', 1300, 50),
+(1020014, 'Mens Casual Shirt - Khaki', '102', 'XL', 1300, 50),
+(1020021, 'Mens Casual Shirt - Mint Green', '102', 'S', 1300, 50),
+(1020022, 'Mens Casual Shirt - Mint Green', '102', 'M', 1300, 50),
+(1020023, 'Mens Casual Shirt - Mint Green', '102', 'L', 1300, 50),
+(1020024, 'Mens Casual Shirt - Mint Green', '102', 'XL', 1300, 50),
+(1020031, 'Mens Casual Shirt - Olive Green', '102', 'S', 1300, 50),
+(1020032, 'Mens Casual Shirt - Olive Green', '102', 'M', 1300, 50),
+(1020033, 'Mens Casual Shirt - Olive Green', '102', 'L', 1300, 50),
+(1020034, 'Mens Casual Shirt - Olive Green', '102', 'XL', 1300, 50),
+(1020041, 'Mens Casual Shirt - Pale Orange', '102', 'S', 1300, 50),
+(1020042, 'Mens Casual Shirt - Pale Orange', '102', 'M', 1300, 50),
+(1020043, 'Mens Casual Shirt - Pale Orange', '102', 'L', 1300, 50),
+(1020044, 'Mens Casual Shirt - Pale Orange', '102', 'XL', 1300, 50),
+(1020051, 'Mens Linen Shirt - Navy Blue', '102', 'S', 1350, 50),
+(1020052, 'Mens Linen Shirt - Navy Blue', '102', 'M', 1350, 50),
+(1020053, 'Mens Linen Shirt - Navy Blue', '102', 'L', 1350, 50),
+(1020054, 'Mens Linen Shirt - Navy Blue', '102', 'XL', 1350, 50),
+(1020061, 'Mens Grameen Check Shirt - Blue', '102', 'S', 1400, 50),
+(1020062, 'Mens Grameen Check Shirt - Blue', '102', 'M', 1400, 50),
+(1020063, 'Mens Grameen Check Shirt - Blue', '102', 'L', 1400, 50),
+(1020064, 'Mens Grameen Check Shirt - Blue', '102', 'XL', 1400, 50),
+(1020071, 'Mens Formal Shirt - White', '102', 'S', 1500, 50),
+(1020072, 'Mens Formal Shirt - White', '102', 'M', 1500, 50),
+(1020073, 'Mens Formal Shirt - White', '102', 'L', 1500, 50),
+(1020074, 'Mens Formal Shirt - White', '102', 'XL', 1500, 50),
+(1020081, 'Mens Formal Shirt - Black', '102', 'S', 1500, 50),
+(1020082, 'Mens Formal Shirt - Black', '102', 'M', 1500, 50),
+(1020083, 'Mens Formal Shirt - Black', '102', 'L', 1500, 50),
+(1020084, 'Mens Formal Shirt - Black', '102', 'XL', 1500, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `pants`
+--
+
+CREATE TABLE `pants` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `pants`
+--
+
+INSERT INTO `pants` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(1030001, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'S', 1175, 50),
+(1030002, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'M', 1175, 50),
+(1030003, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'L', 1175, 50),
+(1030004, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'XL', 1175, 50),
+(1030011, 'Mens Cargo Pants - Cream', '103', 'S', 1300, 50),
+(1030012, 'Mens Cargo Pants - Cream', '103', 'M', 1300, 50),
+(1030013, 'Mens Cargo Pants - Cream', '103', 'L', 1300, 50),
+(1030014, 'Mens Cargo Pants - Cream', '103', 'XL', 1300, 50),
+(1030021, 'Mens Cargo Pants - Denim Blue', '103', 'S', 1300, 50),
+(1030022, 'Mens Cargo Pants - Denim Blue', '103', 'M', 1300, 50),
+(1030023, 'Mens Cargo Pants - Denim Blue', '103', 'L', 1300, 50),
+(1030024, 'Mens Cargo Pants - Denim Blue', '103', 'XL', 1300, 50),
+(1030031, 'Mens Cargo Pants - Black', '103', 'S', 1350, 50),
+(1030032, 'Mens Cargo Pants - Black', '103', 'M', 1350, 50),
+(1030033, 'Mens Cargo Pants - Black', '103', 'L', 1350, 50),
+(1030034, 'Mens Cargo Pants - Black', '103', 'XL', 1350, 50),
+(1030041, 'Mens Formal Wide legged - Khaki', '103', 'S', 1400, 50),
+(1030042, 'Mens Formal Wide legged - Khaki', '103', 'M', 1400, 50),
+(1030043, 'Mens Formal Wide legged - Khaki', '103', 'L', 1400, 50),
+(1030044, 'Mens Formal Wide legged - Khaki', '103', 'XL', 1400, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blazers`
+--
+
+CREATE TABLE `blazers` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `blazers`
+--
+
+INSERT INTO `blazers` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(104001, 'Mens Glen Check Blazer - Navy Blue', '104', 'S', 4000, 50),
+(104002, 'Mens Glen Check Blazer - Navy Blue', '104', 'M', 4000, 50),
+(104003, 'Mens Glen Check Blazer - Navy Blue', '104', 'L', 4000, 50),
+(104004, 'Mens Glen Check Blazer - Navy Blue', '104', 'XL', 4000, 50),
+(104011, 'Mens  Formal Blazer - Black', '104', 'S', 4250, 50),
+(104012, 'Mens  Formal Blazer - Black', '104', 'M', 4250, 50),
+(104013, 'Mens  Formal Blazer - Black', '104', 'L', 4250, 50),
+(104014, 'Mens  Formal Blazer - Black', '104', 'XL', 4250, 50),
+(104021, 'Mens  Formal Blazer -  Maroon', '104', 'S', 4800, 50),
+(104022, 'Mens  Formal Blazer -  Maroon', '104', 'M', 4800, 50),
+(104023, 'Mens  Formal Blazer -  Maroon', '104', 'L', 4800, 50),
+(104024, 'Mens  Formal Blazer -  Maroon', '104', 'XL', 4800, 50),
+(104031, 'Mens  Formal Blazer -  Pine Green', '104', 'S', 5200, 50),
+(104032, 'Mens  Formal Blazer -  Pine Green', '104', 'M', 5200, 50),
+(104033, 'Mens  Formal Blazer -  Pine Green', '104', 'L', 5200, 50),
+(104034, 'Mens  Formal Blazer -  Pine Green', '104', 'XL', 5200, 50),
+(104041, 'Mens Glen Check Blazer - Purple', '104', 'S', 5600, 50),
+(104042, 'Mens Glen Check Blazer - Purple', '104', 'M', 5600, 50),
+(104043, 'Mens Glen Check Blazer - Purple', '104', 'L', 5600, 50),
+(104044, 'Mens Glen Check Blazer - Purple', '104', 'XL', 5600, 50),
+(104051, 'Mens Glen Check Blazer - Grey', '104', 'S', 6000, 50),
+(104052, 'Mens Glen Check Blazer - Grey', '104', 'M', 6000, 50),
+(104053, 'Mens Glen Check Blazer - Grey', '104', 'L', 6000, 50),
+(104054, 'Mens Glen Check Blazer - Grey', '104', 'XL', 6000, 50),
+(104061, 'Mens Chalk Stripe Suit - Charcoal Grey', '104', 'S', 8250, 50),
+(104062, 'Mens Chalk Stripe Suit - Charcoal Grey', '104', 'M', 8250, 50),
+(104063, 'Mens Chalk Stripe Suit - Charcoal Grey', '104', 'L', 8250, 50),
+(104064, 'Mens Chalk Stripe Suit - Charcoal Grey', '104', 'XL', 8250, 50),
+(104071, 'Mens Glen Check Suit - Ocean Blue', '104', 'S', 8800, 50),
+(104072, 'Mens Glen Check Suit - Ocean Blue', '104', 'M', 8800, 50),
+(104073, 'Mens Glen Check Suit - Ocean Blue', '104', 'L', 8800, 50),
+(104074, 'Mens Glen Check Suit - Ocean Blue', '104', 'XL', 8800, 50),
+(104081, 'Mens Glen Check Suit - Indigo', '104', 'S', 9000, 50),
+(104082, 'Mens Glen Check Suit - Indigo', '104', 'M', 9000, 50),
+(104083, 'Mens Glen Check Suit - Indigo', '104', 'L', 9000, 50),
+(104084, 'Mens Glen Check Suit - Indigo', '104', 'XL', 9000, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `outfits`
+--
+
+CREATE TABLE `outfits` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `outfits`
+--
+
+INSERT INTO `outfits` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(105001, 'Womens Jumpsuit with Top - Powder Blue', '105', 'S', 1800, 50),
+(105002, 'Womens Jumpsuit with Top - Powder Blue', '105', 'M', 1800, 50),
+(105003, 'Womens Jumpsuit with Top - Powder Blue', '105', 'L', 1800, 50),
+(105004, 'Womens Jumpsuit with Top - Powder Blue', '105', 'XL', 1800, 50),
+(105011, 'Womens Jumpsuit - Black', '105', 'S', 1850, 50),
+(105012, 'Womens Jumpsuit - Black', '105', 'M', 1850, 50),
+(105013, 'Womens Jumpsuit - Black', '105', 'L', 1850, 50),
+(105014, 'Womens Jumpsuit - Black', '105', 'XL', 1850, 50),
+(105021, 'Womens Jumpsuit - Yellow', '105', 'S', 2000, 50),
+(105022, 'Womens Jumpsuit - Yellow', '105', 'M', 2000, 50),
+(105023, 'Womens Jumpsuit - Yellow', '105', 'L', 2000, 50),
+(105024, 'Womens Jumpsuit - Yellow', '105', 'XL', 2000, 50),
+(105031, 'Womens Silk Jumpsuit - Powder Green', '105', 'S', 2200, 50),
+(105032, 'Womens Silk Jumpsuit - Powder Green', '105', 'M', 2200, 50),
+(105033, 'Womens Silk Jumpsuit - Powder Green', '105', 'L', 2200, 50),
+(105034, 'Womens Silk Jumpsuit - Powder Green', '105', 'XL', 2200, 50),
+(105041, 'Womens Jumpsuit - Sea Blue', '105', 'S', 2500, 50),
+(105042, 'Womens Jumpsuit - Sea Blue', '105', 'M', 2500, 50),
+(105043, 'Womens Jumpsuit - Sea Blue', '105', 'L', 2500, 50),
+(105044, 'Womens Jumpsuit - Sea Blue', '105', 'XL', 2500, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jeans`
+--
+
+CREATE TABLE `jeans` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `jeans`
+--
+
+INSERT INTO `jeans` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(106001, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'S', 1500, 50),
+(106002, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'M', 1500, 50),
+(106003, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'L', 1500, 50),
+(106004, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'XL', 1500, 50),
+(106011, 'Womens Wide Legged Denim Jeans - Blue', '106', 'S', 1600, 50),
+(106012, 'Womens Wide Legged Denim Jeans - Blue', '106', 'M', 1600, 50),
+(106013, 'Womens Wide Legged Denim Jeans - Blue', '106', 'L', 1600, 50),
+(106014, 'Womens Wide Legged Denim Jeans - Blue', '106', 'XL', 1600, 50),
+(106021, 'Womens Wide Legged Jeans - Black', '106', 'S', 1750, 50),
+(106022, 'Womens Wide Legged Jeans - Black', '106', 'M', 1750, 50),
+(106023, 'Womens Wide Legged Jeans - Black', '106', 'L', 1750, 50),
+(106024, 'Womens Wide Legged Jeans - Black', '106', 'XL', 1750, 50),
+(106031, 'Womens Flare Jeans - Blue', '106', 'S', 1800, 50),
+(106032, 'Womens Flare Jeans - Blue', '106', 'M', 1800, 50),
+(106033, 'Womens Flare Jeans - Blue', '106', 'L', 1800, 50),
+(106034, 'Womens Flare Jeans - Blue', '106', 'XL', 1800, 50),
+(106041, 'Womens Formal Pants - Black', '106', 'S', 2000, 50),
+(106042, 'Womens Formal Pants - Black', '106', 'M', 2000, 50),
+(106043, 'Womens Formal Pants - Black', '106', 'L', 2000, 50),
+(106044, 'Womens Formal Pants - Black', '106', 'XL', 2000, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tops`
+--
+
+CREATE TABLE `tops` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tops`
+--
+
+INSERT INTO `tops` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(107001, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'S', 700, 50),
+(107002, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'M', 700, 50),
+(107003, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'L', 700, 50),
+(107004, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'XL', 700, 50),
+(107011, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'S', 700, 50),
+(107012, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'M', 700, 50),
+(107013, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'L', 700, 50),
+(107014, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'XL', 700, 50),
+(107021, 'Womens Balloon Sleeve Moff Shirt - Pink', '107', 'S', 750, 50),
+(107022, 'Womens Balloon Sleeve Moff Shirt - Pink', '107', 'M', 750, 50),
+(107023, 'Womens Balloon Sleeve Moff Shirt - Pink', '107', 'L', 750, 50),
+(107024, 'Womens Balloon Sleeve Moff Shirt - Pink', '107', 'XL', 750, 50),
+(107031, 'Womens Folded Half-sleeve Shirt - Pale Orange', '107', 'S', 800, 50),
+(107032, 'Womens Folded Half-sleeve Shirt - Pale Orange', '107', 'M', 800, 50),
+(107033, 'Womens Folded Half-sleeve Shirt - Pale Orange', '107', 'L', 800, 50),
+(107034, 'Womens Folded Half-sleeve Shirt - Pale Orange', '107', 'XL', 800, 50),
+(107041, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'S', 850, 50),
+(107042, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'M', 850, 50),
+(107043, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'L', 850, 50),
+(107044, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'XL', 850, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `trad-wear`
+--
+
+CREATE TABLE `trad-wear` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `trad-wear`
+--
+
+INSERT INTO `trad-wear` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(108001, 'Womens Kurti with Pants - Sky Blue', '108', 'S', 3300, 50),
+(108002, 'Womens Kurti with Pants - Sky Blue', '108', 'M', 3300, 50),
+(108003, 'Womens Kurti with Pants - Sky Blue', '108', 'L', 3300, 50),
+(108004, 'Womens Kurti with Pants - Sky Blue', '108', 'XL', 3300, 50),
+(108011, 'Womens Kurti with Cream Trousers - Navy Blue', '108', 'S', 3500, 50),
+(108012, 'Womens Kurti with Cream Trousers - Navy Blue', '108', 'M', 3500, 50),
+(108013, 'Womens Kurti with Cream Trousers - Navy Blue', '108', 'L', 3500, 50),
+(108014, 'Womens Kurti with Cream Trousers - Navy Blue', '108', 'XL', 3500, 50),
+(108021, 'Womens Embroidered Kurti with Pants - White', '108', 'S', 3800, 50),
+(108022, 'Womens Embroidered Kurti with Pants - White', '108', 'M', 3800, 50),
+(108023, 'Womens Embroidered Kurti with Pants - White', '108', 'L', 3800, 50),
+(108024, 'Womens Embroidered Kurti with Pants - White', '108', 'XL', 3800, 50),
+(108031, 'Womens Three piece - Powder Blue', '108', 'S', 4000, 50),
+(108032, 'Womens Three piece - Powder Blue', '108', 'M', 4000, 50),
+(108033, 'Womens Three piece - Powder Blue', '108', 'L', 4000, 50),
+(108034, 'Womens Three piece - Powder Blue', '108', 'XL', 4000, 50),
+(108041, 'Womens Kurti with Pants - Lavendar', '108', 'S', 4200, 50),
+(108042, 'Womens Kurti with Pants - Lavendar', '108', 'M', 4200, 50),
+(108043, 'Womens Kurti with Pants - Lavendar', '108', 'L', 4200, 50),
+(108044, 'Womens Kurti with Pants - Lavendar', '108', 'XL', 4200, 50),
+(108051, 'Womens Three piece - Lavendar', '108', 'S', 5000, 50),
+(108052, 'Womens Three piece - Lavendar', '108', 'M', 5000, 50),
+(108053, 'Womens Three piece - Lavendar', '108', 'L', 5000, 50),
+(108054, 'Womens Three piece - Lavendar', '108', 'XL', 5000, 50),
+(108061, 'Womens Saree - Pink Shimmery', '108', 'S', 3300, 50),
+(108062, 'Womens Saree - Pink Shimmery', '108', 'M', 3300, 50),
+(108063, 'Womens Saree - Pink Shimmery', '108', 'L', 3300, 50),
+(108064, 'Womens Saree - Pink Shimmery', '108', 'XL', 3300, 50),
+(108071, 'Womens Saree - Navy Blue', '108', 'S', 3000, 50),
+(108072, 'Womens Saree - Navy Blue', '108', 'M', 3000, 50),
+(108073, 'Womens Saree - Navy Blue', '108', 'L', 3000, 50),
+(108074, 'Womens Saree - Navy Blue', '108', 'XL', 3000, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `onesies`
+--
+
+CREATE TABLE `onesies` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `onesies`
+--
+
+INSERT INTO `onesies` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(109001, 'Baby Onesies - Grey', '109', 'S', 500, 50),
+(109002, 'Baby Onesies - Grey', '109', 'M', 500, 50),
+(109003, 'Baby Onesies - Grey', '109', 'L', 500, 50),
+(109004, 'Baby Onesies - Grey', '109', 'XL', 500, 50),
+(109011, 'Baby Onesies - Black', '109', 'S', 550, 50),
+(109012, 'Baby Onesies - Black', '109', 'M', 550, 50),
+(109013, 'Baby Onesies - Black', '109', 'L', 550, 50),
+(109014, 'Baby Onesies - Black', '109', 'XL', 550, 50),
+(109021, 'Baby Onesies - White', '109', 'S', 600, 50),
+(109022, 'Baby Onesies - White', '109', 'M', 600, 50),
+(109023, 'Baby Onesies - White', '109', 'L', 600, 50),
+(109024, 'Baby Onesies - White', '109', 'XL', 600, 50),
+(109031, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'S', 2200, 50),
+(109032, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'M', 2200, 50),
+(109033, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'L', 2200, 50),
+(109034, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'XL', 2200, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `outwears`
+--
+
+CREATE TABLE `outwears` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `outwears`
+--
+
+INSERT INTO `outwears` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(110001, 'Babys Outwear - Mint Green', '110', 'S', 800, 50),
+(110002, 'Babys Outwear - Mint Green', '110', 'M', 800, 50),
+(110003, 'Babys Outwear - Mint Green', '110', 'L', 800, 50),
+(110004, 'Babys Outwear - Mint Green', '110', 'XL', 800, 50),
+(110011, 'Babys Outwear - Navy Blue', '110', 'S', 800, 50),
+(110012, 'Babys Outwear - Navy Blue', '110', 'M', 800, 50),
+(110013, 'Babys Outwear - Navy Blue', '110', 'L', 800, 50),
+(110014, 'Babys Outwear - Navy Blue', '110', 'XL', 800, 50),
+(110021, 'Babys Outwear - Orange', '110', 'S', 900, 50),
+(110022, 'Babys Outwear - Orange', '110', 'M', 900, 50),
+(110023, 'Babys Outwear - Orange', '110', 'L', 900, 50),
+(110024, 'Babys Outwear - Orange', '110', 'XL', 900, 50),
+(110031, 'Babys Outwear Set - Grey & Pink', '110', 'S', 1450, 50),
+(110032, 'Babys Outwear Set - Grey & Pink', '110', 'M', 1450, 50),
+(110033, 'Babys Outwear Set - Grey & Pink', '110', 'L', 1450, 50),
+(110034, 'Babys Outwear Set - Grey & Pink', '110', 'XL', 1450, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `apparels`
+--
+
+CREATE TABLE `apparels` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `apparels`
+--
+
+INSERT INTO `apparels` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(111001, 'Boys T-shirt & Pants set - Black', '111', 'S', 800, 50),
+(111002, 'Boys T-shirt & Pants set - Black', '111', 'M', 800, 50),
+(111003, 'Boys T-shirt & Pants set - Black', '111', 'L', 800, 50),
+(111004, 'Boys T-shirt & Pants set - Black', '111', 'XL', 800, 50),
+(111011, 'Boys T-shirt & Pants set - Mint Green & White', '111', 'S', 1000, 50),
+(111012, 'Boys T-shirt & Pants set - Mint Green & White', '111', 'M', 1000, 50),
+(111013, 'Boys T-shirt & Pants set - Mint Green & White', '111', 'L', 1000, 50),
+(111014, 'Boys T-shirt & Pants set - Mint Green & White', '111', 'XL', 1000, 50),
+(111021, 'Boys T-shirt & Pants set - Black & Brown', '111', 'S', 1000, 50),
+(111022, 'Boys T-shirt & Pants set - Black & Brown', '111', 'M', 1000, 50),
+(111023, 'Boys T-shirt & Pants set - Black & Brown', '111', 'L', 1000, 50),
+(111024, 'Boys T-shirt & Pants set - Black & Brown', '111', 'XL', 1000, 50),
+(111031, 'Boys T-shirt & Pants set - Black & Blue', '111', 'S', 1000, 50),
+(111032, 'Boys T-shirt & Pants set - Black & Blue', '111', 'M', 1000, 50),
+(111033, 'Boys T-shirt & Pants set - Black & Blue', '111', 'L', 1000, 50),
+(111034, 'Boys T-shirt & Pants set - Black & Blue', '111', 'XL', 1000, 50),
+(111041, 'Girls Flowery Frock - Midnight Green', '111', 'S', 1200, 50),
+(111042, 'Girls Flowery Frock - Midnight Green', '111', 'M', 1200, 50),
+(111043, 'Girls Flowery Frock - Midnight Green', '111', 'L', 1200, 50),
+(111044, 'Girls Flowery Frock - Midnight Green', '111', 'XL', 1200, 50),
+(111051, 'Girls Polkadot Frock - Red', '111', 'S', 1200, 50),
+(111052, 'Girls Polkadot Frock - Red', '111', 'M', 1200, 50),
+(111053, 'Girls Polkadot Frock - Red', '111', 'L', 1200, 50),
+(111054, 'Girls Polkadot Frock - Red', '111', 'XL', 1200, 50),
+(111061, 'Girls Frock with Frills - Blue', '111', 'S', 1250, 50),
+(111062, 'Girls Frock with Frills - Blue', '111', 'M', 1250, 50),
+(111063, 'Girls Frock with Frills - Blue', '111', 'L', 1250, 50),
+(111064, 'Girls Frock with Frills - Blue', '111', 'XL', 1250, 50),
+(111071, 'Baby Rampers - Beige & Black', '111', 'S', 1300, 50),
+(111072, 'Baby Rampers - Beige & Black', '111', 'M', 1300, 50),
+(111073, 'Baby Rampers - Beige & Black', '111', 'L', 1300, 50),
+(111074, 'Baby Rampers - Beige & Black', '111', 'XL', 1300, 50),
+(111081, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'S', 1300, 50),
+(111082, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'M', 1300, 50),
+(111083, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'L', 1300, 50),
+(111084, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'XL', 1300, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hoodies`
+--
+
+CREATE TABLE `hoodies` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `hoodies`
+--
+
+INSERT INTO `hoodies` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(112001, 'Mens Sporty Hoodies - Black', '112', 'S', 1100, 50),
+(112002, 'Mens Sporty Hoodies - Black', '112', 'M', 1100, 50),
+(112003, 'Mens Sporty Hoodies - Black', '112', 'L', 1100, 50),
+(112004, 'Mens Sporty Hoodies - Black', '112', 'XL', 1100, 50),
+(112011, 'Mens Sporty Hoodies - Olive Green', '112', 'S', 1200, 50),
+(112012, 'Mens Sporty Hoodies - Olive Green', '112', 'M', 1200, 50),
+(112013, 'Mens Sporty Hoodies - Olive Green', '112', 'L', 1200, 50),
+(112014, 'Mens Sporty Hoodies - Olive Green', '112', 'XL', 1200, 50),
+(112021, 'Mens Sporty Hoodies - Brown', '112', 'S', 1200, 50),
+(112022, 'Mens Sporty Hoodies - Brown', '112', 'M', 1200, 50),
+(112023, 'Mens Sporty Hoodies - Brown', '112', 'L', 1200, 50),
+(112024, 'Mens Sporty Hoodies - Brown', '112', 'XL', 1200, 50),
+(112031, 'Unisex Casual Hoodies - Purple', '112', 'S', 1200, 50),
+(112032, 'Unisex Casual Hoodies - Purple', '112', 'M', 1200, 50),
+(112033, 'Unisex Casual Hoodies - Purple', '112', 'L', 1200, 50),
+(112034, 'Unisex Casual Hoodies - Purple', '112', 'XL', 1200, 50),
+(112041, 'Womens Woollen Hoodies - White', '112', 'S', 1200, 50),
+(112042, 'Womens Woollen Hoodies - White', '112', 'M', 1200, 50),
+(112043, 'Womens Woollen Hoodies - White', '112', 'L', 1200, 50),
+(112044, 'Womens Woollen Hoodies - White', '112', 'XL', 1200, 50),
+(112051, 'Womens Casual Hoodies - White & Pink', '112', 'S', 1200, 50),
+(112052, 'Womens Casual Hoodies - White & Pink', '112', 'M', 1200, 50),
+(112053, 'Womens Casual Hoodies - White & Pink', '112', 'L', 1200, 50),
+(112054, 'Womens Casual Hoodies - White & Pink', '112', 'XL', 1200, 50),
+(112061, 'Womens Cozy Hoodies - Cream & Pink', '112', 'S', 1300, 50),
+(112062, 'Womens Cozy Hoodies - Cream & Pink', '112', 'M', 1300, 50),
+(112063, 'Womens Cozy Hoodies - Cream & Pink', '112', 'L', 1300, 50),
+(112064, 'Womens Cozy Hoodies - Cream & Pink', '112', 'XL', 1300, 50),
+(112071, 'Mens Cozy Hoodies - Blue', '112', 'S', 1300, 50),
+(112072, 'Mens Cozy Hoodies - Blue', '112', 'M', 1300, 50),
+(112073, 'Mens Cozy Hoodies - Blue', '112', 'L', 1300, 50),
+(112074, 'Mens Cozy Hoodies - Blue', '112', 'XL', 1300, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sweaters`
+--
+
+CREATE TABLE `sweaters` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `sweaters`
+--
+
+INSERT INTO `sweaters` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(113001, 'Unisex Sweatshirts - White', '113', 'S', 800, 50),
+(113002, 'Unisex Sweatshirts - White', '113', 'M', 800, 50),
+(113003, 'Unisex Sweatshirts - White', '113', 'L', 800, 50),
+(113004, 'Unisex Sweatshirts - White', '113', 'XL', 800, 50),
+(113011, 'Unisex Sweatshirts - Black', '113', 'S', 800, 50),
+(113012, 'Unisex Sweatshirts - Black', '113', 'M', 800, 50),
+(113013, 'Unisex Sweatshirts - Black', '113', 'L', 800, 50),
+(113014, 'Unisex Sweatshirts - Black', '113', 'XL', 800, 50),
+(113021, 'Unisex Sweatshirts - Blue', '113', 'S', 850, 50),
+(113022, 'Unisex Sweatshirts - Blue', '113', 'M', 850, 50),
+(113023, 'Unisex Sweatshirts - Blue', '113', 'L', 850, 50),
+(113024, 'Unisex Sweatshirts - Blue', '113', 'XL', 850, 50),
+(113031, 'Unisex Sweatshirts - Pine Green', '113', 'S', 900, 50),
+(113032, 'Unisex Sweatshirts - Pine Green', '113', 'M', 900, 50),
+(113033, 'Unisex Sweatshirts - Pine Green', '113', 'L', 900, 50),
+(113034, 'Unisex Sweatshirts - Pine Green', '113', 'XL', 900, 50),
+(113041, 'Womens Sweatshirts - Lavendar', '113', 'S', 960, 50),
+(113042, 'Womens Sweatshirts - Lavendar', '113', 'M', 960, 50),
+(113043, 'Womens Sweatshirts - Lavendar', '113', 'L', 960, 50),
+(113044, 'Womens Sweatshirts - Lavendar', '113', 'XL', 960, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `jackets`
+--
+
+CREATE TABLE `jackets` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `jackets`
+--
+
+INSERT INTO `jackets` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(114001, 'Mens Chore Jacket - Midnight Black', '114', 'S', 1800, 50),
+(114002, 'Mens Chore Jacket - Midnight Black', '114', 'M', 1800, 50),
+(114003, 'Mens Chore Jacket - Midnight Black', '114', 'L', 1800, 50),
+(114004, 'Mens Chore Jacket - Midnight Black', '114', 'XL', 1800, 50),
+(114011, 'Mens Denim Jacket - Blue', '114', 'S', 2200, 50),
+(114012, 'Mens Denim Jacket - Blue', '114', 'M', 2200, 50),
+(114013, 'Mens Denim Jacket - Blue', '114', 'L', 2200, 50),
+(114014, 'Mens Denim Jacket - Blue', '114', 'XL', 2200, 50),
+(114021, 'Mens Harrington Jacket - White', '114', 'S', 2800, 50),
+(114022, 'Mens Harrington Jacket - White', '114', 'M', 2800, 50),
+(114023, 'Mens Harrington Jacket - White', '114', 'L', 2800, 50),
+(114024, 'Mens Harrington Jacket - White', '114', 'XL', 2800, 50),
+(114031, 'Mens Puffer Jacket - Black', '114', 'S', 3000, 50),
+(114032, 'Mens Puffer Jacket - Black', '114', 'M', 3000, 50),
+(114033, 'Mens Puffer Jacket - Black', '114', 'L', 3000, 50),
+(114034, 'Mens Puffer Jacket - Black', '114', 'XL', 3000, 50),
+(114041, 'Womens Denim Jacket - Blue & Navy Blue', '114', 'S', 3500, 50),
+(114042, 'Womens Denim Jacket - Blue & Navy Blue', '114', 'M', 3500, 50),
+(114043, 'Womens Denim Jacket - Blue & Navy Blue', '114', 'L', 3500, 50),
+(114044, 'Womens Denim Jacket - Blue & Navy Blue', '114', 'XL', 3500, 50),
+(114051, 'Womens Leather Jacket - Carbon Black', '114', 'S', 6250, 50),
+(114052, 'Womens Leather Jacket - Carbon Black', '114', 'M', 6250, 50),
+(114053, 'Womens Leather Jacket - Carbon Black', '114', 'L', 6250, 50),
+(114054, 'Womens Leather Jacket - Carbon Black', '114', 'XL', 6250, 50),
+(114061, 'Womens Leather Jacket - Beige', '114', 'S', 7000, 50),
+(114062, 'Womens Leather Jacket - Beige', '114', 'M', 7000, 50),
+(114063, 'Womens Leather Jacket - Beige', '114', 'L', 7000, 50),
+(114064, 'Womens Leather Jacket - Beige', '114', 'XL', 7000, 50),
+(114071, 'Womens Leather Jacket - Black', '114', 'S', 7000, 50),
+(114072, 'Womens Leather Jacket - Black', '114', 'M', 7000, 50),
+(114073, 'Womens Leather Jacket - Black', '114', 'L', 7000, 50),
+(114074, 'Womens Leather Jacket - Black', '114', 'XL', 7000, 50);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `turtlenecks`
+--
+
+CREATE TABLE `turtlenecks` (
+  `product_id` int(11) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `category_ID` int(11) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
+  `product_price` int(6) NOT NULL,
+  `stock` int(5) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `turtlenecks`
+--
+
+INSERT INTO `turtlenecks` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(115001, 'Unisex Turtleneck - Black', '115', 'S', 1100, 50),
+(115002, 'Unisex Turtleneck - Black', '115', 'M', 1100, 50),
+(115003, 'Unisex Turtleneck - Black', '115', 'L', 1100, 50),
+(115004, 'Unisex Turtleneck - Black', '115', 'XL', 1100, 50),
+
+(115001, 'Unisex Turtleneck - Blue', '115', 'S', 1200, 50),
+(115002, 'Unisex Turtleneck - Blue', '115', 'M', 1200, 50),
+(115003, 'Unisex Turtleneck - Blue', '115', 'L', 1200, 50),
+(115004, 'Unisex Turtleneck - Blue', '115', 'XL', 1200, 50),
+
+(115001, 'Unisex Turtleneck - Olive Green', '115', 'S', 1200, 50),
+(115002, 'Unisex Turtleneck - Olive Green', '115', 'M', 1200, 50),
+(115003, 'Unisex Turtleneck - Olive Green', '115', 'L', 1200, 50),
+(115004, 'Unisex Turtleneck - Olive Green', '115', 'XL', 1200, 50),
+
+(115001, 'Unisex Turtleneck - Brown', '115', 'S', 1200, 50),
+(115002, 'Unisex Turtleneck - Brown', '115', 'M', 1200, 50),
+(115003, 'Unisex Turtleneck - Brown', '115', 'L', 1200, 50),
+(115004, 'Unisex Turtleneck - Brown', '115', 'XL', 1200, 50),
+
+(115001, 'Unisex Turtleneck - Grey', '115', 'S', 1200, 50),
+(115002, 'Unisex Turtleneck - Grey', '115', 'M', 1200, 50),
+(115003, 'Unisex Turtleneck - Grey', '115', 'L', 1200, 50),
+(115004, 'Unisex Turtleneck - Grey', '115', 'XL', 1200, 50);
 
 -- --------------------------------------------------------
 
@@ -192,200 +863,28 @@ INSERT INTO `customer` (`id`, `bill_id`, `customer_name`, `customer_contact`, `c
 
 CREATE TABLE `order` (
   `order_id` int(11) NOT NULL,
+  `username` varchar(40) NOT NULL,
   `product_id` int(11) NOT NULL,
   `delivery_Date` date NOT NULL,
-  `payment method` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `payment method` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `order`
 --
 
-INSERT INTO `order` (`order_id`, `product_id`, `delivery_Date`, `payment method`) VALUES
-(1, 0, '2022-01-04', 'cash'),
-(2, 0, '2022-01-10', 'cash'),
-(3, 0, '2022-01-12', 'bkash'),
-(4, 0, '2022-01-12', 'bkash'),
-(5, 0, '2022-01-12', 'bkash'),
-(6, 0, '2022-01-12', 'nagad'),
-(7, 0, '2022-01-12', 'nagad'),
-(8, 0, '2022-01-12', 'nagad'),
-(9, 0, '2022-01-12', 'bkash'),
-(10, 0, '2022-01-13', 'cash'),
-(11, 0, '2022-01-13', 'cash'),
-(12, 0, '2022-01-13', 'cash'),
-(13, 0, '2022-01-13', 'bkash'),
-(14, 0, '2022-01-13', 'bkash'),
-(15, 0, '2022-01-13', 'bkash'),
-(16, 0, '2022-01-13', 'cash'),
-(17, 0, '2022-01-14', 'cash'),
-(18, 0, '2022-01-14', 'cash'),
-(19, 0, '2022-01-14', 'bkash'),
-(20, 0, '2022-01-14', 'bkash'),
-(21, 0, '2022-01-14', 'nagad'),
-(22, 0, '2022-01-14', 'bkash'),
-(23, 0, '2022-01-14', 'cash'),
-(24, 0, '2022-01-14', 'cash'),
-(25, 0, '2022-01-14', 'cash'),
-(26, 0, '2022-01-14', 'bkash'),
-(27, 0, '2022-01-15', 'bkash'),
-(28, 0, '2022-01-15', 'bkash'),
-(29, 0, '2022-01-15', 'cash'),
-(30, 0, '2022-01-15', 'cash'),
-(31, 0, '2022-01-15', 'cash'),
-(32, 0, '2022-01-15', 'bkash'),
-(33, 0, '2022-01-15', 'bkash'),
-(34, 0, '2022-01-15', 'bkash'),
-(35, 0, '2022-01-15', 'bkash'),
-(36, 0, '2022-01-15', 'cash'),
-(37, 0, '2022-01-15', 'cash'),
-(38, 0, '2022-01-15', 'cash'),
-(39, 0, '2022-01-15', 'bkash'),
-(40, 0, '2022-01-16', 'bkash'),
-(41, 0, '2022-01-16', 'cash'),
-(42, 0, '2022-01-16', 'cash'),
-(43, 0, '2022-01-16', 'cash'),
-(44, 0, '2022-01-16', 'bkash'),
-(45, 0, '2022-01-16', 'bkash'),
-(46, 0, '2022-01-16', 'bkash'),
-(47, 0, '2022-01-16', 'bkash'),
-(48, 0, '2022-01-16', 'bkash'),
-(49, 0, '2022-01-16', 'bkash'),
-(50, 0, '2022-01-16', 'cash'),
-(51, 0, '2022-01-16', 'cash'),
-(52, 0, '2022-01-17', 'cash'),
-(53, 0, '2022-01-17', 'cash'),
-(54, 0, '2022-01-17', 'cash'),
-(55, 0, '2022-01-17', 'cash'),
-(56, 0, '2022-01-17', 'cash'),
-(57, 0, '2022-01-17', 'cash'),
-(58, 0, '2022-01-17', 'cash'),
-(59, 0, '2022-01-17', 'bkash'),
-(60, 0, '2022-01-17', 'bkash'),
-(61, 0, '2022-01-17', 'nagad'),
-(62, 0, '2022-01-17', 'cash'),
-(63, 0, '2022-01-17', 'nagad'),
-(64, 0, '2022-01-17', 'bkash'),
-(65, 0, '2022-01-17', 'bkash'),
-(66, 0, '2022-01-17', 'nagad'),
-(67, 0, '2022-01-17', 'cash'),
-(68, 0, '2022-01-17', 'nagad'),
-(69, 0, '2022-01-18', 'bkash'),
-(70, 0, '2022-01-18', 'bkash'),
-(71, 0, '2022-01-18', 'bkash'),
-(72, 0, '2022-01-18', 'nagad'),
-(73, 0, '2022-01-18', 'nagad'),
-(74, 0, '2022-01-18', 'nagad'),
-(75, 0, '2022-01-18', 'bkash'),
-(76, 0, '2022-01-18', 'cash'),
-(77, 0, '2022-01-18', 'cash'),
-(78, 0, '2022-01-18', 'cash'),
-(79, 0, '2022-01-18', 'bkash'),
-(80, 0, '2022-01-18', 'bkash'),
-(81, 0, '2022-01-18', 'bkash'),
-(82, 0, '2022-01-18', 'cash'),
-(83, 0, '2022-01-18', 'cash'),
-(84, 0, '2022-01-18', 'cash'),
-(85, 0, '2022-01-18', 'bkash'),
-(86, 0, '2022-01-18', 'bkash'),
-(87, 0, '2022-01-18', 'nagad'),
-(88, 0, '2022-01-18', 'bkash'),
-(89, 0, '2022-01-18', 'cash'),
-(90, 0, '2022-01-18', 'cash'),
-(91, 0, '2022-01-18', 'cash'),
-(92, 0, '2022-01-18', 'bkash'),
-(93, 0, '2022-01-18', 'bkash'),
-(94, 0, '2022-01-18', 'bkash'),
-(95, 0, '2022-01-19', 'cash'),
-(96, 0, '2022-01-19', 'cash'),
-(97, 0, '2022-01-19', 'cash'),
-(98, 0, '2022-01-19', 'bkash'),
-(99, 0, '2022-01-19', 'bkash'),
-(100, 0, '2022-01-19', 'bkash'),
-(101, 0, '2022-01-19', 'bkash'),
-(102, 0, '2022-01-19', 'cash'),
-(103, 0, '2022-01-19', 'cash'),
-(104, 0, '2022-01-19', 'cash'),
-(105, 0, '2022-01-19', 'bkash'),
-(106, 0, '2022-01-19', 'bkash'),
-(107, 0, '2022-01-19', 'cash'),
-(108, 0, '2022-01-19', 'cash'),
-(109, 0, '2022-01-19', 'cash'),
-(110, 0, '2022-01-19', 'bkash'),
-(111, 0, '2022-01-19', 'bkash'),
-(112, 0, '2022-01-19', 'bkash'),
-(113, 0, '2022-01-19', 'bkash'),
-(114, 0, '2022-01-19', 'bkash'),
-(115, 0, '2022-01-19', 'bkash'),
-(116, 0, '2022-01-19', 'cash'),
-(117, 0, '2022-01-19', 'cash'),
-(118, 0, '2022-01-19', 'cash'),
-(119, 0, '2022-01-19', 'cash'),
-(120, 0, '2022-01-19', 'cash'),
-(121, 0, '2022-01-19', 'cash'),
-(122, 0, '2022-01-19', 'cash'),
-(123, 0, '2022-01-19', 'cash'),
-(124, 0, '2022-01-19', 'cash'),
-(125, 0, '2022-01-20', 'bkash'),
-(126, 0, '2022-01-20', 'bkash'),
-(127, 0, '2022-01-20', 'bkash'),
-(128, 0, '2022-01-20', 'nagad'),
-(129, 0, '2022-01-20', 'nagad'),
-(130, 0, '2022-01-20', 'nagad'),
-(131, 0, '2022-01-20', 'bkash'),
-(132, 0, '2022-01-20', 'cash'),
-(133, 0, '2022-01-20', 'cash'),
-(134, 0, '2022-01-20', 'cash'),
-(135, 0, '2022-01-20', 'bkash'),
-(136, 0, '2022-01-20', 'bkash'),
-(137, 0, '2022-01-20', 'bkash'),
-(138, 0, '2022-01-20', 'cash'),
-(139, 0, '2022-01-20', 'cash'),
-(140, 0, '2022-01-20', 'cash'),
-(141, 0, '2022-01-20', 'bkash'),
-(142, 0, '2022-01-20', 'bkash'),
-(143, 0, '2022-01-20', 'nagad'),
-(144, 0, '2022-01-20', 'bkash'),
-(145, 0, '2022-01-20', 'cash'),
-(146, 0, '2022-01-20', 'cash'),
-(147, 0, '2022-01-20', 'cash'),
-(148, 0, '2022-01-20', 'bkash'),
-(149, 0, '2022-01-20', 'bkash'),
-(150, 0, '2022-01-20', 'bkash'),
-(151, 0, '2022-01-20', 'nagad');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `productlist`
---
-
-CREATE TABLE `productlist` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(35) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `category_name` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `product_size` varchar(10) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `productlist`
---
-
-INSERT INTO `productlist` (`product_id`, `product_name`, `category_name`, `product_size`, `product_price`, `stock`) VALUES
-(1, 'ZARRA', 'JACKET', '', 5000, 45),
-(2, 'ZARRA', 'SHIRT', '', 5000, 45),
-(3, 'ZARRA', 'SHIRT', '', 5000, 45),
-(4, 'ZARRA', 'PANT', '', 5000, 45),
-(5, 'ADIDAS', 'JACKET', '', 5000, 45),
-(6, 'ADIDAS', 'T-SHIRT', '', 5000, 45),
-(7, 'ADIDAS', 'PANT', '', 5000, 45),
-(8, 'NIKE', 'JACKET', '', 5000, 45),
-(9, 'NIKE', 'T-SHIRT', '', 5000, 45),
-(10, 'NIKE', 'PANT', '', 5000, 45),
-(11, 'NIKE', 'SHOE', '', 5000, 45),
-(12, 'ADIDAS', 'SHOE', '', 5000, 45);
+INSERT INTO `order` (`order_id`, `username`, `product_id`, `delivery_Date`, `payment method`) VALUES
+(1, 0, 'sking', '2022-01-04', 'cash'),
+(2, 0, 'nkochar', '2022-01-10', 'cash'),
+(3, 0, 'ROHAN', '2022-01-12', 'bkash'),
+(4, 0, 'dlanod', '2022-01-12', 'bkash'),
+(5, 0, 's2k78', '2022-01-12', 'bkash'),
+(6, 0, 'dLorentz', '2022-01-12', 'nagad'),
+(7, 0, 'LKD16', '2022-01-12', 'nagad'),
+(8, 0, 'tamJr', '2022-01-12', 'nagad'),
+(9, 0, 'shantzy', '2022-01-12', 'bkash'),
+(10, 0, 'parv139', '2022-01-13', 'cash'),
+(11, 0, 'daily23', '2022-01-20', 'nagad');
 
 -- --------------------------------------------------------
 
@@ -394,52 +893,31 @@ INSERT INTO `productlist` (`product_id`, `product_name`, `category_name`, `produ
 --
 
 CREATE TABLE `user` (
-  `user_id` int(11) NOT NULL,
-  `name` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `email` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `phone_number` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-  `city` varchar(25) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `name` varchar(100) NOT NULL,
+  `username` varchar(40) NOT NULL,  
+  `email` varchar(25) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `phone_number` varchar(25) NOT NULL,
+  `city` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`user_id`, `name`, `email`, `phone_number`, `city`) VALUES
-(1, 'King', 'SKING', '515.123.4567', 'Dhaka'),
-(2, 'Kochar', 'NKOCHAR', '515.123.4568', 'Bogura'),
-(3, 'De Haan', 'DEHAAN', '515.123.4569', 'Dhaka'),
-(4, 'Hunold', 'AHUNOLD', '590.423.4567', 'noakhali'),
-(5, 'Ernst', 'BERNST', '590.423.4568', 'barishal'),
-(6, 'Lorentz', 'DLORENTZ', '590.423.5567', 'Borguna'),
-(7, 'Mourgos', 'KMORGOS', '650.123.5234', 'Faridpur'),
-(8, 'Rajs', 'RRAJS', '650.121.5234', 'Jossore'),
-(9, 'Davies', 'CDAVIES', '121.123.5234', 'Jhinaidah'),
-(10, 'Vargas', 'PVARGAS', '121.123.5234', 'Rangpur'),
-(11, 'Zlotkey', 'EZLOTKEY', '44.1344.429018', 'Dinajjpur'),
-(12, 'Abel', 'EABEL', '44.1644.429017', 'Sirajganj'),
-(13, 'Taylor', 'JTAILOR', '44.1644.429021', 'Panchagar'),
-(14, 'Grant', 'KGRANT', '44.1644.429023', 'Dhaka'),
-(15, 'Whalem', 'JWHALEN', '515.123.4444', 'Rajshahi'),
-(16, 'Hartstein', 'MHARSTEIN', '515.123.5555', 'Bandra'),
-(17, 'Fay', 'PFAY', '603.123.6666', 'Lahore'),
-(18, 'Higgins', 'SHIGGINS', '515.123.8050', 'kualalampur'),
-(19, 'Alex', 'he@gmail.com', '515.123.8050', 'mali'),
-(20, 'Clein', 'k@gmail.com', '650.126.5234', 'Dhaka'),
-(21, 'Whalem', 'JWHAL', '515.193.4444', 'Bogura'),
-(22, 'Hartstein', 'MHARS', '515.123.5955', 'Rajbari'),
-(23, 'Anderson', 'PAY', '683.123.6666', 'Rajbari'),
-(24, 'Higgins', 'SHI', '515.223.8050', 'Cumilla'),
-(25, 'Shah', 'hs@gmail.com', '585.123.8050', 'Jassore'),
-(26, 'Abhnderson', 'BHPAY', '686.123.6666', 'Dhaka'),
-(27, 'Higgins', 'Suuu', '517.223.8050', 'Bogura'),
-(28, 'Shah', 'has@gmail.com', '585.129.8050', 'Rajshahi'),
-(29, 'Higgins', 'SABBY', '595.223.8050', 'Rangpur'),
-(30, 'Shah', 'ss@gmail.com', '585.123.8150', 'Feni'),
-(31, 'Abhnderson', 'PFPAY', '606.123.6666', 'Faridabad'),
-(32, 'Higgins', 'Suuu', '517.223.8050', 'Jossore'),
-(33, 'Soozy', 'zas@gmail.com', '589.129.8050', 'Rajbari'),
-(34, 'Gietz', 'WGIETZ', '515.123.8181', 'Coxs Bazar');
+INSERT INTO `user` (`name`, `username`, `email`,`password` ,`phone_number`, `city`) VALUES
+('King', 'sking', 'king@yahoo.com', '111111', '01632856264', 'Dhaka'),
+('Kochar', 'nkochar', 'nkoch@hotmail.com', '222222', '01742856264', 'Bogura'),
+('Rohan', 'ROHAN', 'rohan@gmail.com', '333333', '01745856264', 'Dhaka'),
+('Donald', 'dlanod', 'donald@gmail.com', '444444', '01864856264', 'Noakhali'),
+('Shahid', 's2k78', 'shahid@gmail.com', '555555', '01866656784', 'Barishal'),
+('Lorentz', 'dLorentz', 'lorentz@hotmail.com', '666666','01801286784', 'Comilla'),
+('Liton', 'LKD16', 'liton@gmail.com', '777777', '01811186675', 'Faridpur'),
+('Tamim', 'tamJr', 'junior@yahoo.com', '888888', '01965587752', 'Jossore'),
+('Shanto', 'shantzy', 'shanto@hotmail.com', '999999', '01944588852', 'Jhinaidah'),
+('Parves', 'parv139', 'parvez@ymail.com', '161616', '01613485426', 'Rangpur'),
+('Daisy', 'daily23', 'daisy@gmail.com', '228228', '01313485876', 'Dinajjpur');
+
 
 --
 -- Indexes for dumped tables
@@ -449,15 +927,15 @@ INSERT INTO `user` (`user_id`, `name`, `email`, `phone_number`, `city`) VALUES
 -- Indexes for table `admin`
 --
 ALTER TABLE `admin`
-  ADD PRIMARY KEY (`admin_id`);
+  ADD PRIMARY KEY (`username`);
 
 --
 -- Indexes for table `billing info(orders)`
 --
-ALTER TABLE `billing info(orders)`
+ALTER TABLE `billing info (orders)`
   ADD PRIMARY KEY (`billing_id`),
   ADD KEY `order_id` (`order_id`),
-  ADD KEY `user_id` (`user_id`);
+  ADD KEY `username` (`username`);
 
 --
 -- Indexes for table `cart`
@@ -465,24 +943,14 @@ ALTER TABLE `billing info(orders)`
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`cart_id`),
   ADD KEY `product_id` (`product_id`),
-  ADD KEY `user_Id` (`user_Id`),
+  ADD KEY `username` (`username`),
   ADD KEY `price` (`price`);
 
 --
 -- Indexes for table `category`
 --
 ALTER TABLE `category`
-  ADD PRIMARY KEY (`category_id`);
-
---
--- Indexes for table `customer`
---
-ALTER TABLE `customer`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `product_name` (`product_name`),
-  ADD KEY `product_category` (`product_category`),
-  ADD KEY `product_quantity` (`product_quantity`),
-  ADD KEY `product_price` (`product_price`);
+  ADD PRIMARY KEY (`category_ID`);
 
 --
 -- Indexes for table `order`
@@ -494,25 +962,128 @@ ALTER TABLE `order`
 --
 -- Indexes for table `productlist`
 --
-ALTER TABLE `productlist`
+ALTER TABLE `tshirt`
   ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category` (`category_name`);
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `shirts`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `pants`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `blazers`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `outfits`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `jeans`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `tops`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `trad-wear`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `onesies`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `outdoors`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `apparels`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `hoodies`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `sweaters`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `jackets`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
+--
+-- Indexes for table `productlist`
+--
+
+ALTER TABLE `turtlenecks`
+  ADD PRIMARY KEY (`product_id`),
+  ADD KEY `category_ID` (`category_ID`);
+
 
 --
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`user_id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `admin`
---
-ALTER TABLE `admin`
-  MODIFY `admin_id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  ADD PRIMARY KEY (`username`);
 
 --
 -- AUTO_INCREMENT for table `billing info(orders)`
@@ -527,28 +1098,11 @@ ALTER TABLE `cart`
   MODIFY `cart_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `category`
---
-ALTER TABLE `category`
-  MODIFY `category_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
 -- AUTO_INCREMENT for table `order`
 --
 ALTER TABLE `order`
   MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=152;
 
---
--- AUTO_INCREMENT for table `productlist`
---
-ALTER TABLE `productlist`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT for table `user`
---
-ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -111,7 +111,7 @@
             <div class="product">
                 <img src=".\Img\jumpsuit-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Powder Blue Humpsuit with Top </span>- Powder Blue</h5>
+                    <h5><span>Women's Jumpsuit with Top </span>- Powder Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -127,7 +127,7 @@
             <div class="product">
                 <img src=".\Img\jumpsuit-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Black Jumpsuit</span>- Black</h5>
+                    <h5><span>Women's Jumpsuit </span>- Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -143,7 +143,7 @@
             <div class="product">
                 <img src=".\Img\jumpsuit-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Yellow Jumpsuit</span>- Yellow</h5>
+                    <h5><span>Women's Jumpsuit </span>- Yellow</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -159,7 +159,7 @@
             <div class="product">
                 <img src=".\Img\jumpsuit-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Powder Green Silk Jumpsuit </span>- Powder Green</h5>
+                    <h5><span>Women's Silk Jumpsuit </span>- Powder Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -175,7 +175,7 @@
             <div class="product">
                 <img src=".\Img\jumpsuit-5.jpg" alt="">
                 <div class="description">
-                    <h5><span>Sea Blue Jumpsuit </span>- Sea Blue</h5>
+                    <h5><span>Women's Jumpsuit </span>- Sea Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

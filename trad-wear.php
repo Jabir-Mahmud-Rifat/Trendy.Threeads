@@ -159,7 +159,7 @@
             <div class="product">
                 <img src=".\Img\salwar-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Women's Three-piece </span>- Powder Blue</h5>
+                    <h5><span>Women's Three Piece </span>- Powder Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -191,7 +191,7 @@
             <div class="product">
                 <img src=".\Img\salwar-6.jpg" alt="">
                 <div class="description">
-                    <h5><span>Women's Three-piece</span> - Lavendar</h5>
+                    <h5><span>Women's Three Piece</span> - Lavendar</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

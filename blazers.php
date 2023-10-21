@@ -120,7 +120,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3350</h4>
+                    <h4>BDT. 4000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -128,7 +128,7 @@
             <div class="product">
                 <img src=".\Img\blazer-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer</span>- Black</h5>
+                    <h5><span>Men's Formal Blazer </span>- Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -136,7 +136,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3500</h4>
+                    <h4>BDT. 4250</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -144,7 +144,7 @@
             <div class="product">
                 <img src=".\Img\blazer-5.jpg" alt="">
                 <div class="description">
-                    <h5><span>Men's Formal Blazer</span>- Maroon</h5>
+                    <h5><span>Men's Formal Blazer </span>- Maroon</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -152,7 +152,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 3800</h4>
+                    <h4>BDT. 4800</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -168,7 +168,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4000</h4>
+                    <h4>BDT. 5200</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -184,7 +184,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4200</h4>
+                    <h4>BDT. 5600</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
@@ -201,7 +201,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>BDT. 4500</h4>
+                    <h4>BDT. 6000</h4>
                 </div>
                 <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
             </div>

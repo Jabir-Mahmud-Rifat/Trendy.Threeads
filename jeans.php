@@ -112,7 +112,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged denim </span>- Sky blue</h5>
+                    <h5><span>Women's Wide Legged Denim Jeans</span> - Sky blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -128,7 +128,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged Denim Jeans </span>- Blue</h5>
+                    <h5><span>Women's Wide Legged Denim Jeans</span> - Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -144,7 +144,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Wide Legged Jeans </span>- Black</h5>
+                    <h5><span>Women's Wide Legged Jeans</span> - Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -160,7 +160,7 @@
             <div class="product">
                 <img src=".\Img\lad-jeans-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Flare Jeans </span>- Blue</h5>
+                    <h5><span>Women's Flare Jeans </span>- Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -177,7 +177,7 @@
                 <img src=".\Img\lad-jeans-5.jpg" alt="">
                 <div class="description">
      
-                    <h5><span>Formal Pants </span>- Black</h5>
+                    <h5><span>Women's Formal Pants </span>- Black</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>

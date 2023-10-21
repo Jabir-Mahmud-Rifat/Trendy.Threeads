@@ -111,7 +111,7 @@
             <div class="product">
                 <img src=".\Img\outwear-1.jpg" alt="">
                 <div class="description">
-                    <h5><span>Baby's outwear </span>- Mint Green</h5>
+                    <h5><span>Baby's Outwear </span>- Mint Green</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -127,7 +127,7 @@
             <div class="product">
                 <img src=".\Img\outwear-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Baby's outwear </span>- Navy Blue</h5>
+                    <h5><span>Baby's Outwear </span>- Navy Blue</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -143,7 +143,7 @@
             <div class="product">
                 <img src=".\Img\outwear-4.jpg" alt="">
                 <div class="description">
-                    <h5><span>Baby's outwear </span>- Pine Green</h5>
+                    <h5><span>Baby's Outwear </span>- Orange</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -159,7 +159,7 @@
             <div class="product">
                 <img src=".\Img\outwear-3.jpg" alt="">
                 <div class="description">
-                    <h5><span>Baby's outwear set</span> - Grey & Pink</h5>
+                    <h5><span>Baby's Outwear Set</span> - Grey & Pink</h5>
                     <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
