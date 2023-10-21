@@ -835,25 +835,25 @@ INSERT INTO `turtlenecks` (`product_id`, `product_name`, `category_ID`, `product
 (115003, 'Unisex Turtleneck - Black', '115', 'L', 1100, 50),
 (115004, 'Unisex Turtleneck - Black', '115', 'XL', 1100, 50),
 
-(115001, 'Unisex Turtleneck - Blue', '115', 'S', 1200, 50),
-(115002, 'Unisex Turtleneck - Blue', '115', 'M', 1200, 50),
-(115003, 'Unisex Turtleneck - Blue', '115', 'L', 1200, 50),
-(115004, 'Unisex Turtleneck - Blue', '115', 'XL', 1200, 50),
+(115011, 'Unisex Turtleneck - Blue', '115', 'S', 1200, 50),
+(115012, 'Unisex Turtleneck - Blue', '115', 'M', 1200, 50),
+(115013, 'Unisex Turtleneck - Blue', '115', 'L', 1200, 50),
+(115014, 'Unisex Turtleneck - Blue', '115', 'XL', 1200, 50),
 
-(115001, 'Unisex Turtleneck - Olive Green', '115', 'S', 1200, 50),
-(115002, 'Unisex Turtleneck - Olive Green', '115', 'M', 1200, 50),
-(115003, 'Unisex Turtleneck - Olive Green', '115', 'L', 1200, 50),
-(115004, 'Unisex Turtleneck - Olive Green', '115', 'XL', 1200, 50),
+(115021, 'Unisex Turtleneck - Olive Green', '115', 'S', 1200, 50),
+(115022, 'Unisex Turtleneck - Olive Green', '115', 'M', 1200, 50),
+(115023, 'Unisex Turtleneck - Olive Green', '115', 'L', 1200, 50),
+(115024, 'Unisex Turtleneck - Olive Green', '115', 'XL', 1200, 50),
 
-(115001, 'Unisex Turtleneck - Brown', '115', 'S', 1200, 50),
-(115002, 'Unisex Turtleneck - Brown', '115', 'M', 1200, 50),
-(115003, 'Unisex Turtleneck - Brown', '115', 'L', 1200, 50),
-(115004, 'Unisex Turtleneck - Brown', '115', 'XL', 1200, 50),
+(115031, 'Unisex Turtleneck - Brown', '115', 'S', 1200, 50),
+(115032, 'Unisex Turtleneck - Brown', '115', 'M', 1200, 50),
+(115033, 'Unisex Turtleneck - Brown', '115', 'L', 1200, 50),
+(115034, 'Unisex Turtleneck - Brown', '115', 'XL', 1200, 50),
 
-(115001, 'Unisex Turtleneck - Grey', '115', 'S', 1200, 50),
-(115002, 'Unisex Turtleneck - Grey', '115', 'M', 1200, 50),
-(115003, 'Unisex Turtleneck - Grey', '115', 'L', 1200, 50),
-(115004, 'Unisex Turtleneck - Grey', '115', 'XL', 1200, 50);
+(115041, 'Unisex Turtleneck - Grey', '115', 'S', 1200, 50),
+(115042, 'Unisex Turtleneck - Grey', '115', 'M', 1200, 50),
+(115043, 'Unisex Turtleneck - Grey', '115', 'L', 1200, 50),
+(115044, 'Unisex Turtleneck - Grey', '115', 'XL', 1200, 50);
 
 -- --------------------------------------------------------
 
@@ -1034,7 +1034,7 @@ ALTER TABLE `onesies`
 -- Indexes for table `productlist`
 --
 
-ALTER TABLE `outdoors`
+ALTER TABLE `outwears`
   ADD PRIMARY KEY (`product_id`),
   ADD KEY `category_ID` (`category_ID`);
 
@@ -1088,7 +1088,7 @@ ALTER TABLE `user`
 --
 -- AUTO_INCREMENT for table `billing info(orders)`
 --
-ALTER TABLE `billing info(orders)`
+ALTER TABLE `billing info (orders)`
   MODIFY `billing_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
