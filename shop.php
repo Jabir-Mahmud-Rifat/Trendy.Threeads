@@ -33,7 +33,6 @@
                     <a href="pants.php"><h6>Pants & Trousers</h6></a>
                     <a href="blazers.php"><h6>Blazers</h6></a>
 
-                    
                     <a href="#">Women's Collection:</a>
                     <a href="outfits.php"><h6>Outfits</h6></a>
                     <a href="jeans.php"><h6>Jeans & Trousers</h6></a>
@@ -83,7 +82,14 @@
 
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="login and signup.php" class="login-btn" id="login-btn"><i class="fa-solid fa-user"></i></a>
+                        <div class="user-down">
+                        <button class="user-btn"><a href="login and signup.php" class="login-btn" id="login-btn"><i class="fa-solid fa-user"></i></a></button>                     
+                        <div class="user-content">
+                            <a href="user.php"><h6>My Profile</h6></a>
+                            <a href="orders.php"><h6>My Orders</h6></a>
+                            <a href="shop.php"><h6>Log out</h6></a>
+                        </div>
+                        </div>
                     </li>
 
                     <li class="nav-item">
@@ -142,6 +148,28 @@
 
             
     </section>
+  
+    <div class="chatbot">
+        <button id="chatButton" class="chat-button" onclick="openChat()">
+            <img src=".\Img\chat-icon.png" alt="Chat Icon">
+        </button>
+        <div id="chatContainer" class="chat-container">
+            <div class="chat-header">
+                Chatbot
+                <button id="closeChat" class="close-chat" onclick="closeChat()">X</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <p>Welcome! How can I assist you?</p>
+            </div>
+            <div class="chat-footer">
+                <input type="text" id="userInput" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+        <script src=".\js\scripts.js"></script>
+
+    </div>
+    
        
     
     <section class="feature-product">
@@ -246,6 +274,8 @@
 
         <h6>© 2023 Trendy Threads - All Rights Reserved</h6>
     </footer>
+
+    
     
 </body>
 </html>
