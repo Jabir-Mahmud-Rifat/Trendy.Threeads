@@ -50,10 +50,74 @@ INSERT INTO `admin` (`name`, `username`, `password`, `email`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `billing info(orders)`
+-- Table structure for table `user`
 --
 
-CREATE TABLE `billing info (orders)` (
+CREATE TABLE `user` (
+  `name` varchar(100) NOT NULL,
+  `username` varchar(40) NOT NULL,  
+  `email` varchar(25) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `phone_number` varchar(25) NOT NULL,
+  `city` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`name`, `username`, `email`,`password` ,`phone_number`, `city`) VALUES
+('King', 'sking', 'king@yahoo.com', '111111', '01632856264', 'Dhaka'),
+('Kochar', 'nkochar', 'nkoch@hotmail.com', '222222', '01742856264', 'Bogura'),
+('Rohan', 'ROHAN', 'rohan@gmail.com', '333333', '01745856264', 'Dhaka'),
+('Donald', 'dlanod', 'donald@gmail.com', '444444', '01864856264', 'Noakhali'),
+('Shahid', 's2k78', 'shahid@gmail.com', '555555', '01866656784', 'Barishal'),
+('Lorentz', 'dLorentz', 'lorentz@hotmail.com', '666666','01801286784', 'Comilla'),
+('Liton', 'LKD16', 'liton@gmail.com', '777777', '01811186675', 'Faridpur'),
+('Tamim', 'tamJr', 'junior@yahoo.com', '888888', '01965587752', 'Jossore'),
+('Shanto', 'shantzy', 'shanto@hotmail.com', '999999', '01944588852', 'Jhinaidah'),
+('Parves', 'parv139', 'parvez@ymail.com', '161616', '01613485426', 'Rangpur'),
+('Daisy', 'daily23', 'daisy@gmail.com', '228228', '01313485876', 'Dinajjpur');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order`
+--
+
+CREATE TABLE `order` (
+  `order_id` int(11) NOT NULL,
+  `username` varchar(40) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `product_unit` int(4) NOT NULL,
+  `amount` int(11) NOT NULL,
+  `billing_id` int(11) NOT NULL,
+  `delivery_date` date NOT NULL,
+  `payment_method` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `order`
+--
+
+INSERT INTO `order` (`order_id`, `username`, `product_id`, `product_unit`,  `billing_id`, `amount`, `delivery_date`, `payment_method`) VALUES
+(1, 'sking', 1010011, 1, 1, 675, '2023-01-04', 'cash'),
+(2, 'nkochar', 115033, 1, 2, 1200, '2023-01-10', 'cash'),
+(3, 'ROHAN', 113023, 2, 3, 1700, '2023-01-12', 'bkash'),
+(4, 'dlanod', 113022, 3, 4, 2550, '2023-01-12', 'bkash'),
+(5, 's2k78', 1010011, 1, 5, 675, '2023-01-12', 'bkash'),
+(6, 'dLorentz', 114013, 1, 6, 2200, '2023-01-12', 'nagad'),
+(7, 'LKD16', 1010113, 2, 7, 1350, '2023-01-12', 'nagad'),
+(8, 'tamJr', 115001, 1, 8, 1100, '2023-01-12', 'nagad'),
+(9, 'shantzy', 1010012, 1, 9, , '2023-01-12', 'bkash'),
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `billing info`
+--
+
+CREATE TABLE `billing info` (
   `billing_id` int(11) NOT NULL,
   `billing_address` varchar(40) NOT NULL,
   `order_id` varchar(40) NOT NULL,
@@ -64,12 +128,12 @@ CREATE TABLE `billing info (orders)` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `billing info(orders)`
+-- Dumping data for table `billing info`
 --
 
-INSERT INTO `billing info (orders)` (`billing_id`, `billing_address`, `order_id`, `card_number`, `card_name`, `pin`, `username`) VALUES
+INSERT INTO `billing info` (`billing_id`, `billing_address`, `order_id`, `card_number`, `card_name`, `pin`, `username`) VALUES
 (1, 'Dhaka', ' 111 ', 223145, 'King', 1234, 'sking'),
-(2, 'Jhinaidah', ' 112', 22564, 'Shanto', 1234, ''),
+(2, 'Jhinaidah', ' 112', 22564, 'Shanto', 1234, 'shantzy'),
 (3, 'Jossore', ' 113 ', 223150, 'Tamim', 1234, 'tamJr'),
 (4, 'Rajshahi', ' 114', 22577, 'Parves', 1234, 'parv139'),
 (5, 'Dhaka', ' 115 ', 223196, 'Rohan', 1234, 'ROHAN'),
@@ -84,7 +148,7 @@ INSERT INTO `billing info (orders)` (`billing_id`, `billing_address`, `order_id`
 CREATE TABLE `cart` (
   `cart_id` int(11) NOT NULL,
   `username` varchar(40) NOT NULL,
-  `product_id` int(5) NOT NULL,
+  `product_id` int(11) NOT NULL,
   `price` int(5) NOT NULL,
   `Quantity` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -225,10 +289,6 @@ INSERT INTO `shirts` (`product_id`, `product_name`, `category_ID`, `product_size
 (1020002, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'M', 1200, 50),
 (1020003, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'L', 1200, 50),
 (1020004, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'XL', 1200, 50),
-(1020011, 'Mens Casual Shirt - Khaki', '102', 'S', 1300, 50),
-(1020012, 'Mens Casual Shirt - Khaki', '102', 'M', 1300, 50),
-(1020013, 'Mens Casual Shirt - Khaki', '102', 'L', 1300, 50),
-(1020014, 'Mens Casual Shirt - Khaki', '102', 'XL', 1300, 50),
 (1020021, 'Mens Casual Shirt - Mint Green', '102', 'S', 1300, 50),
 (1020022, 'Mens Casual Shirt - Mint Green', '102', 'M', 1300, 50),
 (1020023, 'Mens Casual Shirt - Mint Green', '102', 'L', 1300, 50),
@@ -278,10 +338,6 @@ CREATE TABLE `pants` (
 --
 
 INSERT INTO `pants` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
-(1030001, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'S', 1175, 50),
-(1030002, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'M', 1175, 50),
-(1030003, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'L', 1175, 50),
-(1030004, 'Mens Slant-pocket Tapered Pants - Beige', '103', 'XL', 1175, 50),
 (1030011, 'Mens Cargo Pants - Cream', '103', 'S', 1300, 50),
 (1030012, 'Mens Cargo Pants - Cream', '103', 'M', 1300, 50),
 (1030013, 'Mens Cargo Pants - Cream', '103', 'L', 1300, 50),
@@ -350,11 +406,7 @@ INSERT INTO `blazers` (`product_id`, `product_name`, `category_ID`, `product_siz
 (104071, 'Mens Glen Check Suit - Ocean Blue', '104', 'S', 8800, 50),
 (104072, 'Mens Glen Check Suit - Ocean Blue', '104', 'M', 8800, 50),
 (104073, 'Mens Glen Check Suit - Ocean Blue', '104', 'L', 8800, 50),
-(104074, 'Mens Glen Check Suit - Ocean Blue', '104', 'XL', 8800, 50),
-(104081, 'Mens Glen Check Suit - Indigo', '104', 'S', 9000, 50),
-(104082, 'Mens Glen Check Suit - Indigo', '104', 'M', 9000, 50),
-(104083, 'Mens Glen Check Suit - Indigo', '104', 'L', 9000, 50),
-(104084, 'Mens Glen Check Suit - Indigo', '104', 'XL', 9000, 50);
+(104074, 'Mens Glen Check Suit - Ocean Blue', '104', 'XL', 8800, 50);
 
 -- --------------------------------------------------------
 
@@ -391,11 +443,7 @@ INSERT INTO `outfits` (`product_id`, `product_name`, `category_ID`, `product_siz
 (105031, 'Womens Silk Jumpsuit - Powder Green', '105', 'S', 2200, 50),
 (105032, 'Womens Silk Jumpsuit - Powder Green', '105', 'M', 2200, 50),
 (105033, 'Womens Silk Jumpsuit - Powder Green', '105', 'L', 2200, 50),
-(105034, 'Womens Silk Jumpsuit - Powder Green', '105', 'XL', 2200, 50),
-(105041, 'Womens Jumpsuit - Sea Blue', '105', 'S', 2500, 50),
-(105042, 'Womens Jumpsuit - Sea Blue', '105', 'M', 2500, 50),
-(105043, 'Womens Jumpsuit - Sea Blue', '105', 'L', 2500, 50),
-(105044, 'Womens Jumpsuit - Sea Blue', '105', 'XL', 2500, 50);
+(105034, 'Womens Silk Jumpsuit - Powder Green', '105', 'XL', 2200, 50);
 
 -- --------------------------------------------------------
 
@@ -417,10 +465,6 @@ CREATE TABLE `jeans` (
 --
 
 INSERT INTO `jeans` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
-(106001, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'S', 1500, 50),
-(106002, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'M', 1500, 50),
-(106003, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'L', 1500, 50),
-(106004, 'Womens Wide Legged Denim Jeans - Sky blue', '106', 'XL', 1500, 50),
 (106011, 'Womens Wide Legged Denim Jeans - Blue', '106', 'S', 1600, 50),
 (106012, 'Womens Wide Legged Denim Jeans - Blue', '106', 'M', 1600, 50),
 (106013, 'Womens Wide Legged Denim Jeans - Blue', '106', 'L', 1600, 50),
@@ -458,10 +502,6 @@ CREATE TABLE `tops` (
 --
 
 INSERT INTO `tops` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
-(107001, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'S', 700, 50),
-(107002, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'M', 700, 50),
-(107003, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'L', 700, 50),
-(107004, 'Womens Solid Full-sleeve Shirt - Plain White', '107', 'XL', 700, 50),
 (107011, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'S', 700, 50),
 (107012, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'M', 700, 50),
 (107013, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'L', 700, 50),
@@ -657,11 +697,7 @@ INSERT INTO `apparels` (`product_id`, `product_name`, `category_ID`, `product_si
 (111071, 'Baby Rampers - Beige & Black', '111', 'S', 1300, 50),
 (111072, 'Baby Rampers - Beige & Black', '111', 'M', 1300, 50),
 (111073, 'Baby Rampers - Beige & Black', '111', 'L', 1300, 50),
-(111074, 'Baby Rampers - Beige & Black', '111', 'XL', 1300, 50),
-(111081, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'S', 1300, 50),
-(111082, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'M', 1300, 50),
-(111083, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'L', 1300, 50),
-(111084, 'Baby Jumpsuit with Stripes - Pink & White', '111', 'XL', 1300, 50);
+(111074, 'Baby Rampers - Beige & Black', '111', 'XL', 1300, 50);
 
 -- --------------------------------------------------------
 
@@ -692,7 +728,7 @@ INSERT INTO `hoodies` (`product_id`, `product_name`, `category_ID`, `product_siz
 (112013, 'Mens Sporty Hoodies - Olive Green', '112', 'L', 1200, 50),
 (112014, 'Mens Sporty Hoodies - Olive Green', '112', 'XL', 1200, 50),
 (112021, 'Mens Sporty Hoodies - Brown', '112', 'S', 1200, 50),
-(112022, 'Mens Sporty Hoodies - Brown', '112', 'M', 1200, 50),
+(11 2023, 'Mens Sporty Hoodies - Brown', '112', 'M', 1200, 50),
 (112023, 'Mens Sporty Hoodies - Brown', '112', 'L', 1200, 50),
 (112024, 'Mens Sporty Hoodies - Brown', '112', 'XL', 1200, 50),
 (112031, 'Unisex Casual Hoodies - Purple', '112', 'S', 1200, 50),
@@ -751,11 +787,7 @@ INSERT INTO `sweaters` (`product_id`, `product_name`, `category_ID`, `product_si
 (113031, 'Unisex Sweatshirts - Pine Green', '113', 'S', 900, 50),
 (113032, 'Unisex Sweatshirts - Pine Green', '113', 'M', 900, 50),
 (113033, 'Unisex Sweatshirts - Pine Green', '113', 'L', 900, 50),
-(113034, 'Unisex Sweatshirts - Pine Green', '113', 'XL', 900, 50),
-(113041, 'Womens Sweatshirts - Lavendar', '113', 'S', 960, 50),
-(113042, 'Womens Sweatshirts - Lavendar', '113', 'M', 960, 50),
-(113043, 'Womens Sweatshirts - Lavendar', '113', 'L', 960, 50),
-(113044, 'Womens Sweatshirts - Lavendar', '113', 'XL', 960, 50);
+(113034, 'Unisex Sweatshirts - Pine Green', '113', 'XL', 900, 50);
 
 -- --------------------------------------------------------
 
@@ -834,90 +866,20 @@ INSERT INTO `turtlenecks` (`product_id`, `product_name`, `category_ID`, `product
 (115002, 'Unisex Turtleneck - Black', '115', 'M', 1100, 50),
 (115003, 'Unisex Turtleneck - Black', '115', 'L', 1100, 50),
 (115004, 'Unisex Turtleneck - Black', '115', 'XL', 1100, 50),
-
 (115011, 'Unisex Turtleneck - Blue', '115', 'S', 1200, 50),
 (115012, 'Unisex Turtleneck - Blue', '115', 'M', 1200, 50),
 (115013, 'Unisex Turtleneck - Blue', '115', 'L', 1200, 50),
 (115014, 'Unisex Turtleneck - Blue', '115', 'XL', 1200, 50),
-
 (115021, 'Unisex Turtleneck - Olive Green', '115', 'S', 1200, 50),
 (115022, 'Unisex Turtleneck - Olive Green', '115', 'M', 1200, 50),
 (115023, 'Unisex Turtleneck - Olive Green', '115', 'L', 1200, 50),
 (115024, 'Unisex Turtleneck - Olive Green', '115', 'XL', 1200, 50),
-
 (115031, 'Unisex Turtleneck - Brown', '115', 'S', 1200, 50),
 (115032, 'Unisex Turtleneck - Brown', '115', 'M', 1200, 50),
 (115033, 'Unisex Turtleneck - Brown', '115', 'L', 1200, 50),
-(115034, 'Unisex Turtleneck - Brown', '115', 'XL', 1200, 50),
-
-(115041, 'Unisex Turtleneck - Grey', '115', 'S', 1200, 50),
-(115042, 'Unisex Turtleneck - Grey', '115', 'M', 1200, 50),
-(115043, 'Unisex Turtleneck - Grey', '115', 'L', 1200, 50),
-(115044, 'Unisex Turtleneck - Grey', '115', 'XL', 1200, 50);
+(115034, 'Unisex Turtleneck - Brown', '115', 'XL', 1200, 50);
 
 -- --------------------------------------------------------
-
---
--- Table structure for table `order`
---
-
-CREATE TABLE `order` (
-  `order_id` int(11) NOT NULL,
-  `username` varchar(40) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `delivery_Date` date NOT NULL,
-  `payment method` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `order`
---
-
-INSERT INTO `order` (`order_id`, `username`, `product_id`, `delivery_Date`, `payment method`) VALUES
-(1, 0, 'sking', '2022-01-04', 'cash'),
-(2, 0, 'nkochar', '2022-01-10', 'cash'),
-(3, 0, 'ROHAN', '2022-01-12', 'bkash'),
-(4, 0, 'dlanod', '2022-01-12', 'bkash'),
-(5, 0, 's2k78', '2022-01-12', 'bkash'),
-(6, 0, 'dLorentz', '2022-01-12', 'nagad'),
-(7, 0, 'LKD16', '2022-01-12', 'nagad'),
-(8, 0, 'tamJr', '2022-01-12', 'nagad'),
-(9, 0, 'shantzy', '2022-01-12', 'bkash'),
-(10, 0, 'parv139', '2022-01-13', 'cash'),
-(11, 0, 'daily23', '2022-01-20', 'nagad');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `user`
---
-
-CREATE TABLE `user` (
-  `name` varchar(100) NOT NULL,
-  `username` varchar(40) NOT NULL,  
-  `email` varchar(25) NOT NULL,
-  `password` varchar(40) NOT NULL,
-  `phone_number` varchar(25) NOT NULL,
-  `city` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`name`, `username`, `email`,`password` ,`phone_number`, `city`) VALUES
-('King', 'sking', 'king@yahoo.com', '111111', '01632856264', 'Dhaka'),
-('Kochar', 'nkochar', 'nkoch@hotmail.com', '222222', '01742856264', 'Bogura'),
-('Rohan', 'ROHAN', 'rohan@gmail.com', '333333', '01745856264', 'Dhaka'),
-('Donald', 'dlanod', 'donald@gmail.com', '444444', '01864856264', 'Noakhali'),
-('Shahid', 's2k78', 'shahid@gmail.com', '555555', '01866656784', 'Barishal'),
-('Lorentz', 'dLorentz', 'lorentz@hotmail.com', '666666','01801286784', 'Comilla'),
-('Liton', 'LKD16', 'liton@gmail.com', '777777', '01811186675', 'Faridpur'),
-('Tamim', 'tamJr', 'junior@yahoo.com', '888888', '01965587752', 'Jossore'),
-('Shanto', 'shantzy', 'shanto@hotmail.com', '999999', '01944588852', 'Jhinaidah'),
-('Parves', 'parv139', 'parvez@ymail.com', '161616', '01613485426', 'Rangpur'),
-('Daisy', 'daily23', 'daisy@gmail.com', '228228', '01313485876', 'Dinajjpur');
-
 
 --
 -- Indexes for dumped tables
@@ -930,9 +892,9 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`username`);
 
 --
--- Indexes for table `billing info(orders)`
+-- Indexes for table `billing info `
 --
-ALTER TABLE `billing info (orders)`
+ALTER TABLE `billing info  `
   ADD PRIMARY KEY (`billing_id`),
   ADD KEY `order_id` (`order_id`),
   ADD KEY `username` (`username`);
@@ -957,7 +919,10 @@ ALTER TABLE `category`
 --
 ALTER TABLE `order`
   ADD PRIMARY KEY (`order_id`),
+  ADD KEY `username` (`username`),
   ADD KEY `product_id` (`product_id`);
+  ADD KEY `billing_id` (`billing_id`)
+
 
 --
 -- Indexes for table `productlist`
@@ -1086,9 +1051,9 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`username`);
 
 --
--- AUTO_INCREMENT for table `billing info(orders)`
+-- AUTO_INCREMENT for table `billing info`
 --
-ALTER TABLE `billing info (orders)`
+ALTER TABLE `billing info`
   MODIFY `billing_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
