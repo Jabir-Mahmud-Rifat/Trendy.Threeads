@@ -50,74 +50,10 @@ INSERT INTO `admin` (`name`, `username`, `password`, `email`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `billing info(orders)`
 --
 
-CREATE TABLE `user` (
-  `name` varchar(100) NOT NULL,
-  `username` varchar(40) NOT NULL,  
-  `email` varchar(25) NOT NULL,
-  `password` varchar(40) NOT NULL,
-  `phone_number` varchar(25) NOT NULL,
-  `city` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`name`, `username`, `email`,`password` ,`phone_number`, `city`) VALUES
-('King', 'sking', 'king@yahoo.com', '111111', '01632856264', 'Dhaka'),
-('Kochar', 'nkochar', 'nkoch@hotmail.com', '222222', '01742856264', 'Bogura'),
-('Rohan', 'ROHAN', 'rohan@gmail.com', '333333', '01745856264', 'Dhaka'),
-('Donald', 'dlanod', 'donald@gmail.com', '444444', '01864856264', 'Noakhali'),
-('Shahid', 's2k78', 'shahid@gmail.com', '555555', '01866656784', 'Barishal'),
-('Lorentz', 'dLorentz', 'lorentz@hotmail.com', '666666','01801286784', 'Comilla'),
-('Liton', 'LKD16', 'liton@gmail.com', '777777', '01811186675', 'Faridpur'),
-('Tamim', 'tamJr', 'junior@yahoo.com', '888888', '01965587752', 'Jossore'),
-('Shanto', 'shantzy', 'shanto@hotmail.com', '999999', '01944588852', 'Jhinaidah'),
-('Parves', 'parv139', 'parvez@ymail.com', '161616', '01613485426', 'Rangpur'),
-('Daisy', 'daily23', 'daisy@gmail.com', '228228', '01313485876', 'Dinajjpur');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `order`
---
-
-CREATE TABLE `order` (
-  `order_id` int(11) NOT NULL,
-  `username` varchar(40) NOT NULL,
-  `product_id` int(11) NOT NULL,
-  `product_unit` int(4) NOT NULL,
-  `amount` int(11) NOT NULL,
-  `billing_id` int(11) NOT NULL,
-  `delivery_date` date NOT NULL,
-  `payment_method` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `order`
---
-
-INSERT INTO `order` (`order_id`, `username`, `product_id`, `product_unit`,  `billing_id`, `amount`, `delivery_date`, `payment_method`) VALUES
-(1, 'sking', 1010011, 1, 1, 675, '2023-01-04', 'cash'),
-(2, 'nkochar', 115033, 1, 2, 1200, '2023-01-10', 'cash'),
-(3, 'ROHAN', 113023, 2, 3, 1700, '2023-01-12', 'bkash'),
-(4, 'dlanod', 113022, 3, 4, 2550, '2023-01-12', 'bkash'),
-(5, 's2k78', 1010011, 1, 5, 675, '2023-01-12', 'bkash'),
-(6, 'dLorentz', 114013, 1, 6, 2200, '2023-01-12', 'nagad'),
-(7, 'LKD16', 1010113, 2, 7, 1350, '2023-01-12', 'nagad'),
-(8, 'tamJr', 115001, 1, 8, 1100, '2023-01-12', 'nagad'),
-(9, 'shantzy', 1010012, 1, 9, , '2023-01-12', 'bkash'),
-
--- --------------------------------------------------------
-
---
--- Table structure for table `billing info`
---
-
-CREATE TABLE `billing info` (
+CREATE TABLE `billing info (orders)` (
   `billing_id` int(11) NOT NULL,
   `billing_address` varchar(40) NOT NULL,
   `order_id` varchar(40) NOT NULL,
@@ -128,10 +64,10 @@ CREATE TABLE `billing info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `billing info`
+-- Dumping data for table `billing info(orders)`
 --
 
-INSERT INTO `billing info` (`billing_id`, `billing_address`, `order_id`, `card_number`, `card_name`, `pin`, `username`) VALUES
+INSERT INTO `billing info (orders)` (`billing_id`, `billing_address`, `order_id`, `card_number`, `card_name`, `pin`, `username`) VALUES
 (1, 'Dhaka', ' 111 ', 223145, 'King', 1234, 'sking'),
 (2, 'Jhinaidah', ' 112', 22564, 'Shanto', 1234, 'shantzy'),
 (3, 'Jossore', ' 113 ', 223150, 'Tamim', 1234, 'tamJr'),
@@ -728,7 +664,7 @@ INSERT INTO `hoodies` (`product_id`, `product_name`, `category_ID`, `product_siz
 (112013, 'Mens Sporty Hoodies - Olive Green', '112', 'L', 1200, 50),
 (112014, 'Mens Sporty Hoodies - Olive Green', '112', 'XL', 1200, 50),
 (112021, 'Mens Sporty Hoodies - Brown', '112', 'S', 1200, 50),
-(11 2023, 'Mens Sporty Hoodies - Brown', '112', 'M', 1200, 50),
+(112022, 'Mens Sporty Hoodies - Brown', '112', 'M', 1200, 50),
 (112023, 'Mens Sporty Hoodies - Brown', '112', 'L', 1200, 50),
 (112024, 'Mens Sporty Hoodies - Brown', '112', 'XL', 1200, 50),
 (112031, 'Unisex Casual Hoodies - Purple', '112', 'S', 1200, 50),
@@ -882,6 +818,68 @@ INSERT INTO `turtlenecks` (`product_id`, `product_name`, `category_ID`, `product
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `order`
+--
+
+CREATE TABLE `order` (
+  `order_id` int(11) NOT NULL,
+  `username` varchar(40) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `delivery_Date` date NOT NULL,
+  `payment method` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `order`
+--
+
+INSERT INTO `order` (`order_id`, `username`, `product_id`, `delivery_Date`, `payment method`) VALUES
+(1, 'sking', 1010011,'2022-01-04', 'cash'),
+(2, 'nkochar', 115033,'2022-01-10', 'cash'),
+(3, 'ROHAN', 113023,'2022-01-12', 'bkash'),
+(4, 'dlanod', 113022,'2022-01-12', 'bkash'),
+(5, 's2k78', 114014,'2022-01-12', 'bkash'),
+(6, 'dLorentz', 114013,'2022-01-12', 'nagad'),
+(7, 'LKD16', 1010011,'2022-01-12', 'nagad'),
+(8, 'tamJr', 115001,'2022-01-12', 'nagad'),
+(9, 'shantzy', 1010012 ,'2022-01-12', 'bkash'),
+(10,'parv139', 1010011,'2022-01-13', 'cash'),
+(11,'daily23', 1120023,'2022-01-20', 'nagad');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `name` varchar(100) NOT NULL,
+  `username` varchar(40) NOT NULL,  
+  `email` varchar(25) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  `phone_number` varchar(25) NOT NULL,
+  `city` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`name`, `username`, `email`,`password` ,`phone_number`, `city`) VALUES
+('King', 'sking', 'king@yahoo.com', '111111', '01632856264', 'Dhaka'),
+('Kochar', 'nkochar', 'nkoch@hotmail.com', '222222', '01742856264', 'Bogura'),
+('Rohan', 'ROHAN', 'rohan@gmail.com', '333333', '01745856264', 'Dhaka'),
+('Donald', 'dlanod', 'donald@gmail.com', '444444', '01864856264', 'Noakhali'),
+('Shahid', 's2k78', 'shahid@gmail.com', '555555', '01866656784', 'Barishal'),
+('Lorentz', 'dLorentz', 'lorentz@hotmail.com', '666666','01801286784', 'Comilla'),
+('Liton', 'LKD16', 'liton@gmail.com', '777777', '01811186675', 'Faridpur'),
+('Tamim', 'tamJr', 'junior@yahoo.com', '888888', '01965587752', 'Jossore'),
+('Shanto', 'shantzy', 'shanto@hotmail.com', '999999', '01944588852', 'Jhinaidah'),
+('Parves', 'parv139', 'parvez@ymail.com', '161616', '01613485426', 'Rangpur'),
+('Daisy', 'daily23', 'daisy@gmail.com', '228228', '01313485876', 'Dinajjpur');
+
+
+--
 -- Indexes for dumped tables
 --
 
@@ -892,9 +890,9 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`username`);
 
 --
--- Indexes for table `billing info `
+-- Indexes for table `billing info(orders)`
 --
-ALTER TABLE `billing info  `
+ALTER TABLE `billing info (orders)`
   ADD PRIMARY KEY (`billing_id`),
   ADD KEY `order_id` (`order_id`),
   ADD KEY `username` (`username`);
@@ -921,7 +919,6 @@ ALTER TABLE `order`
   ADD PRIMARY KEY (`order_id`),
   ADD KEY `username` (`username`),
   ADD KEY `product_id` (`product_id`);
-  ADD KEY `billing_id` (`billing_id`)
 
 
 --
@@ -1051,9 +1048,9 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`username`);
 
 --
--- AUTO_INCREMENT for table `billing info`
+-- AUTO_INCREMENT for table `billing info(orders)`
 --
-ALTER TABLE `billing info`
+ALTER TABLE `billing info (orders)`
   MODIFY `billing_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
