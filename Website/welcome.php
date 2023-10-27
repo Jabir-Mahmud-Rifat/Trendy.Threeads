@@ -16,7 +16,7 @@ session_start() ; //  code for connecting next page
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Landing Page</title>
-    <link rel=" stylesheet " href= "CSS\styles.css" >
+    <link rel=" stylesheet " href= "..\CSS\styles.css" >
 </head>
 <body>
     <header>
