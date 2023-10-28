@@ -121,7 +121,7 @@
                     </div>
                     <h4>BDT. 1800</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+               <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
@@ -137,7 +137,7 @@
                     </div>
                     <h4>BDT. 1850</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+               <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
@@ -153,7 +153,7 @@
                     </div>
                     <h4>BDT. 2000</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+               <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
@@ -169,7 +169,7 @@
                     </div>
                     <h4>BDT. 2200</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+               <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
                     
         </div>

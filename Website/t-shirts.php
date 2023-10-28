@@ -123,7 +123,7 @@
                     </div>
                     <h4>BDT. 650</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             
             <div class="product">
@@ -139,7 +139,7 @@
                     </div>
                     <h4>BDT. 675</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
@@ -155,7 +155,7 @@
                     </div>
                     <h4>BDT. 720</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
             <div class="product">
@@ -171,7 +171,7 @@
                     </div>
                     <h4>BDT. 800</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             
             <div class="product">
@@ -187,7 +187,7 @@
                     </div>
                     <h4>BDT. 800</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="..\Img\t-shirts-2.jpg" alt="">
@@ -202,7 +202,7 @@
                     </div>
                     <h4>BDT. 870</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="..\Img\t-shirts-3.jpg" alt="">
@@ -217,7 +217,7 @@
                     </div>
                     <h4>BDT. 950</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="..\Img\t-shirts-4.jpg" alt="">
@@ -232,7 +232,7 @@
                     </div>
                     <h4>BDT. 950</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="..\Img\polos-1.jpg" alt="">
@@ -247,7 +247,7 @@
                     </div>
                     <h4>BDT. 950</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="..\Img\polos-2.jpg" alt="">
@@ -262,7 +262,7 @@
                     </div>
                     <h4>BDT. 970</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="..\Img\polos-3.jpg" alt="">
@@ -277,7 +277,7 @@
                     </div>
                     <h4>BDT. 1000</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
             <div class="product">
                 <img src="..\Img\polos-4.jpg" alt="">
@@ -292,7 +292,7 @@
                     </div>
                     <h4>BDT. 1000</h4>
                 </div>
-                <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
         </div>
