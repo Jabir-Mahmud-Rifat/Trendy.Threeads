@@ -3,6 +3,24 @@
      session_start ();  
     // echo "Welcome  ". $_SESSION['username'] ;  
 
+
+
+/* 
+   // Example query to fetch products from the database
+$sql = "SELECT * FROM jeans";
+$result =$conn->query($sql);
+
+// Check if there are products in the database
+if ($result->num_rows > 0) {
+    // Output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "Product ID: " . $row["product_id"]. " - Product Name: " . $row["product_name"]. " - Product Size: " . $row["product_size"].
+         " - Price: $" . $row["product_price"]. "     -Stock: " . $row["stock"]. "<br>";
+    }
+} else {
+    echo "No products found in the database.";
+}
+*/
 ?>
 
 <!DOCTYPE html>
@@ -119,6 +137,7 @@
                     </div>
                     <h4>BDT. 1800</h4>
                 </div>
+                <button class="add-to-cart" data-product-id="1" data-product-name="Men's Chore Jacket " data-product-price="1800">Add to Cart</button>
              <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
@@ -135,6 +154,7 @@
                     </div>
                     <h4>BDT. 2200</h4>
                 </div>
+                
               <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
 
@@ -242,6 +262,7 @@
         </div>
     </section>
 
+    <script src="cart.js"></script>
      <!-- footer section -->
      <footer>
         <h3>Trendy Threads</h3>
@@ -256,5 +277,5 @@
 
         <h6>© 2023 Trendy Threads - All Rights Reserved</h6>
     </footer>
-
+    
 </html>
