@@ -11,7 +11,7 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     session_destroy();
 
     // Redirect to login page
-    header("location: login and signup.php");
+    header("location: ..\Website\login and signup.php");
     exit;
 }
 ?>

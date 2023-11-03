@@ -85,15 +85,15 @@ CREATE TABLE `cart` (
   `cart_id` int(11) NOT NULL,
   `username` varchar(40) NOT NULL,
   `product_id` int(11) NOT NULL,
-  `price` int(5) NOT NULL,
-  `Quantity` int(5) NOT NULL
+  `product_price` int(5) NOT NULL,
+  `quantity` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`cart_id`, `username`, `product_id`, `price`, `Quantity`) VALUES
+INSERT INTO `cart` (`cart_id`, `username`, `product_id`, `product_price`, `quantity`) VALUES
 (1, 's2k78', 1010011, 1350, 2),
 (2, 'LKD16', 1010113, 1000, 1);
 
@@ -129,15 +129,13 @@ INSERT INTO `category` (`category_ID`, `category_name`) VALUES
 (114, ' JACKETS '),
 (115, ' TURTLE-NECKS ');
 
-
-
 -- --------------------------------------------------------
 
 --
 -- Table structure for table `tshirts`
 --
 
-CREATE TABLE `tshirts` (
+CREATE TABLE `products` (
   `product_id` int(11) NOT NULL,
   `product_name` varchar(100) NOT NULL,
   `category_ID` int(11) NOT NULL,
@@ -147,170 +145,107 @@ CREATE TABLE `tshirts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `tshirts`
+-- Dumping data for table `products`
 --
 
-INSERT INTO `tshirts` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
-(1010001, 'Too Hot to Handle T-shirt - Black', '101', 'S', 650, 50),
-(1010002, 'Too Hot to Handle T-shirt - Black', '101', 'M', 650, 50),
-(1010003, 'Too Hot to Handle T-shirt - Black', '101', 'L', 650, 50),
-(1010004, 'Too Hot to Handle T-shirt - Black', '101', 'XL', 650, 50),
-(1010011, 'Foodie T-shirt - Red', '101', 'S', 675, 50),
-(1010012, 'Foodie T-shirt - Red', '101', 'M', 675, 50),
-(1010013, 'Foodie T-shirt - Red', '101', 'L', 675, 50),
-(1010014, 'Foodie T-shirt - Red', '101', 'XL', 675, 50),
-(1010021, 'KGF Rules T-shirt - Black', '101', 'S', 720, 50),
-(1010022, 'KGF Rules T-shirt - Black', '101', 'M', 720, 50),
-(1010023, 'KGF Rules T-shirt - Black', '101', 'L', 720, 50),
-(1010024, 'KGF Rules T-shirt - Black', '101', 'XL', 720, 50),
-(1010031, 'Glow in the Dark T-shirt - Black', '101', 'S', 800, 50),
-(1010032, 'Glow in the Dark T-shirt - Black', '101', 'M', 800, 50),
-(1010033, 'Glow in the Dark T-shirt - Black', '101', 'L', 800, 50),
-(1010034, 'Glow in the Dark T-shirt - Black', '101', 'XL', 800, 50),
-(1010041, 'Airplane T-shirt - Khaki', '101', 'S', 800, 50),
-(1010042, 'Airplane T-shirt - Khaki', '101', 'M', 800, 50),
-(1010043, 'Airplane T-shirt - Khaki', '101', 'L', 800, 50),
-(1010044, 'Airplane T-shirt - Khaki', '101', 'XL', 800, 50),
-(1010051, 'Solid T-shirt - Olive Green', '101', 'S', 870, 50),
-(1010052, 'Solid T-shirt - Olive Green', '101', 'M', 870, 50),
-(1010053, 'Solid T-shirt - Olive Green', '101', 'L', 870, 50),
-(1010054, 'Solid T-shirt - Olive Green', '101', 'XL', 870, 50),
-(1010061, 'Drop-shoulder T-shirt - Navy Blue', '101', 'S', 870, 50),
-(1010062, 'Drop-shoulder T-shirt - Navy Blue', '101', 'M', 870, 50),
-(1010063, 'Drop-shoulder T-shirt - Navy Blue', '101', 'L', 870, 50),
-(1010064, 'Drop-shoulder T-shirt - Navy Blue', '101', 'XL', 870, 50),
-(1010071, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
-(1010072, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
-(1010073, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
-(1010074, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
-(1010081, 'Mens Polo T-shirt - Bottle Green', '101', 'S', 950, 50),
-(1010082, 'Mens Polo T-shirt - Bottle Green', '101', 'M', 950, 50),
-(1010083, 'Mens Polo T-shirt - Bottle Green', '101', 'L', 950, 50),
-(1010084, 'Mens Polo T-shirt - Bottle Green', '101', 'XL', 950, 50),
-(1010091, 'Mens Polo T-shirt - Black', '101', 'S', 970, 50),
-(1010092, 'Mens Polo T-shirt - Black', '101', 'S', 970, 50),
-(1010093, 'Mens Polo T-shirt - Black', '101', 'L', 970, 50),
-(1010094, 'Mens Polo T-shirt - Black', '101', 'XL', 970, 50),
-(1010101, 'Mens Polo T-shirt - White', '101', 'S', 1000, 50),
-(1010102, 'Mens Polo T-shirt - White', '101', 'M', 1000, 50),
-(1010103, 'Mens Polo T-shirt - White', '101', 'L', 1000, 50),
-(1010104, 'Mens Polo T-shirt - White', '101', 'XL', 1000, 50),
-(1010111, 'Mens Polo T-shirt - Navy Blue', '101', 'S', 1000, 50),
-(1010112, 'Mens Polo T-shirt - Navy Blue', '101', 'M', 1000, 50),
-(1010113, 'Mens Polo T-shirt - Navy Blue', '101', 'L', 1000, 50),
-(1010114, 'Mens Polo T-shirt - Navy Blue', '101', 'XL', 1000, 50);
+INSERT INTO `products` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
 
-
--- --------------------------------------------------------
-
---
--- Table structure for table `shirts`
---
-
-CREATE TABLE `shirts` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `shirts`
---
-
-INSERT INTO `shirts` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
-(1020001, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'S', 1200, 50),
-(1020002, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'M', 1200, 50),
-(1020003, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'L', 1200, 50),
-(1020004, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'XL', 1200, 50),
-(1020021, 'Mens Casual Shirt - Mint Green', '102', 'S', 1300, 50),
-(1020022, 'Mens Casual Shirt - Mint Green', '102', 'M', 1300, 50),
-(1020023, 'Mens Casual Shirt - Mint Green', '102', 'L', 1300, 50),
-(1020024, 'Mens Casual Shirt - Mint Green', '102', 'XL', 1300, 50),
-(1020031, 'Mens Casual Shirt - Olive Green', '102', 'S', 1300, 50),
-(1020032, 'Mens Casual Shirt - Olive Green', '102', 'M', 1300, 50),
-(1020033, 'Mens Casual Shirt - Olive Green', '102', 'L', 1300, 50),
-(1020034, 'Mens Casual Shirt - Olive Green', '102', 'XL', 1300, 50),
-(1020041, 'Mens Casual Shirt - Pale Orange', '102', 'S', 1300, 50),
-(1020042, 'Mens Casual Shirt - Pale Orange', '102', 'M', 1300, 50),
-(1020043, 'Mens Casual Shirt - Pale Orange', '102', 'L', 1300, 50),
-(1020044, 'Mens Casual Shirt - Pale Orange', '102', 'XL', 1300, 50),
-(1020051, 'Mens Linen Shirt - Navy Blue', '102', 'S', 1350, 50),
-(1020052, 'Mens Linen Shirt - Navy Blue', '102', 'M', 1350, 50),
-(1020053, 'Mens Linen Shirt - Navy Blue', '102', 'L', 1350, 50),
-(1020054, 'Mens Linen Shirt - Navy Blue', '102', 'XL', 1350, 50),
-(1020061, 'Mens Grameen Check Shirt - Blue', '102', 'S', 1400, 50),
-(1020062, 'Mens Grameen Check Shirt - Blue', '102', 'M', 1400, 50),
-(1020063, 'Mens Grameen Check Shirt - Blue', '102', 'L', 1400, 50),
-(1020064, 'Mens Grameen Check Shirt - Blue', '102', 'XL', 1400, 50),
-(1020071, 'Mens Formal Shirt - White', '102', 'S', 1500, 50),
-(1020072, 'Mens Formal Shirt - White', '102', 'M', 1500, 50),
-(1020073, 'Mens Formal Shirt - White', '102', 'L', 1500, 50),
-(1020074, 'Mens Formal Shirt - White', '102', 'XL', 1500, 50),
-(1020081, 'Mens Formal Shirt - Black', '102', 'S', 1500, 50),
-(1020082, 'Mens Formal Shirt - Black', '102', 'M', 1500, 50),
-(1020083, 'Mens Formal Shirt - Black', '102', 'L', 1500, 50),
-(1020084, 'Mens Formal Shirt - Black', '102', 'XL', 1500, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `pants`
---
-
-CREATE TABLE `pants` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `pants`
---
-
-INSERT INTO `pants` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
-(1030011, 'Mens Cargo Pants - Cream', '103', 'S', 1300, 50),
-(1030012, 'Mens Cargo Pants - Cream', '103', 'M', 1300, 50),
-(1030013, 'Mens Cargo Pants - Cream', '103', 'L', 1300, 50),
-(1030014, 'Mens Cargo Pants - Cream', '103', 'XL', 1300, 50),
-(1030021, 'Mens Cargo Pants - Denim Blue', '103', 'S', 1300, 50),
-(1030022, 'Mens Cargo Pants - Denim Blue', '103', 'M', 1300, 50),
-(1030023, 'Mens Cargo Pants - Denim Blue', '103', 'L', 1300, 50),
-(1030024, 'Mens Cargo Pants - Denim Blue', '103', 'XL', 1300, 50),
-(1030031, 'Mens Cargo Pants - Black', '103', 'S', 1350, 50),
-(1030032, 'Mens Cargo Pants - Black', '103', 'M', 1350, 50),
-(1030033, 'Mens Cargo Pants - Black', '103', 'L', 1350, 50),
-(1030034, 'Mens Cargo Pants - Black', '103', 'XL', 1350, 50),
-(1030041, 'Mens Formal Wide legged - Khaki', '103', 'S', 1400, 50),
-(1030042, 'Mens Formal Wide legged - Khaki', '103', 'M', 1400, 50),
-(1030043, 'Mens Formal Wide legged - Khaki', '103', 'L', 1400, 50),
-(1030044, 'Mens Formal Wide legged - Khaki', '103', 'XL', 1400, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `blazers`
---
-
-CREATE TABLE `blazers` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `blazers`
---
-
-INSERT INTO `blazers` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(101001, 'Too Hot to Handle T-shirt - Black', '101', 'S', 650, 50),
+(101002, 'Too Hot to Handle T-shirt - Black', '101', 'M', 650, 50),
+(101003, 'Too Hot to Handle T-shirt - Black', '101', 'L', 650, 50),
+(101004, 'Too Hot to Handle T-shirt - Black', '101', 'XL', 650, 50),
+(101011, 'Foodie T-shirt - Red', '101', 'S', 675, 50),
+(101012, 'Foodie T-shirt - Red', '101', 'M', 675, 50),
+(101013, 'Foodie T-shirt - Red', '101', 'L', 675, 50),
+(101014, 'Foodie T-shirt - Red', '101', 'XL', 675, 50),
+(101021, 'KGF Rules T-shirt - Black', '101', 'S', 720, 50),
+(101022, 'KGF Rules T-shirt - Black', '101', 'M', 720, 50),
+(101023, 'KGF Rules T-shirt - Black', '101', 'L', 720, 50),
+(101024, 'KGF Rules T-shirt - Black', '101', 'XL', 720, 50),
+(101031, 'Glow in the Dark T-shirt - Black', '101', 'S', 800, 50),
+(101032, 'Glow in the Dark T-shirt - Black', '101', 'M', 800, 50),
+(101033, 'Glow in the Dark T-shirt - Black', '101', 'L', 800, 50),
+(101034, 'Glow in the Dark T-shirt - Black', '101', 'XL', 800, 50),
+(101041, 'Airplane T-shirt - Khaki', '101', 'S', 800, 50),
+(101042, 'Airplane T-shirt - Khaki', '101', 'M', 800, 50),
+(101043, 'Airplane T-shirt - Khaki', '101', 'L', 800, 50),
+(101044, 'Airplane T-shirt - Khaki', '101', 'XL', 800, 50),
+(101051, 'Solid T-shirt - Olive Green', '101', 'S', 870, 50),
+(101052, 'Solid T-shirt - Olive Green', '101', 'M', 870, 50),
+(101053, 'Solid T-shirt - Olive Green', '101', 'L', 870, 50),
+(101054, 'Solid T-shirt - Olive Green', '101', 'XL', 870, 50),
+(101061, 'Drop-shoulder T-shirt - Navy Blue', '101', 'S', 870, 50),
+(101062, 'Drop-shoulder T-shirt - Navy Blue', '101', 'M', 870, 50),
+(101063, 'Drop-shoulder T-shirt - Navy Blue', '101', 'L', 870, 50),
+(101064, 'Drop-shoulder T-shirt - Navy Blue', '101', 'XL', 870, 50),
+(101071, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(101072, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(101073, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(101074, 'AC/DC T-shirt - Black', '101', 'S', 950, 50),
+(101081, 'Mens Polo T-shirt - Bottle Green', '101', 'S', 950, 50),
+(101082, 'Mens Polo T-shirt - Bottle Green', '101', 'M', 950, 50),
+(101083, 'Mens Polo T-shirt - Bottle Green', '101', 'L', 950, 50),
+(101084, 'Mens Polo T-shirt - Bottle Green', '101', 'XL', 950, 50),
+(101091, 'Mens Polo T-shirt - Black', '101', 'S', 970, 50),
+(101092, 'Mens Polo T-shirt - Black', '101', 'S', 970, 50),
+(101093, 'Mens Polo T-shirt - Black', '101', 'L', 970, 50),
+(101094, 'Mens Polo T-shirt - Black', '101', 'XL', 970, 50),
+(101101, 'Mens Polo T-shirt - White', '101', 'S', 1000, 50),
+(101102, 'Mens Polo T-shirt - White', '101', 'M', 1000, 50),
+(101103, 'Mens Polo T-shirt - White', '101', 'L', 1000, 50),
+(101104, 'Mens Polo T-shirt - White', '101', 'XL', 1000, 50),
+(101111, 'Mens Polo T-shirt - Navy Blue', '101', 'S', 1000, 50),
+(101112, 'Mens Polo T-shirt - Navy Blue', '101', 'M', 1000, 50),
+(101113, 'Mens Polo T-shirt - Navy Blue', '101', 'L', 1000, 50),
+(101114, 'Mens Polo T-shirt - Navy Blue', '101', 'XL', 1000, 50),
+(102001, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'S', 1200, 50),
+(102002, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'M', 1200, 50),
+(102003, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'L', 1200, 50),
+(102004, 'Mens Band Collar Striped Shirt - Blue & White', '102', 'XL', 1200, 50),
+(102021, 'Mens Casual Shirt - Mint Green', '102', 'S', 1300, 50),
+(102022, 'Mens Casual Shirt - Mint Green', '102', 'M', 1300, 50),
+(102023, 'Mens Casual Shirt - Mint Green', '102', 'L', 1300, 50),
+(102024, 'Mens Casual Shirt - Mint Green', '102', 'XL', 1300, 50),
+(102031, 'Mens Casual Shirt - Olive Green', '102', 'S', 1300, 50),
+(102032, 'Mens Casual Shirt - Olive Green', '102', 'M', 1300, 50),
+(102033, 'Mens Casual Shirt - Olive Green', '102', 'L', 1300, 50),
+(102034, 'Mens Casual Shirt - Olive Green', '102', 'XL', 1300, 50),
+(102041, 'Mens Casual Shirt - Pale Orange', '102', 'S', 1300, 50),
+(102042, 'Mens Casual Shirt - Pale Orange', '102', 'M', 1300, 50),
+(102043, 'Mens Casual Shirt - Pale Orange', '102', 'L', 1300, 50),
+(102044, 'Mens Casual Shirt - Pale Orange', '102', 'XL', 1300, 50),
+(102051, 'Mens Linen Shirt - Navy Blue', '102', 'S', 1350, 50),
+(102052, 'Mens Linen Shirt - Navy Blue', '102', 'M', 1350, 50),
+(102053, 'Mens Linen Shirt - Navy Blue', '102', 'L', 1350, 50),
+(102054, 'Mens Linen Shirt - Navy Blue', '102', 'XL', 1350, 50),
+(102061, 'Mens Grameen Check Shirt - Blue', '102', 'S', 1400, 50),
+(102062, 'Mens Grameen Check Shirt - Blue', '102', 'M', 1400, 50),
+(102063, 'Mens Grameen Check Shirt - Blue', '102', 'L', 1400, 50),
+(102064, 'Mens Grameen Check Shirt - Blue', '102', 'XL', 1400, 50),
+(102071, 'Mens Formal Shirt - White', '102', 'S', 1500, 50),
+(102072, 'Mens Formal Shirt - White', '102', 'M', 1500, 50),
+(102073, 'Mens Formal Shirt - White', '102', 'L', 1500, 50),
+(102074, 'Mens Formal Shirt - White', '102', 'XL', 1500, 50),
+(102081, 'Mens Formal Shirt - Black', '102', 'S', 1500, 50),
+(102082, 'Mens Formal Shirt - Black', '102', 'M', 1500, 50),
+(102083, 'Mens Formal Shirt - Black', '102', 'L', 1500, 50),
+(102084, 'Mens Formal Shirt - Black', '102', 'XL', 1500, 50),
+(103011, 'Mens Cargo Pants - Cream', '103', 'S', 1300, 50),
+(103012, 'Mens Cargo Pants - Cream', '103', 'M', 1300, 50),
+(103013, 'Mens Cargo Pants - Cream', '103', 'L', 1300, 50),
+(103014, 'Mens Cargo Pants - Cream', '103', 'XL', 1300, 50),
+(103021, 'Mens Cargo Pants - Denim Blue', '103', 'S', 1300, 50),
+(103022, 'Mens Cargo Pants - Denim Blue', '103', 'M', 1300, 50),
+(103023, 'Mens Cargo Pants - Denim Blue', '103', 'L', 1300, 50),
+(103024, 'Mens Cargo Pants - Denim Blue', '103', 'XL', 1300, 50),
+(103031, 'Mens Cargo Pants - Black', '103', 'S', 1350, 50),
+(103032, 'Mens Cargo Pants - Black', '103', 'M', 1350, 50),
+(103033, 'Mens Cargo Pants - Black', '103', 'L', 1350, 50),
+(103034, 'Mens Cargo Pants - Black', '103', 'XL', 1350, 50),
+(103041, 'Mens Formal Wide legged - Khaki', '103', 'S', 1400, 50),
+(103042, 'Mens Formal Wide legged - Khaki', '103', 'M', 1400, 50),
+(103043, 'Mens Formal Wide legged - Khaki', '103', 'L', 1400, 50),
+(103044, 'Mens Formal Wide legged - Khaki', '103', 'XL', 1400, 50),
 (104001, 'Mens Glen Check Blazer - Navy Blue', '104', 'S', 4000, 50),
 (104002, 'Mens Glen Check Blazer - Navy Blue', '104', 'M', 4000, 50),
 (104003, 'Mens Glen Check Blazer - Navy Blue', '104', 'L', 4000, 50),
@@ -342,28 +277,7 @@ INSERT INTO `blazers` (`product_id`, `product_name`, `category_ID`, `product_siz
 (104071, 'Mens Glen Check Suit - Ocean Blue', '104', 'S', 8800, 50),
 (104072, 'Mens Glen Check Suit - Ocean Blue', '104', 'M', 8800, 50),
 (104073, 'Mens Glen Check Suit - Ocean Blue', '104', 'L', 8800, 50),
-(104074, 'Mens Glen Check Suit - Ocean Blue', '104', 'XL', 8800, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `outfits`
---
-
-CREATE TABLE `outfits` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `outfits`
---
-
-INSERT INTO `outfits` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(104074, 'Mens Glen Check Suit - Ocean Blue', '104', 'XL', 8800, 50),
 (105001, 'Womens Jumpsuit with Top - Powder Blue', '105', 'S', 1800, 50),
 (105002, 'Womens Jumpsuit with Top - Powder Blue', '105', 'M', 1800, 50),
 (105003, 'Womens Jumpsuit with Top - Powder Blue', '105', 'L', 1800, 50),
@@ -379,28 +293,7 @@ INSERT INTO `outfits` (`product_id`, `product_name`, `category_ID`, `product_siz
 (105031, 'Womens Silk Jumpsuit - Powder Green', '105', 'S', 2200, 50),
 (105032, 'Womens Silk Jumpsuit - Powder Green', '105', 'M', 2200, 50),
 (105033, 'Womens Silk Jumpsuit - Powder Green', '105', 'L', 2200, 50),
-(105034, 'Womens Silk Jumpsuit - Powder Green', '105', 'XL', 2200, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `jeans`
---
-
-CREATE TABLE `jeans` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `jeans`
---
-
-INSERT INTO `jeans` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(105034, 'Womens Silk Jumpsuit - Powder Green', '105', 'XL', 2200, 50),
 (106011, 'Womens Wide Legged Denim Jeans - Blue', '106', 'S', 1600, 50),
 (106012, 'Womens Wide Legged Denim Jeans - Blue', '106', 'M', 1600, 50),
 (106013, 'Womens Wide Legged Denim Jeans - Blue', '106', 'L', 1600, 50),
@@ -416,28 +309,7 @@ INSERT INTO `jeans` (`product_id`, `product_name`, `category_ID`, `product_size`
 (106041, 'Womens Formal Pants - Black', '106', 'S', 2000, 50),
 (106042, 'Womens Formal Pants - Black', '106', 'M', 2000, 50),
 (106043, 'Womens Formal Pants - Black', '106', 'L', 2000, 50),
-(106044, 'Womens Formal Pants - Black', '106', 'XL', 2000, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tops`
---
-
-CREATE TABLE `tops` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tops`
---
-
-INSERT INTO `tops` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(106044, 'Womens Formal Pants - Black', '106', 'XL', 2000, 50),
 (107011, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'S', 700, 50),
 (107012, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'M', 700, 50),
 (107013, 'Womens Half-sleeve Crop Shirt - Light Green', '107', 'L', 700, 50),
@@ -453,28 +325,7 @@ INSERT INTO `tops` (`product_id`, `product_name`, `category_ID`, `product_size`,
 (107041, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'S', 850, 50),
 (107042, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'M', 850, 50),
 (107043, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'L', 850, 50),
-(107044, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'XL', 850, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `trad-wear`
---
-
-CREATE TABLE `trad-wear` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `trad-wear`
---
-
-INSERT INTO `trad-wear` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(107044, 'Womens Folded Half-sleeve Shirt - Bottle Green', '107', 'XL', 850, 50),
 (108001, 'Womens Kurti with Pants - Sky Blue', '108', 'S', 3300, 50),
 (108002, 'Womens Kurti with Pants - Sky Blue', '108', 'M', 3300, 50),
 (108003, 'Womens Kurti with Pants - Sky Blue', '108', 'L', 3300, 50),
@@ -506,28 +357,7 @@ INSERT INTO `trad-wear` (`product_id`, `product_name`, `category_ID`, `product_s
 (108071, 'Womens Saree - Navy Blue', '108', 'S', 3000, 50),
 (108072, 'Womens Saree - Navy Blue', '108', 'M', 3000, 50),
 (108073, 'Womens Saree - Navy Blue', '108', 'L', 3000, 50),
-(108074, 'Womens Saree - Navy Blue', '108', 'XL', 3000, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `onesies`
---
-
-CREATE TABLE `onesies` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `onesies`
---
-
-INSERT INTO `onesies` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(108074, 'Womens Saree - Navy Blue', '108', 'XL', 3000, 50),
 (109001, 'Baby Onesies - Grey', '109', 'S', 500, 50),
 (109002, 'Baby Onesies - Grey', '109', 'M', 500, 50),
 (109003, 'Baby Onesies - Grey', '109', 'L', 500, 50),
@@ -543,28 +373,7 @@ INSERT INTO `onesies` (`product_id`, `product_name`, `category_ID`, `product_siz
 (109031, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'S', 2200, 50),
 (109032, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'M', 2200, 50),
 (109033, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'L', 2200, 50),
-(109034, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'XL', 2200, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `outwears`
---
-
-CREATE TABLE `outwears` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `outwears`
---
-
-INSERT INTO `outwears` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(109034, 'Baby Onesies Mixed Set- White, Brown & Beige', '109', 'XL', 2200, 50),
 (110001, 'Babys Outwear - Mint Green', '110', 'S', 800, 50),
 (110002, 'Babys Outwear - Mint Green', '110', 'M', 800, 50),
 (110003, 'Babys Outwear - Mint Green', '110', 'L', 800, 50),
@@ -580,28 +389,7 @@ INSERT INTO `outwears` (`product_id`, `product_name`, `category_ID`, `product_si
 (110031, 'Babys Outwear Set - Grey & Pink', '110', 'S', 1450, 50),
 (110032, 'Babys Outwear Set - Grey & Pink', '110', 'M', 1450, 50),
 (110033, 'Babys Outwear Set - Grey & Pink', '110', 'L', 1450, 50),
-(110034, 'Babys Outwear Set - Grey & Pink', '110', 'XL', 1450, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `apparels`
---
-
-CREATE TABLE `apparels` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `apparels`
---
-
-INSERT INTO `apparels` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(110034, 'Babys Outwear Set - Grey & Pink', '110', 'XL', 1450, 50),
 (111001, 'Boys T-shirt & Pants set - Black', '111', 'S', 800, 50),
 (111002, 'Boys T-shirt & Pants set - Black', '111', 'M', 800, 50),
 (111003, 'Boys T-shirt & Pants set - Black', '111', 'L', 800, 50),
@@ -633,28 +421,7 @@ INSERT INTO `apparels` (`product_id`, `product_name`, `category_ID`, `product_si
 (111071, 'Baby Rampers - Beige & Black', '111', 'S', 1300, 50),
 (111072, 'Baby Rampers - Beige & Black', '111', 'M', 1300, 50),
 (111073, 'Baby Rampers - Beige & Black', '111', 'L', 1300, 50),
-(111074, 'Baby Rampers - Beige & Black', '111', 'XL', 1300, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `hoodies`
---
-
-CREATE TABLE `hoodies` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `hoodies`
---
-
-INSERT INTO `hoodies` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(111074, 'Baby Rampers - Beige & Black', '111', 'XL', 1300, 50),
 (112001, 'Mens Sporty Hoodies - Black', '112', 'S', 1100, 50),
 (112002, 'Mens Sporty Hoodies - Black', '112', 'M', 1100, 50),
 (112003, 'Mens Sporty Hoodies - Black', '112', 'L', 1100, 50),
@@ -686,28 +453,7 @@ INSERT INTO `hoodies` (`product_id`, `product_name`, `category_ID`, `product_siz
 (112071, 'Mens Cozy Hoodies - Blue', '112', 'S', 1300, 50),
 (112072, 'Mens Cozy Hoodies - Blue', '112', 'M', 1300, 50),
 (112073, 'Mens Cozy Hoodies - Blue', '112', 'L', 1300, 50),
-(112074, 'Mens Cozy Hoodies - Blue', '112', 'XL', 1300, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `sweaters`
---
-
-CREATE TABLE `sweaters` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `sweaters`
---
-
-INSERT INTO `sweaters` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(112074, 'Mens Cozy Hoodies - Blue', '112', 'XL', 1300, 50),
 (113001, 'Unisex Sweatshirts - White', '113', 'S', 800, 50),
 (113002, 'Unisex Sweatshirts - White', '113', 'M', 800, 50),
 (113003, 'Unisex Sweatshirts - White', '113', 'L', 800, 50),
@@ -723,28 +469,7 @@ INSERT INTO `sweaters` (`product_id`, `product_name`, `category_ID`, `product_si
 (113031, 'Unisex Sweatshirts - Pine Green', '113', 'S', 900, 50),
 (113032, 'Unisex Sweatshirts - Pine Green', '113', 'M', 900, 50),
 (113033, 'Unisex Sweatshirts - Pine Green', '113', 'L', 900, 50),
-(113034, 'Unisex Sweatshirts - Pine Green', '113', 'XL', 900, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `jackets`
---
-
-CREATE TABLE `jackets` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `jackets`
---
-
-INSERT INTO `jackets` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(113034, 'Unisex Sweatshirts - Pine Green', '113', 'XL', 900, 50),
 (114001, 'Mens Chore Jacket - Midnight Black', '114', 'S', 1800, 50),
 (114002, 'Mens Chore Jacket - Midnight Black', '114', 'M', 1800, 50),
 (114003, 'Mens Chore Jacket - Midnight Black', '114', 'L', 1800, 50),
@@ -776,28 +501,7 @@ INSERT INTO `jackets` (`product_id`, `product_name`, `category_ID`, `product_siz
 (114071, 'Womens Leather Jacket - Black', '114', 'S', 7000, 50),
 (114072, 'Womens Leather Jacket - Black', '114', 'M', 7000, 50),
 (114073, 'Womens Leather Jacket - Black', '114', 'L', 7000, 50),
-(114074, 'Womens Leather Jacket - Black', '114', 'XL', 7000, 50);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `turtlenecks`
---
-
-CREATE TABLE `turtlenecks` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(100) NOT NULL,
-  `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
-  `product_price` int(6) NOT NULL,
-  `stock` int(5) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `turtlenecks`
---
-
-INSERT INTO `turtlenecks` (`product_id`, `product_name`, `category_ID`, `product_size`, `product_price`, `stock`) VALUES
+(114074, 'Womens Leather Jacket - Black', '114', 'XL', 7000, 50),
 (115001, 'Unisex Turtleneck - Black', '115', 'S', 1100, 50),
 (115002, 'Unisex Turtleneck - Black', '115', 'M', 1100, 50),
 (115003, 'Unisex Turtleneck - Black', '115', 'L', 1100, 50),
@@ -904,7 +608,7 @@ ALTER TABLE `cart`
   ADD PRIMARY KEY (`cart_id`),
   ADD KEY `product_id` (`product_id`),
   ADD KEY `username` (`username`),
-  ADD KEY `price` (`price`);
+  ADD KEY `product_price` (`product_price`);
 
 --
 -- Indexes for table `category`
@@ -919,128 +623,12 @@ ALTER TABLE `order`
   ADD PRIMARY KEY (`order_id`),
   ADD KEY `username` (`username`),
   ADD KEY `product_id` (`product_id`);
-
-
 --
 -- Indexes for table `productlist`
 --
-ALTER TABLE `tshirts`
+ALTER TABLE `products`
   ADD PRIMARY KEY (`product_id`),
   ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `shirts`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `pants`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `blazers`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `outfits`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `jeans`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `tops`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `trad-wear`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `onesies`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `outwears`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `apparels`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `hoodies`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `sweaters`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `jackets`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
---
--- Indexes for table `productlist`
---
-
-ALTER TABLE `turtlenecks`
-  ADD PRIMARY KEY (`product_id`),
-  ADD KEY `category_ID` (`category_ID`);
-
-
 --
 -- Indexes for table `user`
 --
