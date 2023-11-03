@@ -2,63 +2,62 @@
 
 require_once('..\Website\connection.php');
 
-session_start();
+ //code for connecting next page
+session_start ();
 
-if(isset($_POST['submit'])){
-    $Username = mysqli_real_escape_string($conn, $_POST['username']);
-    $Password = mysqli_real_escape_string($conn, ($_POST['password']));
 
-    $sql = "SELECT * FROM admin WHERE username = '$Username' AND password = '$Password'";
-    $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "ss", $Username, $Password);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
 
-    if(empty($Username) || empty($Password)){
-        echo '<script type ="text/JavaScript">';  
-        echo 'alert("Please Fill In The Blanks")';  
-        echo '</script>';
-    }
-    elseif(mysqli_num_rows($result) > 0){
-        header('location:..\Website\admin.php');
-    }
-    else{
-        echo '<script type ="text/JavaScript">';  
-        echo 'alert("Incorrect Username or Password")';  
-        header('location:..\Website\error.php');
-        echo '</script>';
-    }
+if(isset($_POST['submit1'])){
 
-    mysqli_stmt_close($stmt);
+  $Username = mysqli_real_escape_string($conn, $_POST['username']);
+  $Password= mysqli_real_escape_string($conn, ($_POST['password']));    //($conn, md5($_POST['password']))
+
+  $select = mysqli_query($conn, "SELECT * FROM admin WHERE username = '$Username'  And password ='$Password'") or die('query failed');
+  
+
+  if(empty($Username) || empty($Password)){
+   echo '<script type ="text/JavaScript">';  
+   echo 'alert("Please Fill In The Blanks")';  
+   echo '</script>';
+  }
+  elseif(mysqli_num_rows($select) > 0){
+    $row = mysqli_fetch_assoc($select);
+
+
+    //header('location:welcome.php');
+    header('location:..\Website\admin.php   ');      // welcome.php  //landingpage.php
+  }
+  else{
+   echo '<script type ="text/JavaScript">';  
+   echo 'alert("Incorrect Username or Password")';  
+   header('location:..\Website\error.php'); // have to fix this partr
+
+   echo '</script>';
+  }
 }
 elseif(isset($_POST['submit2'])){
-    $Username = mysqli_real_escape_string($conn, $_POST['username']);
-    $Password = mysqli_real_escape_string($conn, ($_POST['password']));
+  $select = mysqli_query($conn, "SELECT * FROM user WHERE username = '$Username'  And password ='$Password'") or die('query failed');
 
-    $sql = "SELECT * FROM user WHERE username = '$Username' AND password = '$Password'";
-    $stmt = mysqli_prepare($conn, $sql);
-    mysqli_stmt_bind_param($stmt, "ss", $Username, $Password);
-    mysqli_stmt_execute($stmt);
-    $result = mysqli_stmt_get_result($stmt);
+  if(empty($Username) || empty($Password)){
+   echo '<script type ="text/JavaScript">';  
+   echo 'alert("Please Fill In The Blanks")';  
+   echo '</script>';
+  }
+  elseif(mysqli_num_rows($select) > 0){
+    $row = mysqli_fetch_assoc($select);
 
-    if(empty($Username) || empty($Password)){
-        echo '<script type ="text/JavaScript">';  
-        echo 'alert("Please Fill In The Blanks")';  
-        echo '</script>';
-    }
-    elseif(mysqli_num_rows($result) > 0){
-        header('location:..\Website\welcome.php');
-    }
-    else{
-        echo '<script type ="text/JavaScript">';  
-        echo 'alert("Incorrect Username or Password")';  
-        header('location:..\Website\error.php');
-        echo '</script>';
-    }
 
-    mysqli_stmt_close($stmt);
+    //header('location:welcome.php');
+    header('location:..\Website\welcome.php   ');      // welcome.php  //landingpage.php
+  }
+  else{
+   echo '<script type ="text/JavaScript">';  
+   echo 'alert("Incorrect Username or Password")';  
+   header('location:..\Website\error.php'); // have to fix this partr
+
+   echo '</script>';
+  }
+
 }
-
-mysqli_close($conn);
 
 ?>

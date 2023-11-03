@@ -87,7 +87,7 @@
                         <div class="user-content">
                             <a href="..\Website\user.php"><h6>My Profile</h6></a>
                             <a href="..\Website\orders.php"><h6>My Orders</h6></a>
-                            <a href="..\Website\shop.php"><h6>Log out</h6></a>
+                            <a href="..\Website\logout.php"><h6>Log out</h6></a>
                         </div>
                         </div>
                     </li>
