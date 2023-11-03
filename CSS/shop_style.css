@@ -158,6 +158,33 @@ input{
     transform: scale(1.2);
 }
 
+/* Style the submit button */
+form.search button {
+    float: right;
+    position: relative;
+    width: 30px;
+    padding: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    background: #2196F3;
+    color: white;
+    font-size: 16px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+} 
+
+form.search button:hover {
+    background: #0b7dda;
+  }
+  
+/* Clear floats */
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
 /* Search box inside the navigation bar */
 .nav-item input[type=text] {
     float: right;
@@ -349,35 +376,6 @@ input{
 .chat-footer button:hover {
     background-color: #45a049;
 }
-
-
-
-/* Style the submit button */
-form.search button {
-    float: right;
-    position: relative;
-    width: 30px;
-    padding: 2px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    background: #2196F3;
-    color: white;
-    font-size: 16px;
-    border: 1px solid grey;
-    border-left: none; 
-    cursor: pointer;
-} 
-
-form.search button:hover {
-    background: #0b7dda;
-  }
-  
-/* Clear floats */
-form.search::after {
-    content: "";
-    clear: both;
-    display: table;
-  }  
 
 .shopbanner{
     padding: 40px 0px;

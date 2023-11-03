@@ -6,7 +6,10 @@ require_once('connection.php');  // database connection
 
 session_start() ; //  code for connecting next page
 
-
+if(isset($_SESSION['login_status']) && $_SESSION['login_status'] == 'success'){
+ echo '<script type="text/javascript">alert("Welcome! Your login was successful.");</script>';
+ unset($_SESSION['login_status']); // clear the session value to avoid multiple alerts
+}
 
 ?>
 

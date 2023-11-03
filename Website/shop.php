@@ -96,7 +96,7 @@
                          <a href="..\Website\cart.php" class="nav-cart" id="cart-shop"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                     <li class="nav-item">
-                    <form class="search" action="..\Website\search.php">
+                    <form class="search" action="..\Website\search.php" method='get'>
                     <input type="text" placeholder="Search.." name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
