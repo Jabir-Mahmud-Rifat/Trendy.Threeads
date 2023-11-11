@@ -107,22 +107,33 @@
         <h2>Denim Delights</h2>
         <p>Elevate Your Style with Classic Jeans</p>
         <div class="product-container">
-
-            <div class="product">
+        <div class="product">
                 <img src="..\Img\lad-jeans-2.jpg" alt="">
                 <div class="description">
-                    <h5><span>Women's Wide Legged Denim Jeans</span> - Blue</h5>
-                    <div class="rating">
+                <?php
+                $sql = "SELECT * FROM products WHERE product_id = 106011";
+                $result = $conn->query($sql);
+
+                if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    echo "<h5>" . $row["product_name"] . "</h5>";
+                    echo "<h4>BDT." . $row["product_price"] . "</h4>";
+                }
+                } else {
+                echo "0 results";
+                }
+                $conn->close();
+                ?>
+                <div class="rating">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                    </div>
-                    <h4>BDT. 1600</h4>
                 </div>
                 <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
             </div>
+        </div>
 
             <div class="product">
                 <img src="..\Img\lad-jeans-3.jpg" alt="">

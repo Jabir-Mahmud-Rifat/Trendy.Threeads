@@ -1,41 +1,29 @@
 <?php
 
-require_once('..\Website\connection.php');
+include("..\Website\connection.php");
+ session_start ();  
+// echo "Welcome  ". $_SESSION['username'] ;  
 
-//code for connecting next page
-session_start ();
+$search_term = $_GET['search_term'];
+$sql = "SELECT * FROM products
+WHERE product_name LIKE '%$search_term%'
+OR product_description LIKE '%$search_term%';";
 
-  /*  // Database connection
-    $servername = "localhost";
-    $username = "your_username";
-    $password = "your_password";
-    $dbname = "your_database_name";
+  $result = $conn->query($sql);
 
-    $conn = new mysqli($servername, $username, $password, $dbname);*/
+  if ($result->num_rows > 0) {
+    // output data of each row
 
-  // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    
+  while($row = $result->fetch_assoc()) {
+      echo "Product Name: " . $row["product_name"] . "<br>";
+      echo "Product Description: " . $row["product_description"] . "<br>";
+      echo "Product Price: $" . $row["product_price"] . "<br>";
+      echo "<br>";
     }
-    
-    // Get the search keyword from the GET parameter
-    $search = $_GET['search'];
-    
-    // Prepare the SQL query
-    $sql = "SELECT * FROM products WHERE product_name LIKE '%$search%'";
-    
-    // Execute the query and get the results
-    $result = $conn->query($sql);
-    
-    // Display the search results
-    if ($result->num_rows > 0) {
-        // output data of each row
-        while($row = $result->fetch_assoc()) {
-        echo "Product ID: " . $row["product_id"]. " - Product Name: " . $row["product_name"]. "<br>";
-        }
-    } else {
-        echo "0 results";
-    }
+  } else {
+    echo "0 results";
+  }
 
-    $conn->close();
-    ?>
+$conn->close();
+?>
