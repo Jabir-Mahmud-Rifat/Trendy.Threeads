@@ -3,6 +3,7 @@
      session_start ();  
     // echo "Welcome  ". $_SESSION['username'] ;  
 
+
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +18,7 @@
     <script src="https://kit.fontawesome.com/98e008cd61.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="..\css\shop_style.css">
+    <link rel="stylesheet" href="..\css\my_profile.css">
 
 </head>
 <body>
@@ -106,3 +108,23 @@
             </div>
         </nav>
     </header>
+    
+        <h1>User Profile</h1>
+
+    <section id="profile-section">
+        <div id="profile-info">
+            <h2> Welcome  <span id="username"></span>!</h2>
+            <p>Email: <span id="email"></span></p>
+            <p>Address: <span id="address"></span></p>
+            <p> phone: <span id="address"></span></p>
+            <!-- Add more profile information as needed -->
+        </div>
+        
+    
+        
+        <button onclick="location.href='..\Website\logout.php'">Logout</button>
+     
+    </section>
+    <script src="my_profile.js"></script>
+</body>
+</html>
