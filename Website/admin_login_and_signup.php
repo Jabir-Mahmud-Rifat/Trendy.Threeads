@@ -14,7 +14,7 @@
     <link rel="icon" type="image/x-icon" href="..\Img\favicon.ico">
 
     <script src="https://kit.fontawesome.com/98e008cd61.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="..\css\login_style.css">
+    <link rel="stylesheet" href="..\css\admin_login.css">
 </head>
 <body>
 
