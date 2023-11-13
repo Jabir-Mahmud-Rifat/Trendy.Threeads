@@ -559,6 +559,53 @@ form.search::after {
     flex-wrap: wrap;
 }
 
+/*Add to cart section*/
+
+.product-container .product .cart-container {
+    position: absolute;
+    top: 20px;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+    display: none;
+  }
+  
+  .cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-details img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .product-details h3 {
+    margin-left: 20px;
+  }
+  
+  .size-selection, .quantity-adjustment {
+    margin-bottom: 20px;
+  }
+  
+  #addToCartButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+
 /* Footer Section */
 
 footer{

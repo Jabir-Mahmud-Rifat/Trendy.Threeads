@@ -1,6 +1,9 @@
 <?php
     include("..\Website\connection.php");
      session_start ();  
+     if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+
+     }
     // echo "Welcome  ". $_SESSION['username'] ;  
 
 ?>
@@ -75,7 +78,8 @@
                     <td>Remove</td>
                     <td>Product</td>
                     <td>Name</td>
-                    <td>Price</td>
+                    <td>Unit Price</td>
+                    <td>Size</td>
                     <td>Quantity</td>
                     <td>Subtotal</td>
                 </tr>
