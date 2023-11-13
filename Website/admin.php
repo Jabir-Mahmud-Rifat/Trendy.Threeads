@@ -16,7 +16,7 @@
 
     <script src="https://kit.fontawesome.com/98e008cd61.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="..\css\shop_style.css">
+    <link rel="stylesheet" href="..\css\admin_style.css">
 
 </head>
 <body>
