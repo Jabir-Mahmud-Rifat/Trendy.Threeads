@@ -4,7 +4,6 @@
     // echo "Welcome  ". $_SESSION['username'] ;  
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,107 +17,94 @@
 
     <link rel="stylesheet" href="..\css\shop_style.css">
 
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="logo-container">
-            <div class="dropdown">
-                <button class="dropbtn"><i class="fa-solid fa-list"></i></button>
-                <div class="dropdown-content">
 
-                    <a href="#">Men's Collection:</a>
-                    <a href="..\Website\t-shirts.php"><h6>T-shirts</h6></a>
-                    <a href="..\Website\shirts.php"><h6>Shirts</h6></a>
-                    <a href="..\Website\pants.php"><h6>Pants & Trousers</h6></a>
-                    <a href="..\Website\blazers.php"><h6>Blazers</h6></a>
+<form id="paymentForm">
+    <label for="paymentMethod">Select Payment Method:</label>
+    <select id="paymentMethod" onchange="togglePaymentFields()">
+        <option value="creditCard">Credit Card</option>
+        <option value="bkash">bKash</option>
+        <option value="nagad">Nagad</option>
+    </select>
 
-                    <a href="#">Women's Collection:</a>
-                    <a href="..\Website\outfits.php"><h6>Outfits</h6></a>
-                    <a href="..\Website\jeans.php"><h6>Jeans & Trousers</h6></a>
-                    <a href="..\Website\tops.php"><h6>Tops</h6></a>
-                    <a href="..\Website\trad-wear.php"><h6>Traditional Wear</h6></a>
+    <div id="creditCardFields">
+        <label for="cardNumber">Card Number:</label>
+        <input type="text" id="cardNumber" placeholder="Enter card number" required>
 
-                    <a href="#">Kid's Collection:</a>
-                    <a href="..\Website\onesies.php"><h6>Baby Onesies & Rompers</h6></a>
-                    <a href="..\Website\outwears.php"><h6>Todler's Outwear</h6></a>
-                    <a href="..\Website\apparels.php"><h6>Kid's Apparel</h6></a>
+        <label for="expiryDate">Expiry Date:</label>
+        <input type="text" id="expiryDate" placeholder="MM/YY" required>
 
-                    <a href="#">Winter Collection:</a>
-                    <a href="..\Website\hoodies.php"><h6>Hoodies</h6></a>
-                    <a href="..\Website\sweaters.php"><h6>Sweaters & Sweatshirts</h6></a>
-                    <a href="..\Website\jackets.php"><h6>Jackets</h6></a>
-                    <a href="..\Website\turtles.php"><h6>Turtlenecks</h6></a>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" placeholder="CVV" required>
+    </div>
 
-                </div>
-            </div>
+    <div id="bkashFields" style="display: none;">
+        <!-- Add bKash-specific fields here -->
+        <p>bKash specific fields go here.</p>
+    </div>
 
-                <a href="..\Website\index.php" class="nav-logo">
-                    <i class="fa-solid fa-vest-patches"></i> Trendy Threads
-                </a>
-            </div> 
+    <div id="nagadFields" style="display: none;">
+        <!-- Add Nagad-specific fields here -->
+        <p>Nagad specific fields go here.</p>
+    </div>
 
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="..\Website\index.php" class="nav-link">Home</a>
-                    </li>
+    <button type="button" onclick="processPayment()">Submit Payment</button>
+</form>
 
-                    <li class="nav-item">
-                        <a href="..\Website\shop.php" class="nav-link active">Shop</a>
-                    </li>
+<script>
+    function togglePaymentFields() {
+        var paymentMethod = document.getElementById("paymentMethod").value;
+        var creditCardFields = document.getElementById("creditCardFields");
+        var bkashFields = document.getElementById("bkashFields");
+        var nagadFields = document.getElementById("nagadFields");
 
-                    <li class="nav-item">
-                        <a href="..\Website\about.php" class="nav-link">About</a>
-                    </li>
+        creditCardFields.style.display = (paymentMethod === "creditCard") ? "block" : "none";
+        bkashFields.style.display = (paymentMethod === "bkash") ? "block" : "none";
+        nagadFields.style.display = (paymentMethod === "nagad") ? "block" : "none";
+    }
 
-                    <li class="nav-item">
-                        <a href="..\Website\contact.php" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    function processPayment() {
+        // This is where you would typically send payment information to a server for processing.
+        // Use the selected payment method to determine which fields to include in the request.
+        alert("Payment processed successfully!");
+        // You can redirect the user to a thank you page or perform other actions after successful payment.
+    }
+</script>
 
-            <div class="nav-btn">
+</body>
+</html>
 
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <div class="user-down">
-                        <button class="user-btn"><a href="..\Website\login and signup.php" class="login-btn" id="login-btn"><i class="fa-solid fa-user"></i></a></button>                     
-                        <div class="user-content">
-                            <a href="..\Website\my_profile.php"><h6>My Profile</h6></a>
-
-
-
-
-
-                            <a href="..\Website\my_orders.php"><h6>My Orders</h6></a>
-
-
-
-
-
-                            <a href="..\Website\logout.php"><h6>Log out</h6></a>
-
-
-
-
-
-                        </div>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                         <a href="..\Website\cart.php" class="nav-cart" id="cart-shop"><i class="fa-solid fa-cart-shopping"></i></a>
-                    </li>
-                    <li class="nav-item">
-                    <form class="search" action="..\Website\search.php" method='get'>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                    </form>
-                    </li>
-
-                </ul>
-
-            </div>
-        </nav>
-    </header>
