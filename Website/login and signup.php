@@ -23,7 +23,7 @@
             <div class="login-signup">
  <!-- login page -->
                 <form action="..\Website\login.php" class="sign-in-form" method = "POST">
-                    <h2 class="title">Sign in</h2>
+                    <h2 class="title">Sign in as Customer</h2>
 
                     <!-- <?php
                     
@@ -34,7 +34,13 @@
                     }
                     
                     ?> -->
-
+                   <div>
+                    
+                   <p><a href="..\Website\admin_login_and_signup.php"> Sing in as Admin</a></p>
+                           
+                     </div> 
+                    
+                   
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Username" name= "username" id="log_name">
@@ -68,7 +74,7 @@
                 </form>
     <!--signup pagae -->
                 <form action="..\Website\signup.php" class="sign-up-form" method= "POST" autocomplete = "off">
-                    <h2 class="title">Sign up</h2>
+                    <h2 class="title">Sign up as  Customer</h2>
 
                     
                     <!-- <?php
@@ -80,7 +86,9 @@
                     }
                     
                     ?> -->
-
+                    
+                    
+                   
                     <div class="input-field">
                         <i class="fa-solid fa-signature"></i>
                         <input type="text" placeholder="Name"  name= "name">

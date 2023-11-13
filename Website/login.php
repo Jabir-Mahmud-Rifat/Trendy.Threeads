@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
     $Username = mysqli_real_escape_string($conn, $_POST['username']);
     $Password = mysqli_real_escape_string($conn, ($_POST['password']));
 
-    $sql = "SELECT * FROM admin WHERE username = '$Username' AND password = '$Password'";
+    $sql = "SELECT * FROM user WHERE username = '$Username' AND password = '$Password'";
     $result = mysqli_query($conn, $sql);
     
     if(empty($Username) || empty($Password)){
@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     }
     elseif(mysqli_num_rows($result) > 0){
       $row = mysqli_fetch_assoc($result);
-      header('location:..\Website\admin.php');
+      header('location:..\Website\index.php');
     }
     else{
         echo '<script type ="text/JavaScript">';  

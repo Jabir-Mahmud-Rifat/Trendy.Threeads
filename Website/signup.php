@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
   $Password= mysqli_real_escape_string($conn, $_POST['password']);
   $CPassword= mysqli_real_escape_string($conn, $_POST['cpassword']);
 
-  $select = mysqli_query($conn, "SELECT * FROM admin WHERE email = '$Email' AND password = '$Password' ") or die('query failed');
+  $select = mysqli_query($conn, "SELECT * FROM user WHERE email = '$Email' AND password = '$Password' ") or die('query failed');
 
   if(empty($Username) || empty($Email) || empty($Password)){
     echo 'Please Fill In The Blanks';
@@ -28,7 +28,7 @@ if(isset($_POST['submit'])){
     }
     else{
       $md5pass= md5($Password); //increpted the password
-      $sql = "INSERT INTO admin(username, password, email, name) VALUES('$Username', '$Password', '$Email', '$Name')" ; //we want to see the pass so 
+      $sql = "INSERT INTO user (username, password, email, name) VALUES('$Username', '$Password', '$Email', '$Name')" ; //we want to see the pass so 
       //we use $Password in the query insted of $pass
       $insert = mysqli_query($conn, $sql) or die('query failed');
 
