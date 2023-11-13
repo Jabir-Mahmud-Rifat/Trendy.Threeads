@@ -131,10 +131,11 @@
                     <td><Strong>BDT. 2620</Strong></td>
                 </tr>
             </table>
-
+            <button onclick="window.location='payment.php'">Payment</button>
             <button onclick="window.location='shop.php'">Checkout</button>
         </div>
     </section>
+   
 
     <!-- footer section -->
     <footer>
