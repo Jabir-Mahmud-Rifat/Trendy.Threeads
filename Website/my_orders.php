@@ -179,7 +179,7 @@
                     <td><Strong>BDT. 2620</Strong></td>
                 </tr>
             </table>
-
+            <button onclick="window.location='payment.php'">Payment</button>
             
         </div>
     </section>
