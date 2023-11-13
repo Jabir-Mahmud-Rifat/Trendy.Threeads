@@ -105,6 +105,59 @@
             </div>
         </nav>
     </header>
+        
+
+   
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: #04AA6D;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h2> Admin access</h2>
+
+
+
+
+<a href="http://localhost/phpmyadmin/index.php?route=/sql&db=cse299&table=category&pos=0" class="button"> Add Category </a>     <!--  devolop add category page the  add the link here -->
+
+<a href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=cse299&table=products" class="button"> Add Product </a>
+
+<a href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=cse299&table=order" class="button">Manage Order </a>
+
+<a href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=cse299&table=billing+info+%28orders%29" class="button">Manage Payment </a>
+
+<a href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=cse299&table=feedback" class="button">check Feedback</a>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
 
       <!-- footer section -->
       <footer>

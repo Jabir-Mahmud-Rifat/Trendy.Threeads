@@ -18,7 +18,7 @@ if(isset($_POST['submit'])){
     }
     elseif(mysqli_num_rows($result) > 0){
       $row = mysqli_fetch_assoc($result);
-      header('location:..\Website\contact.php');
+      header('location:..\Website\admin.php'); // admin page link
     }
     else{
         echo '<script type ="text/JavaScript">';  

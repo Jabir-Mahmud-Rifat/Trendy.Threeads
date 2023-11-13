@@ -35,12 +35,15 @@
                     
                     ?> -->
                    <div>
-                    
+
                    <p><a href="..\Website\admin_login_and_signup.php"> Sing in as Admin</a></p>
-                           
-                     </div> 
                     
                    
+        
+                           
+                     </div> 
+
+
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
                         <input type="text" placeholder="Username" name= "username" id="log_name">
