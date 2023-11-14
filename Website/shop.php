@@ -85,9 +85,24 @@
                         <div class="user-down">
                         <button class="user-btn"><a href="..\Website\login and signup.php" class="login-btn" id="login-btn"><i class="fa-solid fa-user"></i></a></button>                     
                         <div class="user-content">
-                            <a href="..\Website\user.php"><h6>My Profile</h6></a>
-                            <a href="..\Website\orders.php"><h6>My Orders</h6></a>
+                            <a href="..\Website\my_profile.php"><h6>My Profile</h6></a>
+
+
+                         
+
+
+                            <a href="..\Website\my_orders.php"><h6>My Orders</h6></a>
+
+
+                            <a href="..\Website\delivery_tracking.php"><h6>delivery tracking</h6></a> 
+
+
                             <a href="..\Website\logout.php"><h6>Log out</h6></a>
+
+
+
+
+
                         </div>
                         </div>
                     </li>
