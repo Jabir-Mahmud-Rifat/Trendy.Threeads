@@ -111,7 +111,7 @@ include("..\Website\connection.php");
 
     <?php
       $search_term = $_GET['search'];
-      $sql = "SELECT DISTINCT product_name, product_price FROM products WHERE product_name LIKE '%$search_term%'
+      $sql = "SELECT DISTINCT product_name, product_price, img FROM products WHERE product_name LIKE '%$search_term%'
       OR product_id LIKE '%$search_term%';";
       
       $result = $conn->query($sql);
@@ -120,8 +120,9 @@ include("..\Website\connection.php");
        
       while($row = $result->fetch_assoc()) {
           
-          echo "<h5>" . $row["product_name"] . "</h5>";
-          echo "<p>$" . $row["product_price"] . "</p>";
+          echo "<h4>" . $row["product_name"] . "</h4>";
+          echo "<p> BDT. " . $row["product_price"] . "</p>";
+          echo "<img src=\"" . $row["img"] . "\" alt=\"" . $row["product_name"] . "\"> <br>";
           echo "<button type=\"submit\"> Add to cart</button>";
 
         }
