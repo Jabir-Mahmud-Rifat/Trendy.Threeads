@@ -1,7 +1,6 @@
 <?php
     include("..\Website\connection.php");
      session_start ();  
-    // echo "Welcome  ". $_SESSION['username'] ;  
 
 ?>
 
@@ -15,6 +14,7 @@
     <link rel="icon" type="image/x-icon" href="..\Img\favicon.ico">
 
     <script src="https://kit.fontawesome.com/98e008cd61.js" crossorigin="anonymous"></script>
+    <script src="cart-container.js"></script>
 
     <link rel="stylesheet" href="..\css\shop_style.css">
 
@@ -107,33 +107,87 @@
         <h2>Denim Delights</h2>
         <p>Elevate Your Style with Classic Jeans</p>
         <div class="product-container">
-        <div class="product">
-                <img src="..\Img\lad-jeans-2.jpg" alt="">
+            <div class="product">
+                <img src="../Img/lad-jeans-2.jpg" alt="">
                 <div class="description">
-                <?php
-                $sql = "SELECT * FROM products WHERE product_id = 106011";
-                $result = $conn->query($sql);
+                <h5><span>Womens Wide Legged Denim Jeans</span> - Denim</h5>
 
-                if ($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                    echo "<h5>" . $row["product_name"] . "</h5>";
-                    echo "<h4>BDT." . $row["product_price"] . "</h4>";
-                }
-                } else {
-                echo "0 results";
-                }
-                $conn->close();
-                ?>
                 <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
                 </div>
-                <a href="..\Website\cart.php"><i class="fa-solid fa-cart-plus"></i></a>
+
+                <h4>BDT. 1600</h4>
+                </div>
+
+                <button name="add-to-cart-btn" id="openContainerBtn"><i class="fa-solid fa-cart-plus"></i></button>
+
+                <div class="cart-container" style="display: none;">
+                <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                    const openContainerBtn = document.querySelector('#openContainerBtn');
+                    const cartContainer = document.querySelector('.product-container .cart-container');
+
+                    openContainerBtn.addEventListener('click', () => {
+                        cartContainer.style.display = 'block'; // Show the container
+                    });
+                    });
+                </script>
+
+                <div class="product-details">
+                            <?php
+                            $sql = "SELECT * FROM products WHERE product_id = 10601";
+                            $result = $conn->query($sql);
+
+                            if ($result->num_rows > 0) {
+                                while ($row = $result->fetch_assoc()) {
+                                $product_name = $row["product_name"];
+                                $product_price = $row["product_price"];
+                                $img = $row["img"];
+                                }
+                            } else {
+                                echo "0 results";
+                            }
+                            ?>
+                        </div>
+                        <div class="user-details">
+                        <label for="username">Enter Username:</label>
+                        <input type="text" id="username" name="username" required>
+                        </div>
+
+                        <input type="hidden" id="product_id" value="10601">
+                        <input type="hidden" id="product_name" value="<?php echo $product_name; ?>">
+
+                        <div class="size-selection">
+                            <label for="product_size">Select Size:</label>
+                            <select id="product_size">
+                            <option value="S">Small</option>
+                            <option value="M">Medium</option>
+                            <option value="L">Large</option>
+                            <option value="XL">X-Large</option>
+                            </select>
+                        </div>
+
+                        <div class="quantity-adjustment">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" min="1" value="1">
+                        </div>
+
+                        <form action="add-to-cart.php" method="post">
+                            <input type="hidden" name="product_id" value="<?php echo $product_id; ?>">
+                            <input type="hidden" name="product_name" value="<?php echo $product_name; ?>">
+                            <input type="hidden" name="product_price" value="<?php echo $product_price; ?>">
+                            <input type="hidden" name="product_size" value="<?php echo $product_size; ?>">
+                            <input type="hidden" name="quantity" value="<?php echo $quantity; ?>">
+                            <input type="hidden" name="img" value="<?php echo $img; ?>">
+                            <input type="hidden" name="username" value="<?php echo $username; ?>">
+                            <input type="submit" value="Add to Cart">
+                        </form>
+                </div>
             </div>
-        </div>
 
             <div class="product">
                 <img src="..\Img\lad-jeans-3.jpg" alt="">

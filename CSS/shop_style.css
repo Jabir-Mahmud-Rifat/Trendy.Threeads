@@ -561,50 +561,46 @@ form.search::after {
 
 /*Add to cart section*/
 
-.product-container .product .cart-container {
-    position: absolute;
-    top: 20px;
-    background-color: white;
-    padding: 20px;
-    z-index: 1;
-    display: none;
-  }
-  
-  .cart-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .product-details {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .product-details img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-  
-  .product-details h3 {
-    margin-left: 20px;
-  }
-  
-  .size-selection, .quantity-adjustment {
-    margin-bottom: 20px;
-  }
-  
-  #addToCartButton {
-    display: block;
-    margin: 0 auto;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+.product-details .product .description h5{
+    font-size: 20px;
+    padding: 2px 0px;
+}
+
+.product-details .product-container .cart-container {
+    top: 0;
+    left: 0;
+    width: 500px; /* Set the desired width for the container*/
+    height: 500px;
+    background-color: rgb(15, 15, 15);
+    z-index: 1; /* Ensure container appears on top of other elements */
+    display: none; /* Initially hidden */
   }
 
+  .product-details .product-container .cart-container i{
+    font-size: 12px;
+    color: black;
+}
+
+.product-details .product-container .cart-container button{
+    width: 40px;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+    background-color: rgb(46, 46, 46);
+    font-weight: 500;
+    color: rgb(236, 196, 67);
+    padding: 10px 15px;
+    border: 1px solid rgb(58, 58, 58);
+}
+
+.product-details .product-container .cart-container .product-details h5{
+    color: #000000;
+}
+
+.product-details .product-container .cart-container .size-selection option{
+    color: #000000;
+}
 
 /* Footer Section */
 
@@ -674,14 +670,6 @@ footer h6{
     transition: .5s;
 }
 
-.product-details{
-    padding: 40px 80px;
-}
-
-.product-details .single-pro-image{
-    width: 40%;
-    margin-right: 50px;
-}
 
 .sml-img-grp{
     display: flex;
@@ -694,71 +682,6 @@ footer h6{
 
 .sml-img{
     cursor: pointer;
-}
-
-/* Product Page */
-
-.product-details{
-    display: flex;
-    margin-top: 20px;
-}
-
-.product-details .single-pro-details{
-    width: 50%;
-    padding-top: 30px;
-}
-
-.product-details .single-pro-details h2{
-    padding: 10px 0px;
-}
-
-.product-details .single-pro-details span{
-    color: aquamarine;
-}
-
-.product-details .single-pro-details select{
-    display: block;
-    padding: 5px 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(45, 45, 45);
-}
-
-.product-details .single-pro-details input{
-    width: 50px;
-    height: 50px;
-    padding-left: 10px;
-    font-size: 15px;
-    margin-right: 10px;
-    color: white;
-    border: 2px solid white;
-    background: transparent;
-    border-radius: 10px;
-}
-
-.product-details .single-pro-details button{
-    color: rgb(252, 252, 252);
-    border: 2px solid rgb(42, 39, 39);
-    background-color: rgb(35, 32, 32);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: capitalize;
-    padding: 12px 24px;
-    border-radius: 10px;
-    transition: 0.5s;
-    margin-top: 10px;
-}
-
-.product-details .single-pro-details h4{
-    font-size: 24px;
-    padding: 20px 0px;
-}
-
-.product-details .single-pro-details h5{
-    color: rgb(146, 146, 146);
-    font-weight: 500;
 }
 
 .pagination{

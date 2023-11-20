@@ -84,6 +84,8 @@ CREATE TABLE `cart` (
   `username` varchar(40) NOT NULL,
   `product_id` int(11) NOT NULL,
   `img` varchar(255) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `product_size` varchar(10) NOT NULL,
   `product_price` int(5) NOT NULL,
   `quantity` int(5) NOT NULL,
   `total_price` int(6) NOT NULL
@@ -160,7 +162,6 @@ CREATE TABLE `products` (
   `product_name` varchar(100) NOT NULL,
   `img` varchar(255) NOT NULL,
   `category_ID` int(11) NOT NULL,
-  `product_size` varchar(10) NOT NULL,
   `product_price` int(6) NOT NULL,
   `stock` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -353,7 +354,8 @@ ALTER TABLE `cart`
   ADD PRIMARY KEY (`cart_id`),
   ADD KEY `username` (`username`),
   ADD KEY `product_id` (`product_id`),
-  ADD KEY `img` (`img`),  
+  ADD KEY `img` (`img`),
+  ADD KEY `product_name` (`product_name`),  
   ADD KEY `product_price` (`product_price`);
 
 --
